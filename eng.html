@@ -1,0 +1,843 @@
+<?php
+$user_id = rand(999, 999999);
+if(isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+$user_ip = $_SERVER["HTTP_CF_CONNECTING_IP"];
+} else {
+$user_ip = $_SERVER["REMOTE_ADDR"];
+}
+if(!isset($_COOKIE["dle_hash"])) {
+setcookie("dle_hash", md5($user_ip.$user_id), time()+3600);
+}
+setcookie("dle_pm", "0", time()+3600);
+setcookie("user_id", $user_id, time()+3600);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Transfer from Barcelona airport. Booking and ordering a premium car</title>
+<meta name="description" content="If you want to order an inexpensive transfer in Barcelona, our company will be an excellent performer of this service. Choose your favorite car, time of stay, and enjoy a wonderful trip." />
+<link rel="canonical" href="https://barcelonadriver.com/eng.html" />
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<meta name="yandex-verification" content="d9fed12d52febcac" />
+<link rel="stylesheet" href="css/maineng.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+</head>
+<body>
+<header class="header">
+<nav class="navbar navbar-inverse back menu">
+<div class="container">
+<div class="navbar-header">
+<button type="button" id="navbar-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+<span class="icon-bar"></span>
+<span class="icon-bar two"></span>
+<span class="icon-bar three"></span>
+</button>
+<a class="navbar-brand" href="/eng.html">Barcelona <span>driver</span></a>
+<div class="dropdown vis visible-md visible-sm visible-xs">
+<button class="dropbtn"><img src="img/eng.png" alt="">eng</button>
+<div class="dropdown-content">
+<a href="/"><img src="img/rus.png" alt="">rus</a>
+</div>
+</div>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav about">
+<li><a class="mt" href="#scroll1">About us</a></li>
+<li><a class="mt" href="#scroll2">Vehicle fleet</a></li>
+<li><a class="mt" href="#scroll3">Price list</a></li>
+<li><a class="mt" href="#scroll4">Reviews</a></li>
+</ul>
+<div class="dropdown d-n">
+<button class="dropbtn"><img src="img/eng.png" alt="">eng</button>
+<div class="dropdown-content">
+<a href="/"><img src="img/rus.png" alt="">rus</a>
+</div>
+</div>
+<ul class="nav navbar-nav navbar-right">
+<li  class="d-ib"><a href="tel:34635055656"  rel="nofollow" target="blank"><img src="img/phone.png" alt=""></a></li>
+<li  class="d-ib"><a href="https://wa.me/34635055656"  rel="nofollow" target="blank"  alt="Click here to write to us at Whatsapp"><img src="img/whatup.png" alt=""></a></li>
+<li  class="d-ib"><a href="viber://chat?number=34635055656"  rel="nofollow" target="blank"  alt="Click here to write to us at Viber"><img src="img/viber.png" alt=""></a></li>
+<li><a class="mtm num" href="tel:34635055656"  rel="nofollow" target="blank" style="padding-bottom: 0 !important;">+34 635 05 56 56</a><span style="display: block;"><center><a href="mailto:support@barcelonadriver.com" style="font-size: 11px;">info@barcelonadriver.com</a></center></span></li>
+<li class="d-ib"><a href="#" rel="nofollow"><img src="img/facebook.png" alt=""></a></li>
+<li class="d-ib"><a class="mtm" href="https://vk.com/barcelonadriver" rel="nofollow"><img src="img/vk.png" alt=""></a></li>
+<li class="d-ib"><a href="https://www.instagram.com/barcelonadriver/" rel="nofollow"><img src="img/snapchat.png" alt=""></a></li>
+<!-- <li><a class="mt " href="#"><button class="btn btn-now">чат онлайн</button></a></li> -->
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<!-- SECTION 1 -->
+<section class="sc-1">
+<div class="container">
+<div class="row">
+<img class="cars" src="img/cars.png" alt="">
+<div class="w100">
+<h4>    Find out
+<span>the cost</span>
+<span>of the trip</span>
+</h4>
+<form action="">
+<div class="bef1">
+<select name="" id="first_select">
+<option value="1" selected>El Prat Airport</option>
+<option value="2" disabled>Barcelona</option>
+<option value="3">Sitges</option>
+<option value="4">Vilanova</option>
+<option value="5">Cunit</option>
+<option value="6">Comarruga</option>
+<option value="7">Calafell</option>
+<option value="8">Torredembarra</option>
+<option value="9">Salou</option>
+<option value="10">Cambrils</option>
+<option value="11">Port Aventura</option>
+<option value="12">Cruise Port</option>
+<option value="13">Badalona</option>
+<option value="14">Montcada i Reixac</option>
+<option value="15">Terrassa</option>
+<option value="16">Mataró</option>
+<option value="17">La Roca Village</option>
+<option value="18">Calella</option>
+<option value="19">Malgrat de Mar</option>
+<option value="20">Santa Susanna</option>
+<option value="21">Lloret de Mar</option>
+<option value="22">Tossa de Mar</option>
+<option value="23">Castell-Platja d'Aro</option>
+<option value="24">Girona Airport</option>
+<option value="25">Figueres</option>
+</select>
+</div>
+<img src="/img/refresh-button.png" class="one_ref">
+<div class="bef1 bef5">
+<select name="" id="second_select">
+<option value="1" disabled>El Prat Airport</option>
+<option value="2" selected>Barcelona</option>
+<option value="3">Sitges</option>
+<option value="4">Vilanova</option>
+<option value="5">Cunit</option>
+<option value="6">Comarruga</option>
+<option value="7">Calafell</option>
+<option value="8">Torredembarra</option>
+<option value="9">Salou</option>
+<option value="10">Cambrils</option>
+<option value="11">Port Aventura</option>
+<option value="12">Cruise Port</option>
+<option value="13">Badalona</option>
+<option value="14">Montcada i Reixac</option>
+<option value="15">Terrassa</option>
+<option value="16">Mataró</option>
+<option value="17">La Roca Village</option>
+<option value="18">Calella</option>
+<option value="19">Malgrat de Mar</option>
+<option value="20">Santa Susanna</option>
+<option value="21">Lloret de Mar</option>
+<option value="22">Tossa de Mar</option>
+<option value="23">Castell-Platja d'Aro</option>
+<option value="24">Girona Airport</option>
+<option value="25">Figueres</option>
+</select>
+</div>
+<button type="button" class="btn btn-now btn-lg run_price" data-toggle="modal" data-target="#myModal2" >Calculate</button>
+</form>
+</div>
+</div></div>
+</section>
+<!-- Modal 2 ТРАНСФЕР -->
+<div id="myModal2" class="modal fade" role="dialog">
+<div class="modal-dialog">
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><img src="img/close.png" alt=""></button>
+<h4 class="modal-title">Calculation of the cost and booking of the transfer</h4>
+</div>
+<div class="modal-body">
+<form action="" name="main_form" onsubmit="return false;">
+<div class="bef1">
+<select name="" id="first_select_2">
+<option value="1" selected>El Prat Airport</option>
+<option value="2" disabled>Barcelona</option>
+<option value="3">Sitges</option>
+<option value="4">Vilanova</option>
+<option value="5">Cunit</option>
+<option value="6">Comarruga</option>
+<option value="7">Calafell</option>
+<option value="8">Torredembarra</option>
+<option value="9">Salou</option>
+<option value="10">Cambrils</option>
+<option value="11">Port Aventura</option>
+<option value="12">Cruise Port</option>
+<option value="13">Badalona</option>
+<option value="14">Montcada i Reixac</option>
+<option value="15">Terrassa</option>
+<option value="16">Mataró</option>
+<option value="17">La Roca Village</option>
+<option value="18">Calella</option>
+<option value="19">Malgrat de Mar</option>
+<option value="20">Santa Susanna</option>
+<option value="21">Lloret de Mar</option>
+<option value="22">Tossa de Mar</option>
+<option value="23">Castell-Platja d'Aro</option>
+<option value="24">Girona Airport</option>
+<option value="25">Figueres</option>
+</select>
+</div>
+<img src="/img/refresh-button.png" class="one_ref">
+<div class="bef1 bef5">
+<select name="" id="second_select_2">
+<option value="1" disabled>El Prat Airport</option>
+<option value="2" selected>Barcelona</option>
+<option value="3">Sitges</option>
+<option value="4">Vilanova</option>
+<option value="5">Cunit</option>
+<option value="6">Comarruga</option>
+<option value="7">Calafell</option>
+<option value="8">Torredembarra</option>
+<option value="9">Salou</option>
+<option value="10">Cambrils</option>
+<option value="11">Port Aventura</option>
+<option value="12">Cruise Port</option>
+<option value="13">Badalona</option>
+<option value="14">Montcada i Reixac</option>
+<option value="15">Terrassa</option>
+<option value="16">Mataró</option>
+<option value="17">La Roca Village</option>
+<option value="18">Calella</option>
+<option value="19">Malgrat de Mar</option>
+<option value="20">Santa Susanna</option>
+<option value="21">Lloret de Mar</option>
+<option value="22">Tossa de Mar</option>
+<option value="23">Castell-Platja d'Aro</option>
+<option value="24">Girona Airport</option>
+<option value="25">Figueres</option>
+</select>
+</div>
+<div class="w100 put_price_car">
+<div class="fl">
+<input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-1">
+<label class="label-for-check2" for="transfer-person-1" value="person 1-4 normal car">
+<h5 >person 1-4 standart</h5>
+<h6>40€</h6>
+</label>
+</div>
+<div class="fl">
+<input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-2">
+<label class="label-for-check2" for="transfer-person-2" value="person 1-4 luxury car">
+<h5>person 1-4 luxury car</h5>
+<h6>55€</h6>
+</label>
+</div>
+<div class="fl">
+<input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-3">
+<label class="label-for-check2" for="transfer-person-3" value="person 4-6 normal car">
+<h5>person 1-8 luxury minivan</h5>
+<h6>70€</h6>
+</label>
+</div>
+</div>
+<div style="color: red;margin-top: 47px;display: none;font-size: 20px;" class="erro_trnsf">Choose a car to continue registration of the transfer.</div>
+<div class="btn btn-now order first_step">Book a transfer</div>
+<div class="form_hide">
+<div class="transfer-option">
+<div class="w684">
+<h3>Arrival flight number as indicated on the ticket</h3>
+<input type="text" class="number_text" required>
+<h3>Date and time of arrival, as indicated on the ticket</h3>
+<!-- <input class="w50" type="date" id="" name="" value=""> -->
+<input type="text" class="w50 data_text_1" id="datepicker">
+<input class="w50 time_text_1" type="time"name="" required>
+<label class="switch">
+<input type="checkbox" class="checkbox">
+<span class="slider round"></span>
+</label><br>
+<span class="wait">
+<h3>Extra hour of waiting</h3>
+<input type="text" class="sitebg" value="0€" readonly>
+</span>
+<h3 class="special">The driver is waiting for you at the airport for 2 hours instead of 1 hour</h3>
+<h3>Destination: address or hotel name</h3>
+<input type="text" class="place_text_1" required>
+<span class="w50">
+<h3>Number of passengers
+including children and infants</h3>
+<input class="w50 passanger" type="number" value="0" unchecked>
+</span>
+<span class="w50">
+<h3 >Number of luggage</h3>
+<input class="w50 stuff" type="number" value="0" required>
+</span>
+<div class="bef">
+<select name="" id="nump_priv">
+<option value="">0</option>
+<option value="">1</option>
+<option value="">2</option>
+<option value="">3</option>
+<option value="">4</option>
+<option value="">5</option>
+</select>
+</div>
+<input type="text" class="extra" value="Extra stops (10€ each)" readonly>
+<label class="switch">
+<input type="checkbox"  class="checkbox2" unchecked>
+<span class="slider round"></span>
+</label><br>
+<span class="wait ">
+<h3>Return transfer</h3>
+<input type="text" class="sitebg2" value="0€" readonly>
+</span>
+<div style="display: none;" class="info_for_back_transf">
+<h3>Place of departure: address or hotel name</h3>
+<input type="text" class="place_text_2">
+<h3>Date and time of the transfer</h3>
+<!-- <input class="w50" type="date" id="" name="" value=""> -->
+<input type="text" class="w50 data_text_2" id="datepicker_1">
+<input class="w50 time_text_2" type="time"  id="" name="">
+</div>
+<span class="w50 ">
+<h3>Name</h3>
+<input class="w50 nobg name_text" type="text"  required>
+</span>
+<span class="w50">
+<h3>Surname</h3>
+<input class="w50 nobg lastname_text" type="text"  required>
+</span>
+<h3>Phone number with country code</h3>
+<input type="phone" class="phone_text" required>
+<h3>email</h3>
+<input type="email" class="email_text" required>
+</div>
+</div>
+<div class="all">in total: <span class="unitCount"></span></div>
+<div class="result"></div>
+<button class="btn btn-now order final_order_pay">Book <br>and pay <u>online</u></button>
+<button class="btn btn-now order final_order_nopay">Book <br>and pay <u>locally</u></button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal 3 забронировать экскурсию -->
+<div id="myModal3" class="modal fade" role="dialog">
+<div class="modal-dialog">
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><img src="img/close.png" alt=""></button>
+<h4 class="modal-title">book a tour</h4>
+</div>
+<div class="modal-body">
+<form action="">
+<div class="tour">
+<p>The Barcelona sightseeing tour by car for 4-6-8 hours involves acquaintance with the main attractions - the main street of Paseo de Grazia with the famous Gaudi masterpieces - the Batllo house and the House of Mila, the Holy Family Cathedral, Park Guell, Spain Square and magnificent views from the Montjuic mountain , the highest point of Barcelona is Mount Tibedabo and of course the history of Barcelona - the old city or the Gothic quarter with its amazing secrets accumulated over 2000 years, La Rambla and Boqueria market with a wide assortment of fruits, jamon, cheese and seafood</p>
+<p>
+Our guide will take care of buying tickets to the Holy Family Cathedral and to the Park Guell, will calculate the time and you will not have to stand in tedious queues</p>
+<table bordercolor="#b9bbbf">
+<tr height="48px" class="mbi">
+<td>In Barcelona</td>
+<td>Outside Barcelona</td>
+</tr>
+<tr height="48px">
+<td>2h <span>60€</span></td>
+<td>2h <span>80€</span></td>
+</tr>
+<tr height="48px">
+<td>3h <span>55€</span></td>
+<td>3h <span>75€</span></td>
+</tr>
+<tr height="48px">
+<td>4h <span>50€</span></td>
+<td>4h <span>70€</span></td>
+</tr>
+<tr height="48px">
+<td class="b-b-n">8h <span>45€</span></td>
+<td class="b-b-n">8h <span>65€</span></td>
+</tr>
+</table>
+</div>
+<button class="btn btn-now order" >Book a tour</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2 -->
+<section class="sc-2" id="scroll1">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-12"><img src="img/city.jpg" alt=""></div>
+<div class="col-lg-8 col-md-12">
+<h1>Transfer from Barcelona airport</h1>
+<center><a ><button class="btn btn-now bt1 bron_trnf" style="width: 384px;
+    height: 82px;
+    border-radius: 14% 9% 17% 8% / 60% 48% 53% 35%;
+    font-size: 19px;
+    font-family: 'Montserrat-BlackItalic';
+    color: #fff;
+    text-transform: uppercase;
+    background-image: -webkit-gradient(linear, left top, right top, from(#f7921e), to(#f15c29));
+    background-image: linear-gradient(to right, #f7921e, #f15c29);" data-toggle="modal" data-target="#myModal2">Book a transfer</button></a>
+<a ><button class="btn btn-now bt2" style="width: 340px;
+    height: 73px;
+    border-radius: 14% 9% 17% 8% / 60% 48% 53% 35%;
+    font-size: 17px;
+    font-family: 'Montserrat-BlackItalic';
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 22px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#515151), to(#171717));
+    background-image: linear-gradient(to right, #515151, #171717);" data-toggle="modal" data-target="#myModal3">Book a tour</button></a></center>
+<p><span>Barcelona Driver</span> - is a young but ambitious and fast-growing company that provides transfers and excursions to Barcelona and other cities. You can order cars of any class with a personal driver and guide. In addition to the choice of class, you can rent cars of different capacities. In our fleet there are cars of the following categories: business class, executive class, minivans, SUVs, minibuses. We know how to make customers' lives more comfortable and economical. Therefore, passengers can get water and use WI-FI absolutely free of charge during trips. Also, the car will wait 60 minutes for you at the airport free of charge. You can pay with your card, PayPal and other possible ways. And for regular customers we provide a flexible discount system.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3 -->
+<section class="sc-3" id="scroll2">
+<div class="container">
+<div class="row">
+<div style="font-size: 34px;font-family: 'Montserrat-BlackItalic';color: #000;text-transform: uppercase;margin-bottom: 25px;text-align: center;margin-bottom: 70px;">VEHICLE FLEET</div>
+<div class="line"></div>
+<div class="col-lg-4 col-md-6">
+<img src="img/car1.png">
+<h2>mercedes benz class v</h2>
+<h4>Capacity up to 7 people</h4>
+</div>
+<div class="col-lg-4 col-md-6">
+<img src="img/car2.png">
+<h2>mercedes benz class e</h2>
+<h4>Capacity up to 4 people</h4>
+</div>
+<div class="col-lg-4 col-md-12">
+<img src="img/car3.png">
+<h2>mercedes benz class c</h2>
+<h4>Capacity up to 4 people</h4>
+</div>
+<div class="margin"></div>
+<div class="col-lg-2 col-md-12"></div>
+<div class="col-lg-4 col-md-6">
+<img src="img/car4.png">
+<h2>mercedes benz Vito</h2>
+<h4>Capacity up to 8 people</h4>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="h259">
+<img  src="img/car5.png">
+</div>
+<h2>Fiat tipo</h2>
+<h4>Capacity up to 4 people</h4>
+</div>
+<div class="col-lg-2 col-md-12"></div>
+</div>
+</div>
+</section>
+<!-- SECTION 4 -->
+<section class="sc-4" id="scroll3">
+<div class="container">
+<div class="row">
+<div style="font-size: 34px;font-family: 'Montserrat-BlackItalic';color: #000;text-transform: uppercase;margin-bottom: 25px;text-align: center;margin-bottom: 70px;">PRICE LIST</div>
+<div class="line"></div>
+<div class="name">costa daurada</div>
+<div class="text-center">
+<div class="w667 mr">
+<img src="img/pic1.png" alt="">
+</div>
+<div class="w667">
+<img src="img/pic2.png" alt="">
+</div>
+</div>
+<div class="over" style="overflow-x:auto;">
+<table>
+<tr class="title"  align="center" >
+<td width="14%" class="b-t b-r m-t"  align="left"><span>costa daurada</span></td>
+<td width="14%" class="b-t b-l p-r m-t" align="right"><span>km</span></td>
+<td width="14%" class="b-t" ><span>person 1-4 standart car</span></td>
+<td width="14%" class="b-t" ><span>person 1-4 luxury car</span></td>
+<td width="14%"class="b-t" ><span>person 1-8 luxury minivan</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Barcelona</span></td>
+<td width="14%" class="p-r b-l" align="right"><span>19</span></td>
+<td width="14%"><span>40€</span></td>
+<td width="14%"><span>55€</span></td>
+<td width="14%"><span>70€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Sitges</span></td>
+<td width="14%" align="right" class="p-r"><span>33</span></td>
+<td width="14%"><span>75€</span></td>
+<td width="14%"><span>95€</span></td>
+<td width="14%"><span>155€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Vilanova</span></td>
+<td width="14%" align="right" class="p-r"><span>38</span></td>
+<td width="14%"><span>80€</span></td>
+<td width="14%"><span>90€</span></td>
+<td width="14%"><span>110€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Cunit</span></td>
+<td width="14%" align="right" class="p-r"><span>47</span></td>
+<td width="14%"><span>85€</span></td>
+<td width="14%"><span>95€</span></td>
+<td width="14%"><span>115€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Comarruga</span></td>
+<td width="14%" align="right" class="p-r"><span>58</span></td>
+<td width="14%"><span>90€</span></td>
+<td width="14%"><span>110€</span></td>
+<td width="14%"><span>130€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Calafell</span></td>
+<td width="14%" align="right" class="p-r"><span>54</span></td>
+<td width="14%"><span>90€</span></td>
+<td width="14%"><span>110€</span></td>
+<td width="14%"><span>130€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Torredembarra</span></td>
+<td width="14%" align="right" class="p-r"><span>78</span></td>
+<td width="14%"><span>110€</span></td>
+<td width="14%"><span>120€</span></td>
+<td width="14%"><span>140€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Salou</span></td>
+<td width="14%" align="right" class="p-r"><span>101</span></td>
+<td width="14%"><span>130€</span></td>
+<td width="14%"><span>150€</span></td>
+<td width="14%"><span>170€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Cambrils</span></td>
+<td width="14%" align="right" class="p-r"><span>108</span></td>
+<td width="14%"><span>130€</span></td>
+<td width="14%"><span>150€</span></td>
+<td width="14%"><span>170€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Port Aventura</span></td>
+<td width="14%" align="right" class="p-r"><span>105</span></td>
+<td width="14%"><span>130€</span></td>
+<td width="14%"><span>150€</span></td>
+<td width="14%"><span>170€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-b b-r" align="left"><span>Cruise Port</span></td>
+<td width="14%" class="b-b p-r" align="right" ><span>12</span></td>
+<td width="14%" class="b-b"><span>40€</span></td>
+<td width="14%" class="b-b"><span>55€</span></td>
+<td width="14%" class="b-b"><span>70€</span></td>
+</tr>
+</table>
+</div>
+<button class="btn btn-now order" data-toggle="modal" data-target="#myModal2">book a transfer</button>
+<div class="line"></div>
+<div class="name">costa brava</div>
+<div class="text-center">
+<div class="w667 mr">
+<img src="img/pic3.png" alt="">
+</div>
+<div class="w667">
+<img src="img/pic4.png" alt="">
+</div>
+</div>
+<div class="over" style="overflow-x:auto;">
+<table>
+<tr class="title"  align="center" >
+<td width="14%" class="b-t b-r m-t"  align="left"><span>costa brava</span></td>
+<td width="14%" class="b-t b-l p-r m-t" align="right"><span>km</span></td>
+<td width="14%" class="b-t" ><span>person 1-4 standart car</span></td>
+<td width="14%" class="b-t" ><span>person 1-4 luxury car</span></td>
+<td width="14%"class="b-t" ><span>person 1-8 luxury minivan</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Badalona</span></td>
+<td width="14%" class="p-r b-l" align="right"><span>29</span></td>
+<td width="14%"><span>50€</span></td>
+<td width="14%"><span>60€</span></td>
+<td width="14%"><span>70€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Montcada i Reixac</span></td>
+<td width="14%" align="right" class="p-r"><span>31</span></td>
+<td width="14%"><span>50€</span></td>
+<td width="14%"><span>60€</span></td>
+<td width="14%"><span>70€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Terrassa</span></td>
+<td width="14%" align="right" class="p-r"><span>45</span></td>
+<td width="14%"><span>60€</span></td>
+<td width="14%"><span>80€</span></td>
+<td width="14%"><span>90€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Mataró</span></td>
+<td width="14%" align="right" class="p-r"><span>51</span></td>
+<td width="14%"><span>65€</span></td>
+<td width="14%"><span>85€</span></td>
+<td width="14%"><span>95€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>La Roca Village</span></td>
+<td width="14%" align="right" class="p-r"><span>59</span></td>
+<td width="14%"><span>65€</span></td>
+<td width="14%"><span>85€</span></td>
+<td width="14%"><span>105€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Calella</span></td>
+<td width="14%" align="right" class="p-r"><span>69</span></td>
+<td width="14%"><span>80€</span></td>
+<td width="14%"><span>100€</span></td>
+<td width="14%"><span>120€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Malgrat de Mar</span></td>
+<td width="14%" align="right" class="p-r"><span>81</span></td>
+<td width="14%"><span>100€</span></td>
+<td width="14%"><span>120€</span></td>
+<td width="14%"><span>140€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Santa Susanna</span></td>
+<td width="14%" align="right" class="p-r"><span>80</span></td>
+<td width="14%"><span>90€</span></td>
+<td width="14%"><span>110€</span></td>
+<td width="14%"><span>130€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Lloret de Mar</span></td>
+<td width="14%" align="right" class="p-r"><span>92</span></td>
+<td width="14%"><span>110€</span></td>
+<td width="14%"><span>130€</span></td>
+<td width="14%"><span>150€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Tossa de Mar</span></td>
+<td width="14%" align="right" class="p-r"><span>105</span></td>
+<td width="14%"><span>125€</span></td>
+<td width="14%"><span>145€</span></td>
+<td width="14%"><span>165€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Castell-Platja d'Aro</span></td>
+<td width="14%" align="right" class="p-r"><span>125</span></td>
+<td width="14%"><span>130€</span></td>
+<td width="14%"><span>150€</span></td>
+<td width="14%"><span>170€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-r" align="left"><span>Girona Airport</span></td>
+<td width="14%" align="right" class="p-r"><span>115</span></td>
+<td width="14%"><span>105€</span></td>
+<td width="14%"><span>125€</span></td>
+<td width="14%"><span>145€</span></td>
+</tr>
+<tr class="normal" align="center" height="49px">
+<td width="14%" class="b-b b-r" align="left"><span>Figueres</span></td>
+<td width="14%" class="b-b p-r" align="right" ><span>140</span></td>
+<td width="14%" class="b-b"><span>165€</span></td>
+<td width="14%" class="b-b"><span>185€</span></td>
+<td width="14%" class="b-b"><span>205€</span></td>
+</tr>
+</table>
+</div>
+<button class="btn btn-now order" data-toggle="modal" data-target="#myModal2">book a transfer</button>
+<div class="line"></div>
+</div>
+</div>
+</section>
+<!-- SECTION 5 -->
+<section class="sc-5" id="scroll4">
+<div class="container">
+<div class="row">
+<div style="font-size: 34px;font-family: 'Montserrat-BlackItalic';color: #000;text-transform: uppercase;margin-bottom: 25px;text-align: center;margin-bottom: 70px;">REVIEWS</div>
+<div class="col-lg-3 col-sm-6 col-sm-12">
+<div class="oval">
+<img src="img/img1.png" alt="">
+</div>
+<h4>Emily Black</h4>
+<h5>The car got here on time. Luggage was received for a very long time.
+They waited for us and met us with a sign. Delivered without problems.
+There were 6 of us with skis.</h5>
+</div>
+<div class="col-lg-3 col-sm-6 col-sm-12">
+<div class="oval">
+<img src="img/img2.png" alt="">
+</div>
+<h4>Monica Evans</h4>
+<h5>Oh, and I was tormented with a gettransfer! The car will not be delivered in time,
+the price is different, you can feel the attitude to customers.
+In Barcelona Driver everything is fair and individual</h5>
+</div>
+<div class="col-lg-3 col-sm-6 col-sm-12">
+<div class="oval">
+<img src="img/img3.png" alt="">
+</div>
+<h4>Kevin Jackson</h4>
+<h5>It is very convenient that you do not need to pay the entire amount in advance,
+as in most transfer services from Barcelona!
+Everything is fair, inexpensive, prices on the site and in fact are similar</h5>
+</div>
+<div class="col-lg-3 col-sm-6 col-sm-12">
+<div class="oval">
+<img src="img/img4.png" alt="">
+</div>
+<h4>Alex Clark</h4>
+<h5>We used the transfer service from Barcelona to Andorra
+and back in early February 2019. The cars were delivered on time
+and there are no complaints. Thank you</h5>
+</div>
+<div class="margin"></div>
+<article class="seo_text">
+<p>During a visit to Barcelona, visitors are often lost and cannot find a car or taxi. The fast rhythm of life here also affects the traffic flow. A person who has just stepped down from the quiet cabin of an airplane is bound to be confused, and he or she will have problems finding transportation. Gettransfer service, which is gaining popularity, also can not always provide services of the proper level.</p>
+<p>Our company Barcelona Driver specializes in transportation and excursions both in Barcelona and throughout Europe. If you like comfort and appreciate your time, you should take care of transport in advance. And we are ready to deal with this issue. The main thing for us is to make the client satisfied. We try our best to do it. Extensive car park, professional drivers, transport delivery in advance, courteous staff, discount system - this is not the whole list of our advantages.</p>
+<h2>EXTENSIVE FLEET</h2>
+<p>Before you book a transfer from Barcelona airport, please check out our cars. They are selected to meet the widest range of needs. For executive visits we have business and executive class cars. This is the best choice if you are used to the comfort or if you need to impress your business partners in Barcelona. The same class of cars will be the best choice in case you have to drive a lot. Your legs and back will not be painful, and you will feel great even late at night.</p>
+<p>If you are coming in large groups, the transfer from Barcelona airport should be by minivan or minibus. The first can accommodate up to 6 people, the second - more. Calculate how many people will come with you, and decide in advance on the type of car. But if you don't know for sure yet, warn the manager and we will be able to find solutions to possible problems.</p>
+<p>SUVs will be the best choice if the route runs through the countryside and off-road. The vehicles are equipped with a soft suspension so that you can work quietly or enjoy the surrounding scenery without discomfort.</p>
+<h2>CONVENIENCE AND CUSTOMER CARE</h2>
+<p>Barcelona is located in a subtropical climate zone. So it's always hot here. Besides, we rarely have cloudy weather. Therefore, the main thing that is appreciated is water. This is especially noted by those coming from colder areas. We always put several bottles of cool water into our cars. It is provided absolutely free of charge, so that customers do not feel uncomfortable. In addition, this small, at first glance, addition saves a lot of your time.</p>
+<p>Another nice option that all machines are equipped with is the free WI-FI. Upon arrival, you can call your loved ones via Skype or telegram to inform them of a successful landing. And for those who have arrived in Barcelona on working need it is a great opportunity to make an appointment with business partners. You do not need to spend a lot of money on calls in roaming or buy a SIM card, activate it and refill it. We have already solved this problem for you by equipping each car with a free access point.</p>
+<h2>WELL-BEHAVED AND QUALIFIED STAFF</h2>
+<p>We have mannered staff. Remember how it was every time you called a taxi? Drivers there are always talking all the time and don't let you focus on the business. We took care of it. The chauffeur won't bother you with talking if he sees you're busy. But if you get bored, you can always talk to him. This is especially true if the transfer from Barcelona airport takes longer and the road will be long.</p>
+<p>Our excursions to famous places in Spain and all over Europe are accompanied by professional guides. They know the history and all the interesting places you want to go. And the excursion can be conducted not only from the car. If the group would like, the car can stop, and you - come closer to the sights. The guide will tell you why this or that place is interesting.</p>
+<h2>FAIR PRICES AND CONVENIENT PAYMENT</h2>
+<p>Our prices make the visitors happy. As a rule, ordering a car in Barcelona is quite expensive. In addition, a lot of problems that accompany this case, push away tourists from this service. We went the other way: maximum transparency and honest cooperation. All prices are listed on our website. They are always relevant and you can see the cost of ordering a car.</p>
+<p>You will need to fill in as many items as you can when booking your car. This way, we can give you the most accurate price. Don't forget to enter your return phone number and email address. Our manager will contact you to discuss any additional questions.</p>
+<p>Payment is made both locally and online. For Barcelona Driver it is important that customers trust us. That's why we have done everything to make it easy to pay for our services.</p>
+<p>The cost is calculated based on the number of people, hours, kilometers and type of car. It seems to us that this is the most correct method of determining the price of a trip.</p>
+<h2>CUSTOMER CONFIDENCE</h2>
+<p>Our services have already been used by many people. They are extremely satisfied and in future visits, if they need to order a transfer, they contact us. In addition, they actively advise us to their loved ones. You can find their feedback on the website.</p>
+<p>We are proud to have been able to build such an honest and useful business for our clients!</p>
+</article>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+<div class="row">
+<div class="brand">
+<a href="">
+<p>Barcelona <span>driver</span></p>
+</a>
+</div>
+<div class="sec">
+<a href="#scroll1">ABOUT US </a>
+<a href="#scroll2">VEHICLE FLEET</a>
+<a href="#scroll3">PRICE LIST</a>
+<a href="#scroll4">REVIEWS</a>
+</div>
+<div class="contact">
+<a href="tel:34635055656" rel="nofollow" target="blank"><img src="img/phone.png" alt=""></a>
+<a href="https://wa.me/34635055656" rel="nofollow" target="blank"><img src="img/whatup.png" alt=""></a>
+<a href="viber://chat?number=34635055656" rel="nofollow" target="blank"><img src="img/viber.png" alt="" style="width: 28px;"></a>
+<a href="tel:34635055656" target="blank" rel="nofollow" class="tel"   alt="Нажмите, чтобы написать нам в Whatsapp" >+34 635 05 56 56</a>
+<span style="display: block;"><a href="mailto:support@barcelonadriver.com" style="font-size: 11px;color: #b1b1b1;">info@barcelonadriver.com</a></span>
+</div>
+</div>
+</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+<div id="myModal" class="modal fade myModal_succes" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><img src="img/close.png" alt=""></button>
+<h4 class="modal-title">Transfer booking</h4>
+</div>
+<div class="modal-body">
+<div style="padding: 40px 0;font-size: 20px;color: green">Your booking is complete!<br>Our managers will contact you to clarify the details of the trip.</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal" class="modal fade myModal_fail" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><img src="img/close.png" alt=""></button>
+<h4 class="modal-title">Transfer booking</h4>
+</div>
+<div class="modal-body">
+<div style="padding: 40px 0;font-size: 20px;color: red">Your booking is not processed due to cancellation of payment!<br>Try again or contact Technical Support.</div>
+</div>
+</div>
+</div>
+</div>
+<script src="/js/eng_script.js"></script>
+<style>
+.form_hide {
+display: none;
+}
+.seo_text h2 {
+font-size: 30px;
+font-family: "Montserrat-BlackItalic";
+color: #000;
+text-transform: uppercase;
+text-align: center;
+margin-top: 30px;
+}
+</style>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ym(54508261, "init", {
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/54508261" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script type="text/javascript">
+var arrgetbtn=[];
+arrgetbtn.push({"title":"Whatsapp","icon":"fwidgethelp-whatsapp","link":"https://wa.me/34635055656","target":"_blank","color":"#FFFFFF","background":"#5EC758"});
+arrgetbtn.push({"title":"Viber","icon":"fwidgethelp-viber","link":"viber://chat?number=34635055656","target":"_blank","color":"#FFFFFF","background":"#8456A7"});
+ var WidGetButtonOptions = {
+  id:"9443a9d37984b85366905c31d1e71ab4",
+  iconopen:"fwidgethelp-commenting-o",
+  maintitle:"",
+  mainbackground:"#FF3338",
+  maincolor:"#FFFFFF",
+  pulse:"widgethelp_pulse",
+  fasize:"2",
+  direction:"top",
+  position:"rightbottom",
+  arrbtn: arrgetbtn
+};
+(function() {
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.async = true;
+  script.src = "https://getbtn.com/widget/index.php?id="+WidGetButtonOptions.id;
+  document.getElementsByTagName("head")[0].appendChild(script);
+})();</script>
+<script src="js/readmore.js"></script>
+	<script>
+		$('article').readmore({
+			maxHeight: 240,
+			moreLink: '<a href="#">More text</a>',
+			lessLink: '<a href="#">Close text</a>'
+		});
+	</script></body>
+</html>

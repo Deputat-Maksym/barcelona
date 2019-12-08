@@ -1,0 +1,195 @@
+/*Variables SCSS*/
+  //Breakpoints
+  $breakpoint-xs: 0;
+  $breakpoint-400: 400px;
+  $breakpoint-480: 480px;
+  $breakpoint-640: 640px;
+  $breakpoint-sm: 576px;
+  $breakpoint-md: 768px;
+  $breakpoint-lg: 992px;
+  $breakpoint-1090: 1090px;
+  $breakpoint-xl: 1200px;
+
+/*Variables CSS*/
+:root {
+  //Colors
+  --blue: #007bff;
+  --dark-blue: #0033cc;
+  --black-blue: #0005b5;
+  --light-blue: #66ccff;
+  --white-blue: #d9f2ff;
+  --opt-blue: #b2e5ff;
+  --opt2-blue: #e0f5ff;
+  --mid-blue: #003fff;
+  --indigo: #af39dd;
+  --purple: #cc66ff;
+  --dark-purple: #9933cc;
+  --light-purple: #7f99e5;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #ff9933;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --light-gray: #cdcdcd;
+  --mid-gray: #f2f5f5;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --sub-menu: #1548d1;
+  --sub-menu-hover: #295cd6;
+  --black-light: #333;
+
+  //Shadow
+  --round-shadow: 0 0 35px rgba(0,0,0,.1);
+  --left-shadow: -35px 0 35px -35px rgba(0,0,0,.1);
+  --round-shadow-blue-15: 0 0 15px var(--dark-blue);
+  --round-shadow-lblue-15: 0 0 15px var(--light-blue);
+  --round-shadow-alpha-blue-70: 0 0 70px rgba(0,50,204,.2);
+  --round-shadow-alpha-blue-35: 0 0 35px rgba(0,50,204,.3);
+  --round-shadow-alpha-blue-20: 0 0 20px rgba(0,50,204,.1);
+  --round-shadow-alpha-blue-10: 0 0 10px rgba(0,50,204,.2);
+  --bottom-shadow-alpha-purple-40: 0 16px 40px rgba(178,57,221,.48);
+  --bottom-shadow-alpha-purple--16: 0 40px 40px -16px rgba(178,57,221,.48);
+
+  @media only screen and (max-width: $breakpoint-lg) {
+    --round-shadow: 0 0 20px rgba(0,0,0,.1);
+    --left-shadow: -20px 0 20px -20px rgba(0,0,0,.1);
+  }
+
+  //Transition
+  --transition: all ease-in 200ms;
+  --transition4: all ease-in 400ms;
+  --transition6: all ease-in 600ms;
+}
+
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+html, body {
+  min-width: 320px;
+  height: 100%;
+}
+
+.inner-wrap {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: 0 auto;
+
+  @media only screen and (max-width: $breakpoint-xl) {
+    padding: 0 25px;
+  }
+
+  @media only screen and (max-width: $breakpoint-md) {
+    padding: 0 10px;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+header, footer {
+  flex-grow: 0;
+}
+
+main {
+  flex-grow: 1;
+  padding-top: 60px;
+
+  @media only screen and (max-width: $breakpoint-lg) {
+    padding-top: 40px;
+  }
+}
+
+footer {
+  flex-grow: 0;
+}
+
+nav {
+  ul, ol {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+button {
+  outline: none;
+  border: none;
+  background: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border: 2px solid;
+  border-radius: 22px;
+
+  &:hover {
+    transition: var(--transition);
+  }
+}
+
+h1, .h1 {
+  font-size: 2rem;
+}
+
+h2, .h2 {
+  font-size: 1.75rem;
+}
+
+h3, .h3 {
+  font-size: 1.5rem;
+}
+
+h4, .h4 {
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: $breakpoint-xl) {
+  h1, .h1 {
+    font-size: calc(1rem + 1.2vw) !important;
+  }
+
+  h2, .h2 {
+    font-size: calc(1rem + 1vw) !important;
+  }
+
+  h3, .h3, h4, .h4 {
+    font-size: calc(1rem + 0.4vw) !important;
+  }
+}
+

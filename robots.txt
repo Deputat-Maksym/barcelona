@@ -1,0 +1,3 @@
+User-agent: *
+Host: https://barcelonadriver.com
+Sitemap: https://barcelonadriver.com/sitemap.xml
