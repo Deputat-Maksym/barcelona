@@ -33,7 +33,7 @@ let path = {
         html: 'src/html/pages/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
         js: 'src/js/main.js',//В стилях и скриптах нам понадобятся только main файлы
         jsES6: 'src/js/plugins/*.js',//В стилях и скриптах нам понадобятся только main файлы
-        style: 'src/style/main2.scss',
+        style: 'src/style/main.scss',
         images: 'src/images/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
         fonts: 'src/fonts/**/*.*'
     },
@@ -49,7 +49,7 @@ let path = {
 
 let config = {
     server: {
-        baseDir: ".git/"
+        baseDir: "./"
     },
     tunnel: false,
     browser: 'C:/Program Files/Mozilla Firefox/firefox.exe',

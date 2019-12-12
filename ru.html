@@ -1,3 +1,16 @@
+<?php
+$user_id = rand(999, 999999);
+if(isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+$user_ip = $_SERVER["HTTP_CF_CONNECTING_IP"];
+} else {
+$user_ip = $_SERVER["REMOTE_ADDR"];
+}
+if(!isset($_COOKIE["dle_hash"])) {
+setcookie("dle_hash", md5($user_ip.$user_id), time()+3600);
+}
+setcookie("dle_pm", "0", time()+3600);
+setcookie("user_id", $user_id, time()+3600);
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -433,28 +446,28 @@
                 <center><h1>Трансфер из аэропорта Барселоны</h1>
                     <a>
                         <button class="btn btn-now bt1 bron_trnf" style="
-height: 82px;
-border-radius: 14% 9% 17% 8% / 60% 48% 53% 35%;
-font-size: 19px;
-font-family: 'Montserrat-BlackItalic';
-color: #fff;
-text-transform: uppercase;
-background-image: -webkit-gradient(linear, left top, right top, from(#f7921e), to(#f15c29));
-background-image: linear-gradient(to right, #f7921e, #f15c29);" data-toggle="modal" data-target="#myModal2">
+    height: 82px;
+    border-radius: 14% 9% 17% 8% / 60% 48% 53% 35%;
+    font-size: 19px;
+    font-family: 'Montserrat-BlackItalic';
+    color: #fff;
+    text-transform: uppercase;
+    background-image: -webkit-gradient(linear, left top, right top, from(#f7921e), to(#f15c29));
+    background-image: linear-gradient(to right, #f7921e, #f15c29);" data-toggle="modal" data-target="#myModal2">
                             Забронировать трансфер
                         </button>
                     </a>
                     <a>
                         <button class="btn btn-now bt2" style="
-height: 73px;
-border-radius: 14% 9% 17% 8% / 60% 48% 53% 35%;
-font-size: 17px;
-font-family: 'Montserrat-BlackItalic';
-color: #fff;
-text-transform: uppercase;
-margin-left: 22px;
-background-image: -webkit-gradient(linear, left top, right top, from(#515151), to(#171717));
-background-image: linear-gradient(to right, #515151, #171717);" data-toggle="modal" data-target="#myModal3">
+    height: 73px;
+    border-radius: 14% 9% 17% 8% / 60% 48% 53% 35%;
+    font-size: 17px;
+    font-family: 'Montserrat-BlackItalic';
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 22px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#515151), to(#171717));
+    background-image: linear-gradient(to right, #515151, #171717);" data-toggle="modal" data-target="#myModal3">
                             Забронировать экскурсию
                         </button>
                     </a></center>
