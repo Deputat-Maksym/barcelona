@@ -1,16 +1,16 @@
-<?php
-$user_id = rand(999, 999999);
-if(isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
-$user_ip = $_SERVER["HTTP_CF_CONNECTING_IP"];
-} else {
-$user_ip = $_SERVER["REMOTE_ADDR"];
-}
-if(!isset($_COOKIE["dle_hash"])) {
-setcookie("dle_hash", md5($user_ip.$user_id), time()+3600);
-}
-setcookie("dle_pm", "0", time()+3600);
-setcookie("user_id", $user_id, time()+3600);
-?>
+<!--<?php-->
+<!--$user_id = rand(999, 999999);-->
+<!--if(isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {-->
+<!--$user_ip = $_SERVER["HTTP_CF_CONNECTING_IP"];-->
+<!--} else {-->
+<!--$user_ip = $_SERVER["REMOTE_ADDR"];-->
+<!--}-->
+<!--if(!isset($_COOKIE["dle_hash"])) {-->
+<!--setcookie("dle_hash", md5($user_ip.$user_id), time()+3600);-->
+<!--}-->
+<!--setcookie("dle_pm", "0", time()+3600);-->
+<!--setcookie("user_id", $user_id, time()+3600);-->
+<!--?>-->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -23,78 +23,99 @@ setcookie("user_id", $user_id, time()+3600);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <header class="header">
-    <nav class="navbar navbar-inverse menu back">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" id="navbar-toggle" class="navbar-toggle" data-toggle="collapse"
-                        data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar two"></span>
-                    <span class="icon-bar three"></span>
-                </button>
-                <a class="navbar-brand" href="/">Barcelona <span>driver</span></a>
-                <div class="dropdown vis visible-md visible-sm visible-xs">
-                    <button class="dropbtn"><img src="img/rus.png" alt="русская версия сайта">rus</button>
-                    <div class="dropdown-content">
-                        <a href="/eng.html"><img src="img/eng.png" alt="английская версия сайта">eng</a>
+    <div class="side-top">
+        <div class="inner-wrap">
+            <div class="pad-left side-top-cont">
+                <a href="/" class="header-logo">
+                    <img src="img/header-logo.png" alt="barcelonadriver.com">
+                </a>
+                <div class="head-text">
+                    Трансферы и экскурсии по Барселоне и другим городам
+                </div>
+                <ul class="lang-menu">
+                    <li><a href="/eng.html"><img src="img/eng.png" alt="английская версия сайта">English</a></li>
+                    <li class="current-lang"><img src="img/rus.png" alt="русская версия сайта">Русский</li>
+                </ul>
+                <div class="contact-menu">
+                    <a href="https://wa.me/34635055656" rel="nofollow" target="blank" title="Нажмите, чтобы написать нам в Whatsapp">
+                        <img src="img/whatup.png" alt="Ватсапп">
+                    </a>
+                    <a href="viber://chat?number=34635055656" rel="nofollow" target="blank" title="Нажмите, чтобы написать нам в Viber">
+                        <img src="img/viber.png" alt="Вайбер">
+                    </a>
+                    <div class="numbers-sect">
+                        <div class="numbers-sect-phone">
+                            <button class="arrow-btn js-arrow-btn"></button>
+                            <a class="num num-top" href="tel:34635055656">+34 635 05 56 56</a>
+                            <div class="numbers-sect-phone-hidden">
+                                <a class="num" href="tel:34635726490">+34 635 72 64 90</a>
+                                <a class="num" href="tel:34034622264">+34 034 62 22 64</a>
+                            </div>
+                        </div>
+                        <a class="numbers-sect-mail" href="mailto:support@barcelonadriver.com">info@barcelonadriver.com</a>
                     </div>
                 </div>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav about">
-                    <li><a class="mt" href="#scroll1">О компании</a></li>
-                    <li><a class="mt" href="#scroll2">Автопарк</a></li>
-                    <li><a class="mt" href="#scroll3">Прайс-лист</a></li>
-                    <li><a class="mt" href="#scroll4">Отзывы</a></li>
-                </ul>
-                <div class="dropdown d-n">
-                    <button class="dropbtn"><img src="img/rus.png" alt="русская версия">rus</button>
-                    <div class="dropdown-content">
-                        <a href="/eng.html"><img src="img/eng.png" alt="английская версия">eng</a>
-                    </div>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="d-ib"><a href="tel:34635055656" rel="nofollow" target="blank"><img src="img/phone.png"
-                                                                                                  alt="Ватсапп"></a>
+        </div>
+    </div>
+    
+    <div class="side-bottom">
+        <div class="inner-wrap">
+            <div class="pad-left side-bottom-cont">
+                <nav>
+                    <ul class="main-menu">
+                        <li><a class="" href="#scroll1">О компании</a></li>
+                        <li><a class="" href="#scroll2">Автопарк</a></li>
+                        <li><a class="" href="#scroll3">Прайс-лист</a></li>
+                        <li><a class="" href="#scroll4">Отзывы</a></li>
+                        <li><a class="" href="#scroll5">Экскурсии</a></li>
+                        <li><a class="" href="#scroll6">Фотограф</a></li>
+                        <li><a class="" href="#scroll7">Шоппинг</a></li>
+                    </ul>
+                </nav>
+                <ul class="header-soc-btns">
+                    <li class="">
+                        <a href="#" rel="nofollow">
+                            <img src="img/facebook.png" alt="ФБ сообщество">
+                        </a>
                     </li>
-                    <li class="d-ib"><a href="https://wa.me/34635055656" rel="nofollow" target="blank"
-                                        alt="Нажмите, чтобы написать нам в Whatsapp"><img src="img/whatup.png"
-                                                                                          alt="Ватсаап"></a></li>
-                    <li class="d-ib"><a href="viber://chat?number=34635055656" rel="nofollow" target="blank"
-                                        alt="Нажмите, чтобы написать нам в Viber"><img src="img/viber.png" alt="Вайбер"></a>
+                    <li class="">
+                        <a class="mtm" href="https://vk.com/barcelonadriver" rel="nofollow">
+                            <img src="img/vk.png" alt="Вк сообщество">
+                        </a>
                     </li>
-                    <li><a class="mtm num" href="tel:34635055656" target="blank" style="padding-bottom: 0 !important;">+34
-                        635 05 56 56</a><span style="display: block;"><center><a
-                        href="mailto:support@barcelonadriver.com" style="font-size: 11px;">info@barcelonadriver.com</a></center></span>
+                    <li class="">
+                        <a href="https://www.instagram.com/barcelonadriver/" rel="nofollow">
+                            <img src="img/snapchat.png" alt="Инста канал">
+                        </a>
                     </li>
-                    <li class="d-ib"><a href="#" rel="nofollow"><img src="img/facebook.png" alt="ФБ сообщество"></a>
-                    </li>
-                    <li class="d-ib"><a class="mtm" href="https://vk.com/barcelonadriver" rel="nofollow"><img
-                        src="img/vk.png" alt="Вк сообщество"></a></li>
-                    <li class="d-ib"><a href="https://www.instagram.com/barcelonadriver/" rel="nofollow"><img
-                        src="img/snapchat.png" alt="Инста канал"></a></li>
-                    <!-- <li><a class="mt " href="#"><button class="btn btn-now">чат онлайн</button></a></li> -->
                 </ul>
             </div>
         </div>
-    </nav>
+    </div>
 </header>
-<!-- SECTION 1 -->
-<section class="sc-1">
-    <div class="container">
-        <div class="row">
-            <img class="cars" src="img/cars.webp" alt="наши машины">
-            <div class="w100">
-                <h4> Узнай
-                    <span>стоимость</span>
-                    <span>поездки</span>
-                </h4>
+
+<main>
+    <!-- SECTION 1 -->
+    <section class="sc-1 layer-container">
+        <div class="layer-back">
+            <picture>
+                <source type="image/webp" srcset="img/section-1-bg.webp">
+                <source type="image/jpeg" srcset="img/section-1-bg.jpg">
+                <img src="img/section-1-bg.jpg" alt="Трансферы и такси в Барселоне">
+            </picture>
+        </div>
+        <div class="inner-wrap">
+            <h1 class="main-title">
+                <span>Трансферы и такси в Барселоне</span>
+                <span class="sub-title">с русскоговорящими водителями</span>
+            </h1>
+            <div class="route-block">
+                <div class="form-text">УЗНАЙ СТОИМОСТЬ</div>
                 <form action="">
                     <div class="bef1">
                         <select name="" id="first_select">
@@ -135,7 +156,7 @@ setcookie("user_id", $user_id, time()+3600);
                             <option value="35">Arinsal</option>
                         </select>
                     </div>
-                    <img src="/img/refresh-button.png" alt="обновить данные" class="one_ref">
+                    <img src="/img/refresh-button-white.png" alt="обновить данные" class="one_ref">
                     <div class="bef1 bef5">
                         <select name="" id="second_select">
                             <option value="1" disabled>Аэропорт Эль Прат</option>
@@ -181,784 +202,785 @@ setcookie("user_id", $user_id, time()+3600);
                 </form>
             </div>
         </div>
-    </div>
-</section>
-<!-- Modal 2 ТРАНСФЕР -->
-<div id="myModal2" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><img src="img/close.png" alt="закрыть">
-                </button>
-                <h4 class="modal-title">Расчет стоимости и бронирование трансфера</h4>
-            </div>
-            <div class="modal-body">
-                <form action="" name="main_form" onsubmit="return false;">
-                    <div class="bef1">
-                        <select name="" id="first_select_2">
-                            <option value="1" selected>Аэропорт Эль Прат</option>
-                            <option value="2" disabled>Барселона</option>
-                            <option value="3">Ситджес</option>
-                            <option value="4">Вианова</option>
-                            <option value="5">Кунит</option>
-                            <option value="6">Кома-Руга</option>
-                            <option value="7">Калафель</option>
-                            <option value="8">Торредембарра</option>
-                            <option value="9">Салоу</option>
-                            <option value="10">Камбрильс</option>
-                            <option value="11">Порт Авентура</option>
-                            <option value="12">Cruise Port</option>
-                            <option value="13">Бадалона</option>
-                            <option value="14">Монкада-и-Решак</option>
-                            <option value="15">Тарраса</option>
-                            <option value="16">Матаро</option>
-                            <option value="17">La Roca Village</option>
-                            <option value="18">Калелья</option>
-                            <option value="19">Мальграт-де-Мар</option>
-                            <option value="20">Санта-Сусанна</option>
-                            <option value="21">Льорет-де-Мар</option>
-                            <option value="22">Тосса-де-Мар</option>
-                            <option value="23">Кастель-Пладжа-де-Аро</option>
-                            <option value="24">Аэропорт Жирона</option>
-                            <option value="25">Фигерас</option>
-                            <option value="26">Андорра Ла-Велья</option>
-                            <option value="27">Escaldes-Engordany</option>
-                            <option value="28">Encamp</option>
-                            <option value="29">La Massana</option>
-                            <option value="30">La Canillo</option>
-                            <option value="31">La El Tarter</option>
-                            <option value="32">Soldeu</option>
-                            <option value="33">GrauRoig</option>
-                            <option value="34">PasdelaCasa</option>
-                            <option value="35">Arinsal</option>
-                        </select>
-                    </div>
-                    <img src="/img/refresh-button.png" alt="обновить данные" class="one_ref">
-                    <div class="bef1 bef5">
-                        <select name="" id="second_select_2">
-                            <option value="1" disabled>Аэропорт Эль Прат</option>
-                            <option value="2" selected>Барселона</option>
-                            <option value="3">Ситджес</option>
-                            <option value="4">Вианова</option>
-                            <option value="5">Кунит</option>
-                            <option value="6">Кома-Руга</option>
-                            <option value="7">Калафель</option>
-                            <option value="8">Торредембарра</option>
-                            <option value="9">Салоу</option>
-                            <option value="10">Камбрильс</option>
-                            <option value="11">Порт Авентура</option>
-                            <option value="12">Cruise Port</option>
-                            <option value="13">Бадалона</option>
-                            <option value="14">Монкада-и-Решак</option>
-                            <option value="15">Тарраса</option>
-                            <option value="16">Матаро</option>
-                            <option value="17">La Roca Village</option>
-                            <option value="18">Калелья</option>
-                            <option value="19">Мальграт-де-Мар</option>
-                            <option value="20">Санта-Сусанна</option>
-                            <option value="21">Льорет-де-Мар</option>
-                            <option value="22">Тосса-де-Мар</option>
-                            <option value="23">Кастель-Пладжа-де-Аро</option>
-                            <option value="24">Аэропорт Жирона</option>
-                            <option value="25">Фигерас</option>
-                            <option value="26">Андорра Ла-Велья</option>
-                            <option value="27">Escaldes-Engordany</option>
-                            <option value="28">Encamp</option>
-                            <option value="29">La Massana</option>
-                            <option value="30">La Canillo</option>
-                            <option value="31">La El Tarter</option>
-                            <option value="32">Soldeu</option>
-                            <option value="33">GrauRoig</option>
-                            <option value="34">PasdelaCasa</option>
-                            <option value="35">Arinsal</option>
-                        </select>
-                    </div>
-                    <div class="w100 put_price_car">
-                        <div class="fl">
-                            <input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-1">
-                            <label class="label-for-check2" for="transfer-person-1" value="person 1-4 normal car">
-                                <h5>1-4 человека стандарт</h5>
-                                <h6>40€</h6>
-                            </label>
+    </section>
+    <!-- Modal 2 ТРАНСФЕР -->
+    <div style="display:none" id="myModal2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><img src="img/close.png" alt="закрыть">
+                    </button>
+                    <h4 class="modal-title">Расчет стоимости и бронирование трансфера</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="" name="main_form" onsubmit="return false;">
+                        <div class="bef1">
+                            <select name="" id="first_select_2">
+                                <option value="1" selected>Аэропорт Эль Прат</option>
+                                <option value="2" disabled>Барселона</option>
+                                <option value="3">Ситджес</option>
+                                <option value="4">Вианова</option>
+                                <option value="5">Кунит</option>
+                                <option value="6">Кома-Руга</option>
+                                <option value="7">Калафель</option>
+                                <option value="8">Торредембарра</option>
+                                <option value="9">Салоу</option>
+                                <option value="10">Камбрильс</option>
+                                <option value="11">Порт Авентура</option>
+                                <option value="12">Cruise Port</option>
+                                <option value="13">Бадалона</option>
+                                <option value="14">Монкада-и-Решак</option>
+                                <option value="15">Тарраса</option>
+                                <option value="16">Матаро</option>
+                                <option value="17">La Roca Village</option>
+                                <option value="18">Калелья</option>
+                                <option value="19">Мальграт-де-Мар</option>
+                                <option value="20">Санта-Сусанна</option>
+                                <option value="21">Льорет-де-Мар</option>
+                                <option value="22">Тосса-де-Мар</option>
+                                <option value="23">Кастель-Пладжа-де-Аро</option>
+                                <option value="24">Аэропорт Жирона</option>
+                                <option value="25">Фигерас</option>
+                                <option value="26">Андорра Ла-Велья</option>
+                                <option value="27">Escaldes-Engordany</option>
+                                <option value="28">Encamp</option>
+                                <option value="29">La Massana</option>
+                                <option value="30">La Canillo</option>
+                                <option value="31">La El Tarter</option>
+                                <option value="32">Soldeu</option>
+                                <option value="33">GrauRoig</option>
+                                <option value="34">PasdelaCasa</option>
+                                <option value="35">Arinsal</option>
+                            </select>
                         </div>
-                        <div class="fl">
-                            <input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-2">
-                            <label class="label-for-check2" for="transfer-person-2" value="person 1-4 luxury car">
-                                <h5>1-4 человека люкс</h5>
-                                <h6>55€</h6>
-                            </label>
+                        <img src="/img/refresh-button.png" alt="обновить данные" class="one_ref">
+                        <div class="bef1 bef5">
+                            <select name="" id="second_select_2">
+                                <option value="1" disabled>Аэропорт Эль Прат</option>
+                                <option value="2" selected>Барселона</option>
+                                <option value="3">Ситджес</option>
+                                <option value="4">Вианова</option>
+                                <option value="5">Кунит</option>
+                                <option value="6">Кома-Руга</option>
+                                <option value="7">Калафель</option>
+                                <option value="8">Торредембарра</option>
+                                <option value="9">Салоу</option>
+                                <option value="10">Камбрильс</option>
+                                <option value="11">Порт Авентура</option>
+                                <option value="12">Cruise Port</option>
+                                <option value="13">Бадалона</option>
+                                <option value="14">Монкада-и-Решак</option>
+                                <option value="15">Тарраса</option>
+                                <option value="16">Матаро</option>
+                                <option value="17">La Roca Village</option>
+                                <option value="18">Калелья</option>
+                                <option value="19">Мальграт-де-Мар</option>
+                                <option value="20">Санта-Сусанна</option>
+                                <option value="21">Льорет-де-Мар</option>
+                                <option value="22">Тосса-де-Мар</option>
+                                <option value="23">Кастель-Пладжа-де-Аро</option>
+                                <option value="24">Аэропорт Жирона</option>
+                                <option value="25">Фигерас</option>
+                                <option value="26">Андорра Ла-Велья</option>
+                                <option value="27">Escaldes-Engordany</option>
+                                <option value="28">Encamp</option>
+                                <option value="29">La Massana</option>
+                                <option value="30">La Canillo</option>
+                                <option value="31">La El Tarter</option>
+                                <option value="32">Soldeu</option>
+                                <option value="33">GrauRoig</option>
+                                <option value="34">PasdelaCasa</option>
+                                <option value="35">Arinsal</option>
+                            </select>
                         </div>
-                        <div class="fl">
-                            <input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-3">
-                            <label class="label-for-check2" for="transfer-person-3" value="person 4-6 normal car">
-                                <h5>1-8 человек люкс минивен</h5>
-                                <h6>70€</h6>
-                            </label>
-                        </div>
-                    </div>
-                    <div style="color: red;margin-top: 47px;display: none;font-size: 20px;" class="erro_trnsf">Выберите
-                        машину для продолжения оформления трансфера.
-                    </div>
-                    <div class="btn btn-now order first_step">забронировать</div>
-                    <div class="form_hide">
-                        <div class="transfer-option">
-                            <div class="w684">
-                                <h3>Номер рейса прилета, как указано в билете</h3>
-                                <input type="text" class="number_text" required>
-                                <h3>Дата и время прилета, как указано в билете</h3>
-                                <!-- <input class="w50" type="date" id="" name="" value=""> -->
-                                <input type="text" class="w50 data_text_1" id="datepicker">
-                                <input class="w50 time_text_1" type="time" name="" required>
-                                <label class="switch">
-                                    <input type="checkbox" class="checkbox">
-                                    <span class="slider round"></span>
-                                </label><br>
-                                <span class="wait">
-<h3>Дополнительный час ожидания</h3>
-<input type="text" class="sitebg" value="0€" readonly>
-</span>
-                                <h3 class="special">Водитель ждет вас в аэропорту 2 часа вместо 1 часа</h3>
-                                <h3>Место назначения: адрес или название отеля</h3>
-                                <input type="text" class="place_text_1" required>
-                                <span class="w50">
-<h3>Число пассажиров
-включая детей и младенцев</h3>
-<input class="w50 passanger" type="number" value="0" unchecked>
-</span>
-                                <span class="w50">
-<h3>Количество багажа</h3>
-<input class="w50 stuff" type="number" value="0" required>
-</span>
-                                <div class="bef">
-                                    <select name="" id="nump_priv">
-                                        <option value="">0</option>
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
-                                        <option value="">4</option>
-                                        <option value="">5</option>
-                                    </select>
-                                </div>
-                                <input type="text" class="extra" value="Доп. остановки (10€ за каждую)" readonly>
-                                <label class="switch">
-                                    <input type="checkbox" class="checkbox2" unchecked>
-                                    <span class="slider round"></span>
-                                </label><br>
-                                <span class="wait ">
-<h3>Обратный трансфер</h3>
-<input type="text" class="sitebg2" value="0€" readonly>
-</span>
-                                <div style="display: none;" class="info_for_back_transf">
-                                    <h3>Место отправления: адрес или название отеля</h3>
-                                    <input type="text" class="place_text_2">
-                                    <h3>Дата и время подачи трансфера</h3>
-                                    <!-- <input class="w50" type="date" id="" name="" value=""> -->
-                                    <input type="text" class="w50 data_text_2" id="datepicker_1">
-                                    <input class="w50 time_text_2" type="time" id="" name="">
-                                </div>
-                                <span class="w50 ">
-<h3>Имя</h3>
-<input class="w50 nobg name_text" type="text" required>
-</span>
-                                <span class="w50">
-<h3>Фамилия</h3>
-<input class="w50 nobg lastname_text" type="text" required>
-</span>
-                                <h3>Телефон с кодом страны</h3>
-                                <input type="phone" class="phone_text" required>
-                                <h3>email</h3>
-                                <input type="email" class="email_text" required>
+                        <div class="w100 put_price_car">
+                            <div class="fl">
+                                <input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-1">
+                                <label class="label-for-check2" for="transfer-person-1" value="person 1-4 normal car">
+                                    <h5>1-4 человека стандарт</h5>
+                                    <h6>40€</h6>
+                                </label>
+                            </div>
+                            <div class="fl">
+                                <input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-2">
+                                <label class="label-for-check2" for="transfer-person-2" value="person 1-4 luxury car">
+                                    <h5>1-4 человека люкс</h5>
+                                    <h6>55€</h6>
+                                </label>
+                            </div>
+                            <div class="fl">
+                                <input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-3">
+                                <label class="label-for-check2" for="transfer-person-3" value="person 4-6 normal car">
+                                    <h5>1-8 человек люкс минивен</h5>
+                                    <h6>70€</h6>
+                                </label>
                             </div>
                         </div>
-                        <div class="all">итого: <span class="unitCount"></span></div>
-                        <div class="result"></div>
-                        <button class="btn btn-now order final_order_pay">забронировать <br>и оплатить <u>онлайн</u>
-                        </button>
-                        <button class="btn btn-now order final_order_nopay">забронировать <br>и оплатить <u>на месте</u>
-                        </button>
+                        <div style="color: red;margin-top: 47px;display: none;font-size: 20px;" class="erro_trnsf">Выберите
+                            машину для продолжения оформления трансфера.
+                        </div>
+                        <div class="btn btn-now order first_step">забронировать</div>
+                        <div class="form_hide">
+                            <div class="transfer-option">
+                                <div class="w684">
+                                    <h3>Номер рейса прилета, как указано в билете</h3>
+                                    <input type="text" class="number_text" required>
+                                    <h3>Дата и время прилета, как указано в билете</h3>
+                                    <!-- <input class="w50" type="date" id="" name="" value=""> -->
+                                    <input type="text" class="w50 data_text_1" id="datepicker">
+                                    <input class="w50 time_text_1" type="time" name="" required>
+                                    <label class="switch">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="slider round"></span>
+                                    </label><br>
+                                    <span class="wait">
+    <h3>Дополнительный час ожидания</h3>
+    <input type="text" class="sitebg" value="0€" readonly>
+    </span>
+                                    <h3 class="special">Водитель ждет вас в аэропорту 2 часа вместо 1 часа</h3>
+                                    <h3>Место назначения: адрес или название отеля</h3>
+                                    <input type="text" class="place_text_1" required>
+                                    <span class="w50">
+    <h3>Число пассажиров
+    включая детей и младенцев</h3>
+    <input class="w50 passanger" type="number" value="0" unchecked>
+    </span>
+                                    <span class="w50">
+    <h3>Количество багажа</h3>
+    <input class="w50 stuff" type="number" value="0" required>
+    </span>
+                                    <div class="bef">
+                                        <select name="" id="nump_priv">
+                                            <option value="">0</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                        </select>
+                                    </div>
+                                    <input type="text" class="extra" value="Доп. остановки (10€ за каждую)" readonly>
+                                    <label class="switch">
+                                        <input type="checkbox" class="checkbox2" unchecked>
+                                        <span class="slider round"></span>
+                                    </label><br>
+                                    <span class="wait ">
+    <h3>Обратный трансфер</h3>
+    <input type="text" class="sitebg2" value="0€" readonly>
+    </span>
+                                    <div style="display: none;" class="info_for_back_transf">
+                                        <h3>Место отправления: адрес или название отеля</h3>
+                                        <input type="text" class="place_text_2">
+                                        <h3>Дата и время подачи трансфера</h3>
+                                        <!-- <input class="w50" type="date" id="" name="" value=""> -->
+                                        <input type="text" class="w50 data_text_2" id="datepicker_1">
+                                        <input class="w50 time_text_2" type="time" id="" name="">
+                                    </div>
+                                    <span class="w50 ">
+    <h3>Имя</h3>
+    <input class="w50 nobg name_text" type="text" required>
+    </span>
+                                    <span class="w50">
+    <h3>Фамилия</h3>
+    <input class="w50 nobg lastname_text" type="text" required>
+    </span>
+                                    <h3>Телефон с кодом страны</h3>
+                                    <input type="phone" class="phone_text" required>
+                                    <h3>email</h3>
+                                    <input type="email" class="email_text" required>
+                                </div>
+                            </div>
+                            <div class="all">итого: <span class="unitCount"></span></div>
+                            <div class="result"></div>
+                            <button class="btn btn-now order final_order_pay">забронировать <br>и оплатить <u>онлайн</u>
+                            </button>
+                            <button class="btn btn-now order final_order_nopay">забронировать <br>и оплатить <u>на месте</u>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 3 забронировать экскурсию -->
+    <div style="display:none" id="myModal3" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><img src="img/close.png" alt="закрыть">
+                    </button>
+                    <h4 class="modal-title">забронировать экскурсию</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="tour">
+                            <p>Авторская обзорная экскурсия по Барселоне на автомобиле 4-6-8 часов предполагает
+                                знакомство с основными достопримечтельностями - главная улица Пасео де Грация
+                                со знаменитыми шедеврами Гауди - дом Батльо и дом Мила, Собор Святое семейство,
+                                парк Гуэль, площадь Испании и великолепные виды с горы Монжуик, самая высокая
+                                точка Барселоны гора Тибедабо и конечно же история Барселоны - старый город или
+                                готический квартал со своими удивительными секретами, накопившимися за 2000 лет,
+                                улица Ла рамбла и рынок Бокерия с широким ассортиентом фруктов, хамона, сыров
+                                и морепродуктов</p>
+                            <p>
+                                Наш гид позаботится о покупке билетов в Собор святое семейство и в парк
+                                Гуэль, расчитает время и вам не прийдется стоять в утомительных очередях</p>
+                            <table bordercolor="#b9bbbf">
+                                <tr height="48px" class="mbi">
+                                    <td>В барселоне</td>
+                                    <td>За барселоной</td>
+                                </tr>
+                                <tr height="48px">
+                                    <td>2h <span>60€</span></td>
+                                    <td>2h <span>80€</span></td>
+                                </tr>
+                                <tr height="48px">
+                                    <td>3h <span>55€</span></td>
+                                    <td>3h <span>75€</span></td>
+                                </tr>
+                                <tr height="48px">
+                                    <td>4h <span>50€</span></td>
+                                    <td>4h <span>70€</span></td>
+                                </tr>
+                                <tr height="48px">
+                                    <td class="b-b-n">8h <span>45€</span></td>
+                                    <td class="b-b-n">8h <span>65€</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <button class="btn btn-now order">забронировать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2 -->
+    <section class="sc-2 main-menu-item" id="scroll1">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-4 col-md-12"><img src="img/city.jpg" alt="о компании"></div>
+                <div class="col-lg-8 col-md-12">
+                    <center><h1>Трансфер из аэропорта Барселоны</h1>
+                        <a>
+                            <button class="btn btn-now bt1 bron_trnf" style="
+        height: 82px;
+        border-radius: 14% 9% 17% 8% / 60% 48% 53% 35%;
+        font-size: 19px;
+        font-family: 'Montserrat-BlackItalic';
+        color: #fff;
+        text-transform: uppercase;
+        background-image: -webkit-gradient(linear, left top, right top, from(#f7921e), to(#f15c29));
+        background-image: linear-gradient(to right, #f7921e, #f15c29);" data-toggle="modal" data-target="#myModal2">
+                                Забронировать трансфер
+                            </button>
+                        </a>
+                        <a>
+                            <button class="btn btn-now bt2" style="
+        height: 73px;
+        border-radius: 14% 9% 17% 8% / 60% 48% 53% 35%;
+        font-size: 17px;
+        font-family: 'Montserrat-BlackItalic';
+        color: #fff;
+        text-transform: uppercase;
+        margin-left: 22px;
+        background-image: -webkit-gradient(linear, left top, right top, from(#515151), to(#171717));
+        background-image: linear-gradient(to right, #515151, #171717);" data-toggle="modal" data-target="#myModal3">
+                                Забронировать экскурсию
+                            </button>
+                        </a></center>
+                    <p><span>Barcelona Driver</span> - молодая, но амбициозная и быстрорастущая компания, осуществляющая
+                        трансферы и экскурсии по Барселоне и другим городам.
+                        У нас можно заказать автомобили любого класса с личным водителем и гидом. Помимо выбора класса вы
+                        можете арендовать автомобили различной вместимости. В нашем автопарке присутствуют автомобили
+                        следующих категорий: бизнес-класс, представительский класс, минивэны, внедорожники, микроавтобусы.
+                        Мы знаем, как сделать жизнь клиентов комфортнее и экономичнее. Поэтому абсолютно бесплатно во время
+                        поездок пассажиры могут получить воду и воспользоваться WI-FI. Также, машина будет бесплатно ждать
+                        вас в аэропорту целых 60 минут. У нас можно расплатиться как картой, так и PayPal и другими
+                        возможными способами. А для постоянных клиентов мы предоставляем гибкую систему скидок.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION 3 -->
+    <section class="sc-3 main-menu-item" id="scroll2">
+        <div class="container">
+            <div class="row">
+                <div
+                    style="font-size: 34px;font-family: 'Montserrat-BlackItalic';color: #000;text-transform: uppercase;margin-bottom: 25px;text-align: center;margin-bottom: 70px;">
+                    автопарк
+                </div>
+                <div class="line"></div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/car1.webp" alt="Машина номер 1">
+                    <h2>mercedes benz class v</h2>
+                    <h4>Вместимость до 7-и человек</h4>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/car2.webp" alt="Машина номер 2">
+                    <h2>mercedes benz class e</h2>
+                    <h4>Вместимость до 4-х человек</h4>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <img src="img/car3.webp" alt="Машина номер 3">
+                    <h2>mercedes benz class c</h2>
+                    <h4>Вместимость до 4-х человек</h4>
+                </div>
+                <div class="margin"></div>
+                <div class="col-lg-2 col-md-12"></div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/car4.webp" alt="Машина номер 3">
+                    <h2>mercedes benz Vito</h2>
+                    <h4>Вместимость до 8-и человек</h4>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="h259">
+                        <img src="img/car5.webp" alt="Машина номер 6">
                     </div>
-                </form>
+                    <h2>Fiat tipo</h2>
+                    <h4>Вместимость до 4-х человек</h4>
+                </div>
+                <div class="col-lg-2 col-md-12"></div>
             </div>
         </div>
-    </div>
-</div>
-<!-- Modal 3 забронировать экскурсию -->
-<div id="myModal3" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><img src="img/close.png" alt="закрыть">
-                </button>
-                <h4 class="modal-title">забронировать экскурсию</h4>
-            </div>
-            <div class="modal-body">
-                <form action="">
-                    <div class="tour">
-                        <p>Авторская обзорная экскурсия по Барселоне на автомобиле 4-6-8 часов предполагает
-                            знакомство с основными достопримечтельностями - главная улица Пасео де Грация
-                            со знаменитыми шедеврами Гауди - дом Батльо и дом Мила, Собор Святое семейство,
-                            парк Гуэль, площадь Испании и великолепные виды с горы Монжуик, самая высокая
-                            точка Барселоны гора Тибедабо и конечно же история Барселоны - старый город или
-                            готический квартал со своими удивительными секретами, накопившимися за 2000 лет,
-                            улица Ла рамбла и рынок Бокерия с широким ассортиентом фруктов, хамона, сыров
-                            и морепродуктов</p>
-                        <p>
-                            Наш гид позаботится о покупке билетов в Собор святое семейство и в парк
-                            Гуэль, расчитает время и вам не прийдется стоять в утомительных очередях</p>
-                        <table bordercolor="#b9bbbf">
-                            <tr height="48px" class="mbi">
-                                <td>В барселоне</td>
-                                <td>За барселоной</td>
-                            </tr>
-                            <tr height="48px">
-                                <td>2h <span>60€</span></td>
-                                <td>2h <span>80€</span></td>
-                            </tr>
-                            <tr height="48px">
-                                <td>3h <span>55€</span></td>
-                                <td>3h <span>75€</span></td>
-                            </tr>
-                            <tr height="48px">
-                                <td>4h <span>50€</span></td>
-                                <td>4h <span>70€</span></td>
-                            </tr>
-                            <tr height="48px">
-                                <td class="b-b-n">8h <span>45€</span></td>
-                                <td class="b-b-n">8h <span>65€</span></td>
-                            </tr>
-                        </table>
+    </section>
+    <!-- SECTION 4 -->
+    <section class="sc-4 main-menu-item" id="scroll3">
+        <div class="container">
+            <div class="row">
+                <div
+                    style="font-size: 34px;font-family: 'Montserrat-BlackItalic';color: #000;text-transform: uppercase;margin-bottom: 25px;text-align: center;margin-bottom: 70px;">
+                    Прайс-лист
+                </div>
+                <div class="line"></div>
+                <div class="name">коста дорада</div>
+                <div class="text-center">
+                    <div class="w667 mr">
+                        <img src="img/pic1.webp" alt="коста дорада">
                     </div>
-                    <button class="btn btn-now order">забронировать</button>
-                </form>
+                    <div class="w667">
+                        <img src="img/pic2.webp" alt="коста дорада">
+                    </div>
+                </div>
+                <div class="over" style="overflow-x:auto;">
+                    <table>
+                        <tr class="title" align="center">
+                            <td width="14%" class="b-t b-r m-t" align="left"><span>коста дорада</span></td>
+                            <td width="14%" class="b-t b-l p-r m-t" align="right"><span>km</span></td>
+                            <td width="14%" class="b-t"><span>1-4 человека стандарт</span></td>
+                            <td width="14%" class="b-t"><span>1-4 человека люкс</span></td>
+                            <td width="14%" class="b-t"><span>1-8 человек люкс минивен</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Барселона</span></td>
+                            <td width="14%" class="p-r b-l" align="right"><span>19</span></td>
+                            <td width="14%"><span>40€</span></td>
+                            <td width="14%"><span>50€</span></td>
+                            <td width="14%"><span>65€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Ситджес</span></td>
+                            <td width="14%" align="right" class="p-r"><span>33</span></td>
+                            <td width="14%"><span>70€</span></td>
+                            <td width="14%"><span>90€</span></td>
+                            <td width="14%"><span>110€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Вианова</span></td>
+                            <td width="14%" align="right" class="p-r"><span>38</span></td>
+                            <td width="14%"><span>80€</span></td>
+                            <td width="14%"><span>90€</span></td>
+                            <td width="14%"><span>110€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Кунит</span></td>
+                            <td width="14%" align="right" class="p-r"><span>47</span></td>
+                            <td width="14%"><span>85€</span></td>
+                            <td width="14%"><span>95€</span></td>
+                            <td width="14%"><span>115€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Кома-Руга</span></td>
+                            <td width="14%" align="right" class="p-r"><span>58</span></td>
+                            <td width="14%"><span>90€</span></td>
+                            <td width="14%"><span>105€</span></td>
+                            <td width="14%"><span>125€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Калафель</span></td>
+                            <td width="14%" align="right" class="p-r"><span>54</span></td>
+                            <td width="14%"><span>90€</span></td>
+                            <td width="14%"><span>100€</span></td>
+                            <td width="14%"><span>125€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Торредембарра</span></td>
+                            <td width="14%" align="right" class="p-r"><span>78</span></td>
+                            <td width="14%"><span>105€</span></td>
+                            <td width="14%"><span>115€</span></td>
+                            <td width="14%"><span>125€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Салоу</span></td>
+                            <td width="14%" align="right" class="p-r"><span>101</span></td>
+                            <td width="14%"><span>115€</span></td>
+                            <td width="14%"><span>145€</span></td>
+                            <td width="14%"><span>165€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Камбрильс</span></td>
+                            <td width="14%" align="right" class="p-r"><span>108</span></td>
+                            <td width="14%"><span>120€</span></td>
+                            <td width="14%"><span>145€</span></td>
+                            <td width="14%"><span>165€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Порт Авентура</span></td>
+                            <td width="14%" align="right" class="p-r"><span>105</span></td>
+                            <td width="14%"><span>120€</span></td>
+                            <td width="14%"><span>140€</span></td>
+                            <td width="14%"><span>165€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-b b-r" align="left"><span>Cruise Port</span></td>
+                            <td width="14%" class="b-b p-r" align="right"><span>12</span></td>
+                            <td width="14%" class="b-b"><span>40€</span></td>
+                            <td width="14%" class="b-b"><span>50€</span></td>
+                            <td width="14%" class="b-b"><span>65€</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <button class="btn btn-now order" data-toggle="modal" data-target="#myModal2">забронировать</button>
+                <div class="line"></div>
+                <div class="name">коста брава</div>
+                <div class="text-center">
+                    <div class="w667 mr">
+                        <img src="img/pic3.webp" alt="коста брава">
+                    </div>
+                    <div class="w667">
+                        <img src="img/pic4.webp" alt="коста брава">
+                    </div>
+                </div>
+                <div class="over" style="overflow-x:auto;">
+                    <table>
+                        <tr class="title" align="center">
+                            <td width="14%" class="b-t b-r m-t" align="left"><span>коста брава</span></td>
+                            <td width="14%" class="b-t b-l p-r m-t" align="right"><span>km</span></td>
+                            <td width="14%" class="b-t"><span>1-4 человека стандарт</span></td>
+                            <td width="14%" class="b-t"><span>1-4 человека люкс</span></td>
+                            <td width="14%" class="b-t"><span>1-8 человек люкс минивен</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Бадалона</span></td>
+                            <td width="14%" class="p-r b-l" align="right"><span>29</span></td>
+                            <td width="14%"><span>45€</span></td>
+                            <td width="14%"><span>55€</span></td>
+                            <td width="14%"><span>70€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Монкада-и-Решак</span></td>
+                            <td width="14%" align="right" class="p-r"><span>31</span></td>
+                            <td width="14%"><span>50€</span></td>
+                            <td width="14%"><span>60€</span></td>
+                            <td width="14%"><span>70€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Тарраса</span></td>
+                            <td width="14%" align="right" class="p-r"><span>45</span></td>
+                            <td width="14%"><span>60€</span></td>
+                            <td width="14%"><span>80€</span></td>
+                            <td width="14%"><span>90€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Матаро</span></td>
+                            <td width="14%" align="right" class="p-r"><span>51</span></td>
+                            <td width="14%"><span>65€</span></td>
+                            <td width="14%"><span>85€</span></td>
+                            <td width="14%"><span>95€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>La Roca Village</span></td>
+                            <td width="14%" align="right" class="p-r"><span>59</span></td>
+                            <td width="14%"><span>65€</span></td>
+                            <td width="14%"><span>85€</span></td>
+                            <td width="14%"><span>105€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Калелья</span></td>
+                            <td width="14%" align="right" class="p-r"><span>69</span></td>
+                            <td width="14%"><span>75€</span></td>
+                            <td width="14%"><span>95€</span></td>
+                            <td width="14%"><span>115€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Мальграт-де-Мар</span></td>
+                            <td width="14%" align="right" class="p-r"><span>81</span></td>
+                            <td width="14%"><span>95€</span></td>
+                            <td width="14%"><span>115€</span></td>
+                            <td width="14%"><span>130€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Санта-Сусанна</span></td>
+                            <td width="14%" align="right" class="p-r"><span>80</span></td>
+                            <td width="14%"><span>90€</span></td>
+                            <td width="14%"><span>105€</span></td>
+                            <td width="14%"><span>125€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Льорет-де-Мар</span></td>
+                            <td width="14%" align="right" class="p-r"><span>92</span></td>
+                            <td width="14%"><span>105€</span></td>
+                            <td width="14%"><span>120€</span></td>
+                            <td width="14%"><span>140€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Тосса-де-Мар</span></td>
+                            <td width="14%" align="right" class="p-r"><span>105</span></td>
+                            <td width="14%"><span>120€</span></td>
+                            <td width="14%"><span>140€</span></td>
+                            <td width="14%"><span>155€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Кастель-Пладжа-де-Аро</span></td>
+                            <td width="14%" align="right" class="p-r"><span>125</span></td>
+                            <td width="14%"><span>120€</span></td>
+                            <td width="14%"><span>140€</span></td>
+                            <td width="14%"><span>160€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Аэропорт Жирона</span></td>
+                            <td width="14%" align="right" class="p-r"><span>115</span></td>
+                            <td width="14%"><span>105€</span></td>
+                            <td width="14%"><span>125€</span></td>
+                            <td width="14%"><span>145€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-b b-r" align="left"><span>Фигерас</span></td>
+                            <td width="14%" class="b-b p-r" align="right"><span>140</span></td>
+                            <td width="14%" class="b-b"><span>160€</span></td>
+                            <td width="14%" class="b-b"><span>175€</span></td>
+                            <td width="14%" class="b-b"><span>195€</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <button class="btn btn-now order" data-toggle="modal" data-target="#myModal2">забронировать</button>
+                <div class="line"></div>
+                <div class="name">андорра</div>
+                <div class="text-center">
+                    <div class="w667 mr">
+                        <img src="img/Andorra.webp" alt="андорра">
+                    </div>
+                    <div class="w667">
+                        <img src="img/andorraspain.webp" alt="андорра">
+                    </div>
+                </div>
+                <div class="over" style="overflow-x:auto;">
+                    <table>
+                        <tr class="title" align="center">
+                            <td width="14%" class="b-t b-r m-t" align="left"><span>андорра</span></td>
+                            <td width="14%" class="b-t b-l p-r m-t" align="right"></td>
+                            <td width="14%" class="b-t"><span>1-4 человека стандарт</span></td>
+                            <td width="14%" class="b-t"><span>1-4 человека люкс</span></td>
+                            <td width="14%" class="b-t"><span>1-8 человек люкс минивен</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Andorra la vella</span></td>
+                            <td width="14%" class="p-r b-l" align="right"></td>
+                            <td width="14%"><span>205€</span></td>
+                            <td width="14%"><span>225€</span></td>
+                            <td width="14%"><span>260€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Escaldes-Engordany</span></td>
+                            <td width="14%" align="right" class="p-r"></td>
+                            <td width="14%"><span>215€</span></td>
+                            <td width="14%"><span>245€</span></td>
+                            <td width="14%"><span>265€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Encamp</span></td>
+                            <td width="14%" align="right" class="p-r"></td>
+                            <td width="14%"><span>220€</span></td>
+                            <td width="14%"><span>250€</span></td>
+                            <td width="14%"><span>270€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>La Massana</span></td>
+                            <td width="14%" align="right" class="p-r"></td>
+                            <td width="14%"><span>215€</span></td>
+                            <td width="14%"><span>245€</span></td>
+                            <td width="14%"><span>275€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>La Canillo</span></td>
+                            <td width="14%" align="right" class="p-r"></td>
+                            <td width="14%"><span>225€</span></td>
+                            <td width="14%"><span>255€</span></td>
+                            <td width="14%"><span>285€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>La El Tarter</span></td>
+                            <td width="14%" align="right" class="p-r"></td>
+                            <td width="14%"><span>235€</span></td>
+                            <td width="14%"><span>265€</span></td>
+                            <td width="14%"><span>285€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Soldeu</span></td>
+                            <td width="14%" align="right" class="p-r"></td>
+                            <td width="14%"><span>235€</span></td>
+                            <td width="14%"><span>265€</span></td>
+                            <td width="14%"><span>295€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>GrauRoig</span></td>
+                            <td width="14%" align="right" class="p-r"></td>
+                            <td width="14%"><span>245€</span></td>
+                            <td width="14%"><span>270€</span></td>
+                            <td width="14%"><span>295€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>PasdelaCasa</span></td>
+                            <td width="14%" align="right" class="p-r"></td>
+                            <td width="14%"><span>255€</span></td>
+                            <td width="14%"><span>275€</span></td>
+                            <td width="14%"><span>295€</span></td>
+                        </tr>
+                        <tr class="normal" align="center" height="49px">
+                            <td width="14%" class="b-r" align="left"><span>Arinsal</span></td>
+                            <td width="14%" align="right" class="p-r"></td>
+                            <td width="14%"><span>225€</span></td>
+                            <td width="14%"><span>255€</span></td>
+                            <td width="14%"><span>295€</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <button class="btn btn-now order" data-toggle="modal" data-target="#myModal2">забронировать</button>
+                <div class="line"></div>
             </div>
         </div>
-    </div>
-</div>
-<!-- SECTION 2 -->
-<section class="sc-2" id="scroll1">
-    <div class="container">
-        <div class="row">
-            
-            <div class="col-lg-4 col-md-12"><img src="img/city.jpg" alt="о компании"></div>
-            <div class="col-lg-8 col-md-12">
-                <center><h1>Трансфер из аэропорта Барселоны</h1>
-                    <a>
-                        <button class="btn btn-now bt1 bron_trnf" style="
-    height: 82px;
-    border-radius: 14% 9% 17% 8% / 60% 48% 53% 35%;
-    font-size: 19px;
-    font-family: 'Montserrat-BlackItalic';
-    color: #fff;
-    text-transform: uppercase;
-    background-image: -webkit-gradient(linear, left top, right top, from(#f7921e), to(#f15c29));
-    background-image: linear-gradient(to right, #f7921e, #f15c29);" data-toggle="modal" data-target="#myModal2">
-                            Забронировать трансфер
-                        </button>
-                    </a>
-                    <a>
-                        <button class="btn btn-now bt2" style="
-    height: 73px;
-    border-radius: 14% 9% 17% 8% / 60% 48% 53% 35%;
-    font-size: 17px;
-    font-family: 'Montserrat-BlackItalic';
-    color: #fff;
-    text-transform: uppercase;
-    margin-left: 22px;
-    background-image: -webkit-gradient(linear, left top, right top, from(#515151), to(#171717));
-    background-image: linear-gradient(to right, #515151, #171717);" data-toggle="modal" data-target="#myModal3">
-                            Забронировать экскурсию
-                        </button>
-                    </a></center>
-                <p><span>Barcelona Driver</span> - молодая, но амбициозная и быстрорастущая компания, осуществляющая
-                    трансферы и экскурсии по Барселоне и другим городам.
-                    У нас можно заказать автомобили любого класса с личным водителем и гидом. Помимо выбора класса вы
-                    можете арендовать автомобили различной вместимости. В нашем автопарке присутствуют автомобили
-                    следующих категорий: бизнес-класс, представительский класс, минивэны, внедорожники, микроавтобусы.
-                    Мы знаем, как сделать жизнь клиентов комфортнее и экономичнее. Поэтому абсолютно бесплатно во время
-                    поездок пассажиры могут получить воду и воспользоваться WI-FI. Также, машина будет бесплатно ждать
-                    вас в аэропорту целых 60 минут. У нас можно расплатиться как картой, так и PayPal и другими
-                    возможными способами. А для постоянных клиентов мы предоставляем гибкую систему скидок.
-                </p>
+    </section>
+    <!-- SECTION 5 -->
+    <section class="sc-5 main-menu-item" id="scroll4">
+        <div class="container">
+            <div class="row">
+                <div
+                    style="font-size: 34px;font-family: 'Montserrat-BlackItalic';color: #000;text-transform: uppercase;margin-bottom: 25px;text-align: center;margin-bottom: 70px;">
+                    Отзывы
+                </div>
+                <div class="col-lg-3 col-sm-6 col-sm-12">
+                    <div class="oval">
+                        <img src="img/img1.webp" alt="Ксения Костюк">
+                    </div>
+                    <h4>Ксения Костюк</h4>
+                    <h5>Машина приехала вовремя. Очень долго получали багаж.
+                        Дождались. встретили с табличкой. Доставили без проблем.
+                        Было нас 6 человек с лыжами. Эту же машину заказали и назад</h5>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-sm-12">
+                    <div class="oval">
+                        <img src="img/img2.webp" alt="Виктория Репина">
+                    </div>
+                    <h4>Виктория Репина</h4>
+                    <h5>Ох и намучалась я с геттрансфером! То машину не вовремя подадут,
+                        то цена в 2 раза отличается, сразу чувствуется отношение к клиентам.
+                        В барселона-драйвер же все честно и индивидуально</h5>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-sm-12">
+                    <div class="oval">
+                        <img src="img/img3.webp" alt="Андрей Розов">
+                    </div>
+                    <h4>Андрей Розов</h4>
+                    <h5>Очень удобно, что не нужно всю сумму оплачивать заранее,
+                        как в большинстве служб по трансферу из Барселоны!
+                        Все честно, недорого, цены на сайте и по факту аналогичны</h5>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-sm-12">
+                    <div class="oval">
+                        <img src="img/img4.webp" alt="Павел Глазин">
+                    </div>
+                    <h4>Павел Глазин</h4>
+                    <h5>Пользовались услугами по трансферу из Барселоны в Андорру
+                        и обратно в начале февраля 2019. Машины были поданы вовремя,
+                        нареканий нет. Спасибо</h5>
+                </div>
+                <div class="margin"></div>
+                <article class="seo_text">
+                    <p>Во время визита в Барселону приезжие часто теряются и не могут найти автомобиль или такси. Быстрый
+                        ритм жизни тут накладывает свой отпечаток и на транспортный поток. Человек, только что сошедший из
+                        тихого салона самолета, непременно растеряется, и у него возникнут проблемы с поиском транспорта.
+                        Сервис Геттрансфер, который набирает популярность, тоже не всегда может предоставить услуги
+                        надлежащего уровня.</p>
+                    <p>Наша компания Барселона Драйвер специализируется на перевозках и экскурсиях как по Барселоне, так и
+                        по всей Европе. Если вы любите комфорт и цените свое время, стоит заранее озаботиться транспортом. И
+                        мы готовы заняться этим вопросом. Главное для нас – чтобы клиент остался доволен. Мы всячески
+                        стараемся осуществить это. Обширный автопарк, профессиональные водители, подача транспорта
+                        заблаговременно, учтивый персонал, система скидок – это далеко не весь список наших преимуществ. Мы
+                        предлагаем лучший сервис такси в Барселоне.</p>
+                    <h2>Обширный автопарк</h2>
+                    <p>Перед тем, как заказать трансфер из аэропорта Барселоны, ознакомьтесь с нашими автомобилями. Они
+                        подобраны таким образом, чтобы соответствовать самым широким запросам. Для представительских визитов
+                        у нас есть машины бизнес и представительского классов. Это лучший выбор, если вы привыкли к комфорту
+                        или же вам необходимо произвести впечатление на бизнес партнеров в Барселоне. Этот же класс
+                        автомобилей будет лучшим выбором и в том случае, если ездить придется много. Ноги и спина не
+                        затекут, и вы даже поздним вечером будете чувствовать себя отменно.</p>
+                    <p>Если же вы приезжаете большой компанией, то трансфер из аэропорта Барселоны "Эль Прат" должен
+                        осуществляться минивэном или микроавтобусом. Первые вмещают до 6 человек, вторые – больше.
+                        Посчитайте, сколько человек прилетит с вами, и заранее определитесь с типом машины. Но если вы еще
+                        не знаете точно, предупредите менеджера и мы сможем найти способы решения возможных проблем. Так же
+                        предлагаем качественный трансфер Барселона - Андорра и трансфер Барселона - Салоу.</p>
+                    <p>Внедорожники станут лучшим выбором, если путь будет пролегать по деревенской местности и бездорожью.
+                        Машины оборудованы мягкой подвеской, чтобы вы могли спокойно работать или наслаждаться окружающими
+                        пейзажами без дискомфорта.</p>
+                    <h2>Удобство и забота о клиентах</h2>
+                    <p>Барселона находится в субтропическом климатическом поясе. Поэтому тут всегда жарко. К тому же, у нас
+                        редко бывает пасмурная погода. Поэтому главное, что ценится – это вода. Особенно это отмечают
+                        приезжающие из более холодных районов. Мы всегда загружаем в свои автомобили по несколько бутылок
+                        прохладной воды. Она предоставляется абсолютно бесплатно, чтобы клиенты не испытывали дискомфорта. К
+                        тому же, это маленькое, на первый взгляд, дополнение экономит массу вашего времени.</p>
+                    <p>Еще одна приятная опция, которой оснащены все машины – это бесплатный WI-FI. Сразу по прилету во
+                        время трансфера по Испании вы сможете позвонить по скайпу или телеграмму своим близким и сообщить им
+                        об удачном приземлении. А для тех, кто приехал в Барселону по рабочей надобности это отличная
+                        возможность назначить встречу деловым партнерам. Вам не нужно тратить огромные деньги на звонки в
+                        роуминге или покупать СИМ-карту, активировать ее и пополнять. Мы уже решили эту проблему за вас,
+                        оснастив каждый автомобиль бесплатной точкой доступа.</p>
+                    <h2>Воспитанный и профессиональный персонал</h2>
+                    <p>У нас работает воспитанный персонал. Помните, как было каждый раз, когда вы вызывали такси? Водители
+                        там постоянно без умолку болтают и не дают сосредоточиться на своих делах. Мы же позаботились об
+                        этом. Шофер не будет доставать вас разговорами, если видит, что вы заняты. Но если станет скучно, с
+                        ним всегда можно перекинуться словом. Особенно это актуально, если трансфер из аэропорта Барселоны
+                        затянется и дорога будет дальняя.</p>
+                    <p>Организовываемые нами экскурсии по известным местам Испании и всей Европе сопровождают
+                        профессиональные гиды. Они отлично знают историю и все интересные места, по которым вы желаете
+                        проехаться. Причем экскурсия может вестись не только из машины. Если группа пожелает, авто может
+                        остановиться, а вы – подойти поближе к достопримечательности. Гид расскажет, чем интересно то или
+                        иное место.</p>
+                    <h2>Честные цены и удобная оплата</h2>
+                    <p>Наши цены радуют приезжих. Как правило, заказать машину по Барселоне стоит довольно недешево. К тому
+                        же, масса проблем, которые сопровождают это дело, отталкивают туристов от данной услуги. Мы же пошли
+                        иным путем: максимальная прозрачность и честное сотрудничество. Все цены указаны у нас на сайте. Они
+                        всегда актуальны и вы можете ознакомиться со стоимостью заказа авто.</p>
+                    <p>Во время бронирования автомобиля вам потребуется заполнить как можно больше пунктов. Так мы сможем
+                        назвать максимально точную цену услуг. Не забудьте указать обратный телефон и электронный адрес. По
+                        ним наш менеджер свяжется с вами для обсуждения всех дополнительных вопросов.</p>
+                    <p>Оплата производится как на месте, так и онлайн. Для Barcelona Driver важно, чтобы клиенты доверяли
+                        нам. Поэтому мы сделали все для удобства оплаты услуг.</p>
+                    <p>Стоимость рассчитывается, исходя из человеко-часов, километража и типа машины. Нам кажется, что это
+                        самый правильный метод определения цены поездки.</p>
+                    <h2>Доверие клиентов</h2>
+                    <p>Услугами нашей компании уже воспользовалось множество людей. Они остаются крайне довольными, и в
+                        последующие свои визиты, если им нужно заказать трансфер, обращаются именно к нам. Кроме того, они
+                        активно советуют нас своим близким. С их отзывами вы можете ознакомиться на сайте.</p>
+                    <p>Мы гордимся тем, что смогли построить настолько честный и полезный для клиентов бизнес!</p>
+                </article>
             </div>
         </div>
-    </div>
-</section>
-<!-- SECTION 3 -->
-<section class="sc-3" id="scroll2">
-    <div class="container">
-        <div class="row">
-            <div
-                style="font-size: 34px;font-family: 'Montserrat-BlackItalic';color: #000;text-transform: uppercase;margin-bottom: 25px;text-align: center;margin-bottom: 70px;">
-                автопарк
-            </div>
-            <div class="line"></div>
-            <div class="col-lg-4 col-md-6">
-                <img src="img/car1.webp" alt="Машина номер 1">
-                <h2>mercedes benz class v</h2>
-                <h4>Вместимость до 7-и человек</h4>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <img src="img/car2.webp" alt="Машина номер 2">
-                <h2>mercedes benz class e</h2>
-                <h4>Вместимость до 4-х человек</h4>
-            </div>
-            <div class="col-lg-4 col-md-12">
-                <img src="img/car3.webp" alt="Машина номер 3">
-                <h2>mercedes benz class c</h2>
-                <h4>Вместимость до 4-х человек</h4>
-            </div>
-            <div class="margin"></div>
-            <div class="col-lg-2 col-md-12"></div>
-            <div class="col-lg-4 col-md-6">
-                <img src="img/car4.webp" alt="Машина номер 3">
-                <h2>mercedes benz Vito</h2>
-                <h4>Вместимость до 8-и человек</h4>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="h259">
-                    <img src="img/car5.webp" alt="Машина номер 6">
-                </div>
-                <h2>Fiat tipo</h2>
-                <h4>Вместимость до 4-х человек</h4>
-            </div>
-            <div class="col-lg-2 col-md-12"></div>
-        </div>
-    </div>
-</section>
-<!-- SECTION 4 -->
-<section class="sc-4" id="scroll3">
-    <div class="container">
-        <div class="row">
-            <div
-                style="font-size: 34px;font-family: 'Montserrat-BlackItalic';color: #000;text-transform: uppercase;margin-bottom: 25px;text-align: center;margin-bottom: 70px;">
-                Прайс-лист
-            </div>
-            <div class="line"></div>
-            <div class="name">коста дорада</div>
-            <div class="text-center">
-                <div class="w667 mr">
-                    <img src="img/pic1.webp" alt="коста дорада">
-                </div>
-                <div class="w667">
-                    <img src="img/pic2.webp" alt="коста дорада">
-                </div>
-            </div>
-            <div class="over" style="overflow-x:auto;">
-                <table>
-                    <tr class="title" align="center">
-                        <td width="14%" class="b-t b-r m-t" align="left"><span>коста дорада</span></td>
-                        <td width="14%" class="b-t b-l p-r m-t" align="right"><span>km</span></td>
-                        <td width="14%" class="b-t"><span>1-4 человека стандарт</span></td>
-                        <td width="14%" class="b-t"><span>1-4 человека люкс</span></td>
-                        <td width="14%" class="b-t"><span>1-8 человек люкс минивен</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Барселона</span></td>
-                        <td width="14%" class="p-r b-l" align="right"><span>19</span></td>
-                        <td width="14%"><span>40€</span></td>
-                        <td width="14%"><span>50€</span></td>
-                        <td width="14%"><span>65€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Ситджес</span></td>
-                        <td width="14%" align="right" class="p-r"><span>33</span></td>
-                        <td width="14%"><span>70€</span></td>
-                        <td width="14%"><span>90€</span></td>
-                        <td width="14%"><span>110€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Вианова</span></td>
-                        <td width="14%" align="right" class="p-r"><span>38</span></td>
-                        <td width="14%"><span>80€</span></td>
-                        <td width="14%"><span>90€</span></td>
-                        <td width="14%"><span>110€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Кунит</span></td>
-                        <td width="14%" align="right" class="p-r"><span>47</span></td>
-                        <td width="14%"><span>85€</span></td>
-                        <td width="14%"><span>95€</span></td>
-                        <td width="14%"><span>115€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Кома-Руга</span></td>
-                        <td width="14%" align="right" class="p-r"><span>58</span></td>
-                        <td width="14%"><span>90€</span></td>
-                        <td width="14%"><span>105€</span></td>
-                        <td width="14%"><span>125€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Калафель</span></td>
-                        <td width="14%" align="right" class="p-r"><span>54</span></td>
-                        <td width="14%"><span>90€</span></td>
-                        <td width="14%"><span>100€</span></td>
-                        <td width="14%"><span>125€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Торредембарра</span></td>
-                        <td width="14%" align="right" class="p-r"><span>78</span></td>
-                        <td width="14%"><span>105€</span></td>
-                        <td width="14%"><span>115€</span></td>
-                        <td width="14%"><span>125€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Салоу</span></td>
-                        <td width="14%" align="right" class="p-r"><span>101</span></td>
-                        <td width="14%"><span>115€</span></td>
-                        <td width="14%"><span>145€</span></td>
-                        <td width="14%"><span>165€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Камбрильс</span></td>
-                        <td width="14%" align="right" class="p-r"><span>108</span></td>
-                        <td width="14%"><span>120€</span></td>
-                        <td width="14%"><span>145€</span></td>
-                        <td width="14%"><span>165€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Порт Авентура</span></td>
-                        <td width="14%" align="right" class="p-r"><span>105</span></td>
-                        <td width="14%"><span>120€</span></td>
-                        <td width="14%"><span>140€</span></td>
-                        <td width="14%"><span>165€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-b b-r" align="left"><span>Cruise Port</span></td>
-                        <td width="14%" class="b-b p-r" align="right"><span>12</span></td>
-                        <td width="14%" class="b-b"><span>40€</span></td>
-                        <td width="14%" class="b-b"><span>50€</span></td>
-                        <td width="14%" class="b-b"><span>65€</span></td>
-                    </tr>
-                </table>
-            </div>
-            <button class="btn btn-now order" data-toggle="modal" data-target="#myModal2">забронировать</button>
-            <div class="line"></div>
-            <div class="name">коста брава</div>
-            <div class="text-center">
-                <div class="w667 mr">
-                    <img src="img/pic3.webp" alt="коста брава">
-                </div>
-                <div class="w667">
-                    <img src="img/pic4.webp" alt="коста брава">
-                </div>
-            </div>
-            <div class="over" style="overflow-x:auto;">
-                <table>
-                    <tr class="title" align="center">
-                        <td width="14%" class="b-t b-r m-t" align="left"><span>коста брава</span></td>
-                        <td width="14%" class="b-t b-l p-r m-t" align="right"><span>km</span></td>
-                        <td width="14%" class="b-t"><span>1-4 человека стандарт</span></td>
-                        <td width="14%" class="b-t"><span>1-4 человека люкс</span></td>
-                        <td width="14%" class="b-t"><span>1-8 человек люкс минивен</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Бадалона</span></td>
-                        <td width="14%" class="p-r b-l" align="right"><span>29</span></td>
-                        <td width="14%"><span>45€</span></td>
-                        <td width="14%"><span>55€</span></td>
-                        <td width="14%"><span>70€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Монкада-и-Решак</span></td>
-                        <td width="14%" align="right" class="p-r"><span>31</span></td>
-                        <td width="14%"><span>50€</span></td>
-                        <td width="14%"><span>60€</span></td>
-                        <td width="14%"><span>70€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Тарраса</span></td>
-                        <td width="14%" align="right" class="p-r"><span>45</span></td>
-                        <td width="14%"><span>60€</span></td>
-                        <td width="14%"><span>80€</span></td>
-                        <td width="14%"><span>90€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Матаро</span></td>
-                        <td width="14%" align="right" class="p-r"><span>51</span></td>
-                        <td width="14%"><span>65€</span></td>
-                        <td width="14%"><span>85€</span></td>
-                        <td width="14%"><span>95€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>La Roca Village</span></td>
-                        <td width="14%" align="right" class="p-r"><span>59</span></td>
-                        <td width="14%"><span>65€</span></td>
-                        <td width="14%"><span>85€</span></td>
-                        <td width="14%"><span>105€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Калелья</span></td>
-                        <td width="14%" align="right" class="p-r"><span>69</span></td>
-                        <td width="14%"><span>75€</span></td>
-                        <td width="14%"><span>95€</span></td>
-                        <td width="14%"><span>115€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Мальграт-де-Мар</span></td>
-                        <td width="14%" align="right" class="p-r"><span>81</span></td>
-                        <td width="14%"><span>95€</span></td>
-                        <td width="14%"><span>115€</span></td>
-                        <td width="14%"><span>130€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Санта-Сусанна</span></td>
-                        <td width="14%" align="right" class="p-r"><span>80</span></td>
-                        <td width="14%"><span>90€</span></td>
-                        <td width="14%"><span>105€</span></td>
-                        <td width="14%"><span>125€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Льорет-де-Мар</span></td>
-                        <td width="14%" align="right" class="p-r"><span>92</span></td>
-                        <td width="14%"><span>105€</span></td>
-                        <td width="14%"><span>120€</span></td>
-                        <td width="14%"><span>140€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Тосса-де-Мар</span></td>
-                        <td width="14%" align="right" class="p-r"><span>105</span></td>
-                        <td width="14%"><span>120€</span></td>
-                        <td width="14%"><span>140€</span></td>
-                        <td width="14%"><span>155€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Кастель-Пладжа-де-Аро</span></td>
-                        <td width="14%" align="right" class="p-r"><span>125</span></td>
-                        <td width="14%"><span>120€</span></td>
-                        <td width="14%"><span>140€</span></td>
-                        <td width="14%"><span>160€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Аэропорт Жирона</span></td>
-                        <td width="14%" align="right" class="p-r"><span>115</span></td>
-                        <td width="14%"><span>105€</span></td>
-                        <td width="14%"><span>125€</span></td>
-                        <td width="14%"><span>145€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-b b-r" align="left"><span>Фигерас</span></td>
-                        <td width="14%" class="b-b p-r" align="right"><span>140</span></td>
-                        <td width="14%" class="b-b"><span>160€</span></td>
-                        <td width="14%" class="b-b"><span>175€</span></td>
-                        <td width="14%" class="b-b"><span>195€</span></td>
-                    </tr>
-                </table>
-            </div>
-            <button class="btn btn-now order" data-toggle="modal" data-target="#myModal2">забронировать</button>
-            <div class="line"></div>
-            <div class="name">андорра</div>
-            <div class="text-center">
-                <div class="w667 mr">
-                    <img src="img/Andorra.webp" alt="андорра">
-                </div>
-                <div class="w667">
-                    <img src="img/andorraspain.webp" alt="андорра">
-                </div>
-            </div>
-            <div class="over" style="overflow-x:auto;">
-                <table>
-                    <tr class="title" align="center">
-                        <td width="14%" class="b-t b-r m-t" align="left"><span>андорра</span></td>
-                        <td width="14%" class="b-t b-l p-r m-t" align="right"></td>
-                        <td width="14%" class="b-t"><span>1-4 человека стандарт</span></td>
-                        <td width="14%" class="b-t"><span>1-4 человека люкс</span></td>
-                        <td width="14%" class="b-t"><span>1-8 человек люкс минивен</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Andorra la vella</span></td>
-                        <td width="14%" class="p-r b-l" align="right"></td>
-                        <td width="14%"><span>205€</span></td>
-                        <td width="14%"><span>225€</span></td>
-                        <td width="14%"><span>260€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Escaldes-Engordany</span></td>
-                        <td width="14%" align="right" class="p-r"></td>
-                        <td width="14%"><span>215€</span></td>
-                        <td width="14%"><span>245€</span></td>
-                        <td width="14%"><span>265€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Encamp</span></td>
-                        <td width="14%" align="right" class="p-r"></td>
-                        <td width="14%"><span>220€</span></td>
-                        <td width="14%"><span>250€</span></td>
-                        <td width="14%"><span>270€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>La Massana</span></td>
-                        <td width="14%" align="right" class="p-r"></td>
-                        <td width="14%"><span>215€</span></td>
-                        <td width="14%"><span>245€</span></td>
-                        <td width="14%"><span>275€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>La Canillo</span></td>
-                        <td width="14%" align="right" class="p-r"></td>
-                        <td width="14%"><span>225€</span></td>
-                        <td width="14%"><span>255€</span></td>
-                        <td width="14%"><span>285€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>La El Tarter</span></td>
-                        <td width="14%" align="right" class="p-r"></td>
-                        <td width="14%"><span>235€</span></td>
-                        <td width="14%"><span>265€</span></td>
-                        <td width="14%"><span>285€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Soldeu</span></td>
-                        <td width="14%" align="right" class="p-r"></td>
-                        <td width="14%"><span>235€</span></td>
-                        <td width="14%"><span>265€</span></td>
-                        <td width="14%"><span>295€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>GrauRoig</span></td>
-                        <td width="14%" align="right" class="p-r"></td>
-                        <td width="14%"><span>245€</span></td>
-                        <td width="14%"><span>270€</span></td>
-                        <td width="14%"><span>295€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>PasdelaCasa</span></td>
-                        <td width="14%" align="right" class="p-r"></td>
-                        <td width="14%"><span>255€</span></td>
-                        <td width="14%"><span>275€</span></td>
-                        <td width="14%"><span>295€</span></td>
-                    </tr>
-                    <tr class="normal" align="center" height="49px">
-                        <td width="14%" class="b-r" align="left"><span>Arinsal</span></td>
-                        <td width="14%" align="right" class="p-r"></td>
-                        <td width="14%"><span>225€</span></td>
-                        <td width="14%"><span>255€</span></td>
-                        <td width="14%"><span>295€</span></td>
-                    </tr>
-                </table>
-            </div>
-            <button class="btn btn-now order" data-toggle="modal" data-target="#myModal2">забронировать</button>
-            <div class="line"></div>
-        </div>
-    </div>
-</section>
-<!-- SECTION 5 -->
-<section class="sc-5" id="scroll4">
-    <div class="container">
-        <div class="row">
-            <div
-                style="font-size: 34px;font-family: 'Montserrat-BlackItalic';color: #000;text-transform: uppercase;margin-bottom: 25px;text-align: center;margin-bottom: 70px;">
-                Отзывы
-            </div>
-            <div class="col-lg-3 col-sm-6 col-sm-12">
-                <div class="oval">
-                    <img src="img/img1.webp" alt="Ксения Костюк">
-                </div>
-                <h4>Ксения Костюк</h4>
-                <h5>Машина приехала вовремя. Очень долго получали багаж.
-                    Дождались. встретили с табличкой. Доставили без проблем.
-                    Было нас 6 человек с лыжами. Эту же машину заказали и назад</h5>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-sm-12">
-                <div class="oval">
-                    <img src="img/img2.webp" alt="Виктория Репина">
-                </div>
-                <h4>Виктория Репина</h4>
-                <h5>Ох и намучалась я с геттрансфером! То машину не вовремя подадут,
-                    то цена в 2 раза отличается, сразу чувствуется отношение к клиентам.
-                    В барселона-драйвер же все честно и индивидуально</h5>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-sm-12">
-                <div class="oval">
-                    <img src="img/img3.webp" alt="Андрей Розов">
-                </div>
-                <h4>Андрей Розов</h4>
-                <h5>Очень удобно, что не нужно всю сумму оплачивать заранее,
-                    как в большинстве служб по трансферу из Барселоны!
-                    Все честно, недорого, цены на сайте и по факту аналогичны</h5>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-sm-12">
-                <div class="oval">
-                    <img src="img/img4.webp" alt="Павел Глазин">
-                </div>
-                <h4>Павел Глазин</h4>
-                <h5>Пользовались услугами по трансферу из Барселоны в Андорру
-                    и обратно в начале февраля 2019. Машины были поданы вовремя,
-                    нареканий нет. Спасибо</h5>
-            </div>
-            <div class="margin"></div>
-            <article class="seo_text">
-                <p>Во время визита в Барселону приезжие часто теряются и не могут найти автомобиль или такси. Быстрый
-                    ритм жизни тут накладывает свой отпечаток и на транспортный поток. Человек, только что сошедший из
-                    тихого салона самолета, непременно растеряется, и у него возникнут проблемы с поиском транспорта.
-                    Сервис Геттрансфер, который набирает популярность, тоже не всегда может предоставить услуги
-                    надлежащего уровня.</p>
-                <p>Наша компания Барселона Драйвер специализируется на перевозках и экскурсиях как по Барселоне, так и
-                    по всей Европе. Если вы любите комфорт и цените свое время, стоит заранее озаботиться транспортом. И
-                    мы готовы заняться этим вопросом. Главное для нас – чтобы клиент остался доволен. Мы всячески
-                    стараемся осуществить это. Обширный автопарк, профессиональные водители, подача транспорта
-                    заблаговременно, учтивый персонал, система скидок – это далеко не весь список наших преимуществ. Мы
-                    предлагаем лучший сервис такси в Барселоне.</p>
-                <h2>Обширный автопарк</h2>
-                <p>Перед тем, как заказать трансфер из аэропорта Барселоны, ознакомьтесь с нашими автомобилями. Они
-                    подобраны таким образом, чтобы соответствовать самым широким запросам. Для представительских визитов
-                    у нас есть машины бизнес и представительского классов. Это лучший выбор, если вы привыкли к комфорту
-                    или же вам необходимо произвести впечатление на бизнес партнеров в Барселоне. Этот же класс
-                    автомобилей будет лучшим выбором и в том случае, если ездить придется много. Ноги и спина не
-                    затекут, и вы даже поздним вечером будете чувствовать себя отменно.</p>
-                <p>Если же вы приезжаете большой компанией, то трансфер из аэропорта Барселоны "Эль Прат" должен
-                    осуществляться минивэном или микроавтобусом. Первые вмещают до 6 человек, вторые – больше.
-                    Посчитайте, сколько человек прилетит с вами, и заранее определитесь с типом машины. Но если вы еще
-                    не знаете точно, предупредите менеджера и мы сможем найти способы решения возможных проблем. Так же
-                    предлагаем качественный трансфер Барселона - Андорра и трансфер Барселона - Салоу.</p>
-                <p>Внедорожники станут лучшим выбором, если путь будет пролегать по деревенской местности и бездорожью.
-                    Машины оборудованы мягкой подвеской, чтобы вы могли спокойно работать или наслаждаться окружающими
-                    пейзажами без дискомфорта.</p>
-                <h2>Удобство и забота о клиентах</h2>
-                <p>Барселона находится в субтропическом климатическом поясе. Поэтому тут всегда жарко. К тому же, у нас
-                    редко бывает пасмурная погода. Поэтому главное, что ценится – это вода. Особенно это отмечают
-                    приезжающие из более холодных районов. Мы всегда загружаем в свои автомобили по несколько бутылок
-                    прохладной воды. Она предоставляется абсолютно бесплатно, чтобы клиенты не испытывали дискомфорта. К
-                    тому же, это маленькое, на первый взгляд, дополнение экономит массу вашего времени.</p>
-                <p>Еще одна приятная опция, которой оснащены все машины – это бесплатный WI-FI. Сразу по прилету во
-                    время трансфера по Испании вы сможете позвонить по скайпу или телеграмму своим близким и сообщить им
-                    об удачном приземлении. А для тех, кто приехал в Барселону по рабочей надобности это отличная
-                    возможность назначить встречу деловым партнерам. Вам не нужно тратить огромные деньги на звонки в
-                    роуминге или покупать СИМ-карту, активировать ее и пополнять. Мы уже решили эту проблему за вас,
-                    оснастив каждый автомобиль бесплатной точкой доступа.</p>
-                <h2>Воспитанный и профессиональный персонал</h2>
-                <p>У нас работает воспитанный персонал. Помните, как было каждый раз, когда вы вызывали такси? Водители
-                    там постоянно без умолку болтают и не дают сосредоточиться на своих делах. Мы же позаботились об
-                    этом. Шофер не будет доставать вас разговорами, если видит, что вы заняты. Но если станет скучно, с
-                    ним всегда можно перекинуться словом. Особенно это актуально, если трансфер из аэропорта Барселоны
-                    затянется и дорога будет дальняя.</p>
-                <p>Организовываемые нами экскурсии по известным местам Испании и всей Европе сопровождают
-                    профессиональные гиды. Они отлично знают историю и все интересные места, по которым вы желаете
-                    проехаться. Причем экскурсия может вестись не только из машины. Если группа пожелает, авто может
-                    остановиться, а вы – подойти поближе к достопримечательности. Гид расскажет, чем интересно то или
-                    иное место.</p>
-                <h2>Честные цены и удобная оплата</h2>
-                <p>Наши цены радуют приезжих. Как правило, заказать машину по Барселоне стоит довольно недешево. К тому
-                    же, масса проблем, которые сопровождают это дело, отталкивают туристов от данной услуги. Мы же пошли
-                    иным путем: максимальная прозрачность и честное сотрудничество. Все цены указаны у нас на сайте. Они
-                    всегда актуальны и вы можете ознакомиться со стоимостью заказа авто.</p>
-                <p>Во время бронирования автомобиля вам потребуется заполнить как можно больше пунктов. Так мы сможем
-                    назвать максимально точную цену услуг. Не забудьте указать обратный телефон и электронный адрес. По
-                    ним наш менеджер свяжется с вами для обсуждения всех дополнительных вопросов.</p>
-                <p>Оплата производится как на месте, так и онлайн. Для Barcelona Driver важно, чтобы клиенты доверяли
-                    нам. Поэтому мы сделали все для удобства оплаты услуг.</p>
-                <p>Стоимость рассчитывается, исходя из человеко-часов, километража и типа машины. Нам кажется, что это
-                    самый правильный метод определения цены поездки.</p>
-                <h2>Доверие клиентов</h2>
-                <p>Услугами нашей компании уже воспользовалось множество людей. Они остаются крайне довольными, и в
-                    последующие свои визиты, если им нужно заказать трансфер, обращаются именно к нам. Кроме того, они
-                    активно советуют нас своим близким. С их отзывами вы можете ознакомиться на сайте.</p>
-                <p>Мы гордимся тем, что смогли построить настолько честный и полезный для клиентов бизнес!</p>
-            </article>
-        </div>
-    </div>
-</section>
+    </section>
+</main>
+
 <!-- FOOTER -->
 <footer class="footer">
     <div class="container">
@@ -990,13 +1012,15 @@ setcookie("user_id", $user_id, time()+3600);
         </div>
     </div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="-->
+<!--        crossorigin="anonymous"></script>-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"-->
+<!--        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>-->
+<script src="js/main.js"></script>
 <script src="js/script.js"></script>
+<script src="js/ru.js"></script>
 <div id="myModal" class="modal fade myModal_succes" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -1029,7 +1053,7 @@ setcookie("user_id", $user_id, time()+3600);
         </div>
     </div>
 </div>
-<script src="/js/rus_script.js"></script>
+
 <style>
     .form_hide {
         display: none;
@@ -1037,7 +1061,6 @@ setcookie("user_id", $user_id, time()+3600);
     
     .seo_text h2 {
         font-size: 30px;
-        font-family: 'Montserrat-BlackItalic';
         color: #000;
         text-transform: uppercase;
         text-align: center;
@@ -1045,63 +1068,63 @@ setcookie("user_id", $user_id, time()+3600);
     }
 </style>
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (m, e, t, r, i, k, a) {
-        m[i] = m[i] || function () {
-            (m[i].a = m[i].a || []).push(arguments);
-        };
-        m[i].l = 1 * new Date();
-        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a);
-    })
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-    ym(54508261, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true
-    });
-</script>
-<noscript>
-    <div><img src="https://mc.yandex.ru/watch/54508261" style="position:absolute; left:-9999px;" alt="метрика"/></div>
-</noscript>
+<!--<script type="text/javascript">-->
+<!--    (function (m, e, t, r, i, k, a) {-->
+<!--        m[i] = m[i] || function () {-->
+<!--            (m[i].a = m[i].a || []).push(arguments);-->
+<!--        };-->
+<!--        m[i].l = 1 * new Date();-->
+<!--        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a);-->
+<!--    })-->
+<!--    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");-->
+<!--    ym(54508261, "init", {-->
+<!--        clickmap: true,-->
+<!--        trackLinks: true,-->
+<!--        accurateTrackBounce: true,-->
+<!--        webvisor: true-->
+<!--    });-->
+<!--</script>-->
+<!--<noscript>-->
+<!--    <div><img src="https://mc.yandex.ru/watch/54508261" style="position:absolute; left:-9999px;" alt="метрика"/></div>-->
+<!--</noscript>-->
 <!-- /Yandex.Metrika counter -->
-<script type="text/javascript">
-    var arrgetbtn = [];
-    arrgetbtn.push({
-        "title": "Whatsapp",
-        "icon": "fwidgethelp-whatsapp",
-        "link": "https://wa.me/34635055656",
-        "target": "_blank",
-        "color": "#FFFFFF",
-        "background": "#5EC758"
-    });
-    arrgetbtn.push({
-        "title": "Viber",
-        "icon": "fwidgethelp-viber",
-        "link": "viber://chat?number=34635055656",
-        "target": "_blank",
-        "color": "#FFFFFF",
-        "background": "#8456A7"
-    });
-    var WidGetButtonOptions = {
-        id: "9443a9d37984b85366905c31d1e71ab4",
-        iconopen: "fwidgethelp-commenting-o",
-        maintitle: "",
-        mainbackground: "#FF3338",
-        maincolor: "#FFFFFF",
-        pulse: "widgethelp_pulse",
-        fasize: "2",
-        direction: "top",
-        position: "rightbottom",
-        arrbtn: arrgetbtn
-    };
-    (function () {
-        var script = document.createElement("script");
-        script.type = "text/javascript";
-        script.async = true;
-        script.src = "https://getbtn.com/widget/index.php?id=" + WidGetButtonOptions.id;
-        document.getElementsByTagName("head")[0].appendChild(script);
-    })();</script>
+<!--<script type="text/javascript">-->
+<!--    var arrgetbtn = [];-->
+<!--    arrgetbtn.push({-->
+<!--        "title": "Whatsapp",-->
+<!--        "icon": "fwidgethelp-whatsapp",-->
+<!--        "link": "https://wa.me/34635055656",-->
+<!--        "target": "_blank",-->
+<!--        "color": "#FFFFFF",-->
+<!--        "background": "#5EC758"-->
+<!--    });-->
+<!--    arrgetbtn.push({-->
+<!--        "title": "Viber",-->
+<!--        "icon": "fwidgethelp-viber",-->
+<!--        "link": "viber://chat?number=34635055656",-->
+<!--        "target": "_blank",-->
+<!--        "color": "#FFFFFF",-->
+<!--        "background": "#8456A7"-->
+<!--    });-->
+<!--    var WidGetButtonOptions = {-->
+<!--        id: "9443a9d37984b85366905c31d1e71ab4",-->
+<!--        iconopen: "fwidgethelp-commenting-o",-->
+<!--        maintitle: "",-->
+<!--        mainbackground: "#FF3338",-->
+<!--        maincolor: "#FFFFFF",-->
+<!--        pulse: "widgethelp_pulse",-->
+<!--        fasize: "2",-->
+<!--        direction: "top",-->
+<!--        position: "rightbottom",-->
+<!--        arrbtn: arrgetbtn-->
+<!--    };-->
+<!--    (function () {-->
+<!--        var script = document.createElement("script");-->
+<!--        script.type = "text/javascript";-->
+<!--        script.async = true;-->
+<!--        script.src = "https://getbtn.com/widget/index.php?id=" + WidGetButtonOptions.id;-->
+<!--        document.getElementsByTagName("head")[0].appendChild(script);-->
+<!--    })();</script>-->
 <script src="js/readmore.js"></script>
 <script>
     $('article').readmore({

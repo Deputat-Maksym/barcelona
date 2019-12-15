@@ -22,8 +22,8 @@ RewriteRule ^(.*)$ https://barcelonadriver.com/$1 [R=301,L]
 RewriteRule ^pay_data_base/(.*)$ - [R=404,L]
 
 
-RewriteRule ^js/rus_script.js$ js/script_rus.php [L]
-RewriteRule ^js/eng_script.js$ js/script_eng.php [L]
+#RewriteRule ^js/rus_script.js$ js/script_rus.php [L]
+#RewriteRule ^js/eng_script.js$ js/script_eng.php [L]
 
 # Кеширование картинок, js и css
 FileETag MTime Size
@@ -36,13 +36,13 @@ FileETag MTime Size
 
 <IfModule mod_headers.c>
   <FilesMatch "\.(jpg|gif|png)$">
-    Header append Cache-Control "public"  
+    Header append Cache-Control "public"
   </FilesMatch>
 </IfModule>
 
 <IfModule mod_headers.c>
   <FilesMatch "\.(js|css)$">
     Header append Vary Accept-Encoding
-    Header append Cache-Control "private"  
+    Header append Cache-Control "private"
   </FilesMatch>
 </IfModule>

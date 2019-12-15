@@ -7,11 +7,11 @@
         }
 
         function getCookie(name) {
-            
+
             let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
-            
+
             return matches ? decodeURIComponent(matches[1]) : "";
-        
+
         }
 
         function get_active_select_ref_1() {
@@ -181,43 +181,43 @@
             } else if(active_selecet_1 == "Барселона" && active_selecet_2 == "Фигерас") {
 
                 var price_arr = ["155"+sumbol, "170"+sumbol, "190"+sumbol];
-                
+
             } else if(active_selecet_1 == "Барселона" && active_selecet_2 == "Андорра Ла-Велья") {
 
                 var price_arr = ["205"+sumbol, "225"+sumbol, "260"+sumbol];
-                
+
             } else if(active_selecet_1 == "Барселона" && active_selecet_2 == "Escaldes-Engordany") {
 
                 var price_arr = ["215"+sumbol, "245"+sumbol, "265"+sumbol];
-                
+
             } else if(active_selecet_1 == "Барселона" && active_selecet_2 == "Encamp") {
 
                 var price_arr = ["220"+sumbol, "250"+sumbol, "270"+sumbol];
-                
+
             } else if(active_selecet_1 == "Барселона" && active_selecet_2 == "La Massana") {
 
                 var price_arr = ["215"+sumbol, "245"+sumbol, "275"+sumbol];
-                
+
             } else if(active_selecet_1 == "Барселона" && active_selecet_2 == "La Canillo") {
 
                 var price_arr = ["225"+sumbol, "255"+sumbol, "285"+sumbol];
-                
+
             } else if(active_selecet_1 == "Барселона" && active_selecet_2 == "La El Tarter") {
 
                 var price_arr = ["235"+sumbol, "265"+sumbol, "285"+sumbol];
-                
+
             } else if(active_selecet_1 == "Барселона" && active_selecet_2 == "Soldeu") {
 
                 var price_arr = ["235"+sumbol, "265"+sumbol, "295"+sumbol];
-                
+
             } else if(active_selecet_1 == "Барселона" && active_selecet_2 == "GrauRoig") {
 
                 var price_arr = ["245"+sumbol, "270"+sumbol, "295"+sumbol];
-                
+
             } else if(active_selecet_1 == "Барселона" && active_selecet_2 == "PasdelaCasa") {
 
                 var price_arr = ["255"+sumbol, "275"+sumbol, "295"+sumbol];
-                
+
             } else if(active_selecet_1 == "Барселона" && active_selecet_2 == "Arinsal") {
 
                 var price_arr = ["225"+sumbol, "255"+sumbol, "295"+sumbol];
@@ -313,43 +313,43 @@
             } else if(active_selecet_1 == "Фигерас" && active_selecet_2 == "Барселона") {
 
                 var price_arr = ["155"+sumbol, "170"+sumbol, "190"+sumbol];
-                
+
             } else if(active_selecet_1 == "Андорра Ла-Велья" && active_selecet_2 == "Барселона") {
 
                 var price_arr = ["205"+sumbol, "225"+sumbol, "260"+sumbol];
-                
+
             } else if(active_selecet_1 == "Escaldes-Engordany" && active_selecet_2 == "Барселона") {
 
                 var price_arr = ["215"+sumbol, "245"+sumbol, "265"+sumbol];
-                
+
             } else if(active_selecet_1 == "Encamp" && active_selecet_2 == "Барселона") {
 
                 var price_arr = ["220"+sumbol, "250"+sumbol, "270"+sumbol];
-                
+
             } else if(active_selecet_1 == "La Massana" && active_selecet_2 == "Барселона") {
 
                 var price_arr = ["215"+sumbol, "245"+sumbol, "275"+sumbol];
-                
+
             } else if(active_selecet_1 == "La Canillo" && active_selecet_2 == "Барселона") {
 
                 var price_arr = ["225"+sumbol, "255"+sumbol, "285"+sumbol];
-                
+
             } else if(active_selecet_1 == "La El Tarter" && active_selecet_2 == "Барселона") {
 
                 var price_arr = ["235"+sumbol, "265"+sumbol, "285"+sumbol];
-                
+
             } else if(active_selecet_1 == "Soldeu" && active_selecet_2 == "Барселона") {
 
                 var price_arr = ["235"+sumbol, "265"+sumbol, "295"+sumbol];
-                
+
             } else if(active_selecet_1 == "GrauRoig" && active_selecet_2 == "Барселона") {
 
                 var price_arr = ["245"+sumbol, "270"+sumbol, "295"+sumbol];
-                
+
             } else if(active_selecet_1 == "PasdelaCasa" && active_selecet_2 == "Барселона") {
 
                 var price_arr = ["255"+sumbol, "275"+sumbol, "295"+sumbol];
-                
+
             } else if(active_selecet_1 == "Arinsal" && active_selecet_2 == "Барселона") {
 
                 var price_arr = ["225"+sumbol, "255"+sumbol, "295"+sumbol];
@@ -357,7 +357,7 @@
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "Барселона") {
 
                 var price_arr = ["40"+sumbol, "50"+sumbol, "65"+sumbol];
-                
+
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "Ситджес") {
 
                 var price_arr = ["70"+sumbol, "90"+sumbol, "110"+sumbol];
@@ -397,11 +397,11 @@
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "Cruise Port") {
 
                 var price_arr = ["40"+sumbol, "50"+sumbol, "65"+sumbol];
-                
+
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "Бадалона") {
 
                 var price_arr = ["45"+sumbol, "55"+sumbol, "70"+sumbol];
-                
+
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "Монкада-и-Решак") {
 
                 var price_arr = ["50"+sumbol, "60"+sumbol, "70"+sumbol];
@@ -441,7 +441,7 @@
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "Кастель-Пладжа-де-Аро") {
 
                 var price_arr = ["120"+sumbol, "140"+sumbol, "160"+sumbol];
-                
+
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "Аэропорт Жирона") {
 
                 var price_arr = ["105"+sumbol, "125"+sumbol, "145"+sumbol];
@@ -449,51 +449,51 @@
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "Фигерас") {
 
                 var price_arr = ["160"+sumbol, "175"+sumbol, "195"+sumbol];
-                
+
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "Андорра Ла-Велья") {
 
                 var price_arr = ["205"+sumbol, "225"+sumbol, "260"+sumbol];
-                
+
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "Escaldes-Engordany") {
 
                 var price_arr = ["215"+sumbol, "245"+sumbol, "265"+sumbol];
-                
+
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "Encamp") {
 
                 var price_arr = ["220"+sumbol, "250"+sumbol, "270"+sumbol];
-                
+
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "La Massana") {
 
                 var price_arr = ["215"+sumbol, "245"+sumbol, "275"+sumbol];
-                
+
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "La Canillo") {
 
                 var price_arr = ["225"+sumbol, "255"+sumbol, "285"+sumbol];
-                
+
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "La El Tarter") {
 
                 var price_arr = ["235"+sumbol, "265"+sumbol, "285"+sumbol];
-                
+
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "Soldeu") {
 
                 var price_arr = ["235"+sumbol, "265"+sumbol, "295"+sumbol];
-                
+
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "GrauRoig") {
 
                 var price_arr = ["245"+sumbol, "270"+sumbol, "295"+sumbol];
-                
+
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "PasdelaCasa") {
 
                 var price_arr = ["255"+sumbol, "275"+sumbol, "295"+sumbol];
-                
+
             } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "Arinsal") {
 
                 var price_arr = ["225"+sumbol, "255"+sumbol, "295"+sumbol];
-           
+
             } else if(active_selecet_1 == "Барселона" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["40"+sumbol, "50"+sumbol, "65"+sumbol];
-                
+
             } else if(active_selecet_1 == "Ситджес" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["70"+sumbol, "90"+sumbol, "110"+sumbol];
@@ -533,11 +533,11 @@
             } else if(active_selecet_1 == "Cruise Port" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["40"+sumbol, "50"+sumbol, "65"+sumbol];
-                
+
             } else if(active_selecet_1 == "Бадалона" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["45"+sumbol, "55"+sumbol, "70"+sumbol];
-                
+
             } else if(active_selecet_1 == "Монкада-и-Решак" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["50"+sumbol, "60"+sumbol, "70"+sumbol];
@@ -577,7 +577,7 @@
             } else if(active_selecet_1 == "Кастель-Пладжа-де-Аро" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["120"+sumbol, "140"+sumbol, "160"+sumbol];
-                
+
             } else if(active_selecet_1 == "Аэропорт Жирона" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["105"+sumbol, "125"+sumbol, "145"+sumbol];
@@ -585,47 +585,47 @@
             } else if(active_selecet_1 == "Фигерас" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["160"+sumbol, "175"+sumbol, "195"+sumbol];
-                
+
             } else if(active_selecet_1 == "Андорра Ла-Велья" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["205"+sumbol, "225"+sumbol, "260"+sumbol];
-                
+
             } else if(active_selecet_1 == "Escaldes-Engordany" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["215"+sumbol, "245"+sumbol, "265"+sumbol];
-                
+
             } else if(active_selecet_1 == "Encamp" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["220"+sumbol, "250"+sumbol, "270"+sumbol];
-                
+
             } else if(active_selecet_1 == "La Massana" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["215"+sumbol, "245"+sumbol, "275"+sumbol];
-                
+
             } else if(active_selecet_1 == "La Canillo" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["225"+sumbol, "255"+sumbol, "285"+sumbol];
-                
+
             } else if(active_selecet_1 == "La El Tarter" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["235"+sumbol, "265"+sumbol, "285"+sumbol];
-                
+
             } else if(active_selecet_1 == "Soldeu" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["235"+sumbol, "265"+sumbol, "295"+sumbol];
-                
+
             } else if(active_selecet_1 == "GrauRoig" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["245"+sumbol, "270"+sumbol, "295"+sumbol];
-                
+
             } else if(active_selecet_1 == "PasdelaCasa" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["255"+sumbol, "275"+sumbol, "295"+sumbol];
-                
+
             } else if(active_selecet_1 == "Arinsal" && active_selecet_2 == "Аэропорт Эль Прат") {
 
                 var price_arr = ["225"+sumbol, "255"+sumbol, "295"+sumbol];
-            
+
             } else {
 
                 var price_arr = ["цена по запросу", "цена по запросу", "цена по запросу", "цена по запросу", "цена по запросу"];
@@ -649,13 +649,13 @@
                 $('input[type=text].sitebg2').val(price_f);
 
                 $(".info_for_back_transf").show();
-                
+
             } else {
-                
+
                 $('input[type=text].sitebg2').val('0€');
 
                 $(".info_for_back_transf").hide();
-                
+
             }
 
         }
@@ -838,9 +838,9 @@
                     var price_transf = $('input[name="book-transfer"]:checked').parent(".fl").find("h6").text();
                     var car_name = $('input[name="book-transfer"]:checked').parent(".fl").find("h5").text();
                     var itog = $(".unitCount").text();
-      
+
                     $.ajax({
-      
+
                         url: "/mail-ru-pay.php",
                         type: "post",
 
@@ -870,11 +870,11 @@
                         },
 
                         success: function(data) {
-        
+
                             $(".result").html(data);
-          
+
                         }
-        
+
                     });
 
 
@@ -884,7 +884,7 @@
 
 
             $(".final_order_nopay").on("click", function() {
-    
+
                 var number_text = $(".number_text").val();
                 var data_text_1 = $(".data_text_1").val();
                 var time_text_1 = $(".time_text_1").val();
@@ -906,9 +906,9 @@
                 var price_transf = $('input[name="book-transfer"]:checked').parent(".fl").find("h6").text();
                 var car_name = $('input[name="book-transfer"]:checked').parent(".fl").find("h5").text();
                 var itog = $(".unitCount").text();
-      
+
                 $.ajax({
-      
+
                     url: "/mail-ru.php",
                     type: "post",
 
@@ -937,13 +937,13 @@
                     },
 
                     success: function(data) {
-        
+
                         $(".result").html(data);
-          
+
                     }
-        
+
                 });
-      
+
             });
 
             $("body").append('<form action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_xclick" /><input type="hidden" name="charset" value="utf-8" /><input type="hidden" name="business" value="igorkapabarcelona@gmail.com" /><input type="hidden" name="return" value="https://barcelonadriver.com/?pay=success" /><input type="hidden" name="currency_code" value="EUR" /><input type="hidden" name="cancel_return" value="https://barcelonadriver.com/?pay=fail" /><input type="hidden" name="notify_url" value="https://barcelonadriver.com/paypal_result.php" /><input type="hidden" name="undefined_quantity" value="1" /><input type="hidden" name="custom" value="'+getCookie("dle_hash")+'||ru" /><input type="hidden" name="rm" value="POST" /><input type="hidden" name="no_note" value="1" /><input type="hidden" name="no_shipping" value="1" /><input type="hidden" name="lc" value="RU"><input type="hidden" name="item_name" value="" /><input type="hidden" name="amount" value="" /></form>');
@@ -952,20 +952,20 @@
             var exists = pattern.test(window.location.search);
 
             if(exists) {
-    
+
                 $(".myModal_succes").modal("show");
                 window.history.replaceState({}, document.title, window.location.pathname);
-        
+
             }
 
             var pattern_1 = /fail/;
             var exists_1 = pattern_1.test(window.location.search);
 
             if(exists_1) {
-    
+
                 $(".myModal_fail").modal("show");
                 window.history.replaceState({}, document.title, window.location.pathname);
-        
+
             }
 
         });
