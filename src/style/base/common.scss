@@ -54,6 +54,8 @@
   --transition2: all ease-in 200ms;
   --transition4: all ease-in 400ms;
   --transition6: all ease-in 600ms;
+
+  --btn-grad: linear-gradient(to right, #e52c43, #ff6b01);
 }
 
 html {
@@ -141,16 +143,33 @@ input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
   width: 100%;
   text-transform: uppercase;
-  font-size: 1.125rem;
-  font-weight: 500;
-  border: 2px solid;
-  border-radius: 22px;
 
   &:hover {
-    transition: var(--transition);
+    transition: var(--transition1);
+  }
+
+  &--grad {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 700;
+    height: 60px;
+    border-radius: 6px;
+    background: var(--btn-grad);
+    border: 1px solid transparent;
+
+    &:hover {
+      border-color: #e52c43;
+      background: #fff;
+      color: #e52c43;
+    }
+  }
+
+  &--score {
+    width: 270px;
+    margin: 0 30px;
   }
 }
 
