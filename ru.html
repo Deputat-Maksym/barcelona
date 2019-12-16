@@ -101,7 +101,7 @@
 
 <main>
     <!-- SECTION 1 -->
-    <section class="sc-1 layer-container">
+    <section class="sc-1 layer-container section-pad">
         <div class="layer-back">
             <picture>
                 <source type="image/webp" srcset="img/section-1-bg.webp">
@@ -117,7 +117,7 @@
             <div class="route-block">
                 <div class="form-text">УЗНАЙ СТОИМОСТЬ</div>
                 <form action="">
-                    <div class="bef1">
+                    <div class="bef1" data-from="откуда">
                         <select name="" id="first_select">
                             <option value="1" selected>Аэропорт Эль Прат</option>
                             <option value="2" disabled>Барселона</option>
@@ -156,8 +156,8 @@
                             <option value="35">Arinsal</option>
                         </select>
                     </div>
-                    <img src="/img/refresh-button-white.png" alt="обновить данные" class="one_ref">
-                    <div class="bef1 bef5">
+                    <img src="/img/refresh-button-white.png" alt="&#8596" class="one_ref">
+                    <div class="bef1 bef5" data-from="куда">
                         <select name="" id="second_select">
                             <option value="1" disabled>Аэропорт Эль Прат</option>
                             <option value="2" selected>Барселона</option>
@@ -203,6 +203,7 @@
             </div>
         </div>
     </section>
+    
     <!-- Modal 2 ТРАНСФЕР -->
     <div style="display:none" id="myModal2" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -403,6 +404,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Modal 3 забронировать экскурсию -->
     <div style="display:none" id="myModal3" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -456,7 +458,36 @@
             </div>
         </div>
     </div>
+    
     <!-- SECTION 2 -->
+    <section class="sc-2 pref section-pad">
+        <div class="inner-wrap pref">
+            <div class="pref-item">
+                <div class="pref-item-img">
+                    <img src="img/man.png" alt="Лучшие водители">
+                </div>
+                <div class="pref-item-title">Лучшие водители</div>
+                <div class="pref-item-text">Вы будете спокойны всю поездку, у нас работают только профессиональные и лицензированные водители</div>
+            </div>
+            <div class="pref-item">
+                <div class="pref-item-img">
+                    <img src="img/fly.png" alt="Никаких задержек">
+                </div>
+                <div class="pref-item-title">Никаких задержек</div>
+                <div class="pref-item-text">Никаких задержек, все пунктуально, все вовремя. Наши водители контролируют время приелета вашего рейса</div>
+            </div>
+            <div class="pref-item">
+                <div class="pref-item-img">
+                    <img src="img/mob.png" alt="Всегда на связи">
+                </div>
+                <div class="pref-item-title">Всегда на связи</div>
+                <div class="pref-item-text">Мы всегда на связи. Всю нужную информацию вы можете передать нам по телефону, email или мессенджеры</div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
     <section class="sc-2 main-menu-item" id="scroll1">
         <div class="container">
             <div class="row">
