@@ -1,0 +1,149 @@
+.sc-3 {
+  background: var(--mid-gray);
+
+  .section-pad {
+    padding: 50px 0;
+  }
+
+  .layer-container {
+    height: 500px;
+  }
+
+  table {
+    width: 100%;
+    font-size: 1.125rem;
+
+    tr:nth-child(odd) {
+      background: #fff;
+    }
+
+    td {
+      padding: 10px 20px;
+      text-align: center;
+      width: 200px;
+
+      &.b-l {
+        text-align: left;
+        width: calc(100% - 600px);
+      }
+    }
+  }
+}
+
+.price-tables {
+  padding: 70px 0 100px;
+
+  &-input {
+    display: none;
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -14px;
+
+    label {
+      width: 270px;
+      margin: 10px 14px;
+      cursor: pointer;
+      border: 2px solid #e52c43;
+      border-image: var(--btn-grad) 10% stretch;
+      border-image-width: 2px;
+
+      &:hover {
+        background: var(--btn-grad);
+      }
+    }
+  }
+
+  &-item {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition4);
+  }
+}
+
+#barcelona:checked {
+  & ~ .inner-wrap .barcelona {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    transition: var(--transition4);
+  }
+
+  & ~ .btns-sect label[for="barcelona"] {
+    background: var(--btn-grad);
+  }
+}
+
+#dorada:checked {
+  & ~ .inner-wrap .dorada {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    transition: var(--transition4);
+  }
+
+  & ~ .btns-sect label[for="dorada"] {
+    background: var(--btn-grad);
+  }
+}
+
+#brava:checked {
+  & ~ .inner-wrap .brava {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    transition: var(--transition4);
+  }
+
+  & ~ .btns-sect label[for="brava"] {
+    background: var(--btn-grad);
+  }
+}
+
+#andorra:checked {
+  & ~ .inner-wrap .andorra {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    transition: var(--transition4);
+  }
+
+  & ~ .btns-sect label[for="andorra"] {
+    background: var(--btn-grad);
+  }
+}
+
+tr.t-title {
+  height: 70px;
+  font-weight: 700;
+}
+
+tr.normal {
+  height: 50px;
+}
+
+.b-t {
+  text-transform: uppercase;
+}
+
+.new-p {
+  color: var(--red);
+
+  span {
+    color: #000;
+    text-decoration: line-through;
+  }
+}
+
+.btn--order {
+  width: 100%;
+  max-width: 365px;
+  margin: 40px auto 0;
+}
+
+
+

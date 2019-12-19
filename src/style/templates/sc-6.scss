@@ -1,0 +1,34 @@
+.sc-6 {
+  padding: 85px 0;
+
+}
+
+.excursions {
+  &-item {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background: #000;
+    border-radius: 6px;
+
+    &-layer {
+      height: 365px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      img {
+        display: block;
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    &-descr {
+      position: relative;
+      padding: 365px 25px 25px;
+      background: linear-gradient(to top,#000 30%,rgba(0,0,0,.1));
+    }
+  }
+}

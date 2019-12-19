@@ -3,18 +3,19 @@
 @import 'base/common';
 @import 'base/fonts';
 
-/*slider*/
-//@import 'libraries/glide.core';
+/*libraries*/
+@import 'libraries/slick';
 //@import 'libraries/glide.theme';
-
-
 
 /*templates*/
 @import 'templates/header';
 @import 'templates/sc-1';
 @import 'templates/sc-2';
+@import 'templates/sc-3';
+@import 'templates/sc-4';
+@import 'templates/sc-5';
+@import 'templates/sc-6';
 //@import 'templates/footer';
 //@import 'templates/modal-window';
-//@import 'templates/faq-single';
 
 

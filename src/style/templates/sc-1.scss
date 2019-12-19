@@ -5,12 +5,6 @@
     padding: 45px 0;
   }
 
-  .inner-wrap {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
   .bef1 {
     position: relative;
 
@@ -83,5 +77,10 @@
   cursor: pointer;
   margin: 0 7px;
   color: #fff;
+}
+
+.btn--score {
+  width: 270px;
+  margin: 0 30px;
 }
 

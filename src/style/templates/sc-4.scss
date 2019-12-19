@@ -1,0 +1,53 @@
+.sc-4 {
+  &.section-pad {
+    height: 500px;
+    padding: 50px 0;
+  }
+
+  .section-aligning {
+    justify-content: center;
+  }
+
+  .main-title {
+    flex-grow: 0;
+  }
+}
+
+.about-text {
+  text-align: center;
+  color: #fff;
+  padding: 20px 50px;
+  background: rgba(0,0,0,.4);
+  position: relative;
+
+  span {
+    text-transform: uppercase;
+  }
+}
+
+.corner-border {
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e52c43;
+    display: block;
+    width: 70px;
+    height: 2px;
+  }
+
+  &:after {
+    width: 2px;
+    height: 70px;
+  }
+
+  &--rev {
+    &:before, &:after {
+      top: unset;
+      left: unset;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
