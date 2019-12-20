@@ -1,0 +1,53 @@
+.sc-9 {
+  padding: 85px 0;
+  
+  .main-title {
+    color: #000;
+  }
+}
+
+.circle {
+  margin: 0 0 36px;
+
+  img {
+    margin: 0 auto;
+    display: block;
+    width: 250px;
+    min-width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+}
+
+.reviews {
+  &-list {
+    margin: 40px 0 0;
+    opacity: 0;
+
+    &.slick-initialized {
+      opacity: 1;
+      transition: var(--transition4);
+    }
+  }
+
+  &-item {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    display: block !important;
+
+    &-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 0 16px;
+      text-transform: uppercase;
+    }
+
+    &-text {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+

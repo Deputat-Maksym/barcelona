@@ -1,41 +1,19 @@
-if(document.querySelector('.feedback-rotator')) {
-  var slider2 = new Glide('.feedback-rotator', {
-    type: 'carousel',
-    perView: 3,
-    focusAt: 'center',
-    breakpoints: {
-      800: {
-        perView: 1
-      }
-    }
-  });
+$(document).ready(function () {
+    $('.js-slider-reviews').slick({
+        // centerMode: true,
+        arrows: true,
+        // centerPadding: '0px',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // responsive: [
+        //     {
+        //         breakpoint: 1100,
+        //         settings: {
+        //             // centerMode: false,
+        //             slidesToShow: 3
+        //         }
+        //     }
+        // ]
+    });
+});
 
-  slider2.on('build.after', function() {
-    getSlides()
-  });
-
-  slider2.on('move.after', function() {
-    getSlides()
-  });
-
-  slider2.mount();
-
-  function getSlides() {
-    var activeSlide = document.querySelector('.feedback-rotator .glide__slide--active');
-    var prev = activeSlide.previousElementSibling.querySelector('.feedback-img img');
-    var center = activeSlide.querySelector('.feedback-img img');
-    var next = activeSlide.nextElementSibling.querySelector('.feedback-img img');
-
-    setImg(prev);
-    setImg(center);
-    setImg(next);
-  }
-
-  function setImg(slide) {
-    var processed = slide.getAttribute('data-processed');
-    if(processed === 'false') {
-      slide.setAttribute('src', slide.getAttribute('data-src'));
-      slide.setAttribute('data-processed', 'true');
-    }
-  }
-};

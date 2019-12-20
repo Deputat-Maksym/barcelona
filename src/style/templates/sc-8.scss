@@ -1,0 +1,61 @@
+.sc-8 {
+  &.section-pad {
+    height: 610px;
+    padding: 65px 0 0;
+  }
+
+  .main-title {
+    color: #fff;
+    margin: 0 0 35px;
+    align-items: flex-start;
+
+    &:after {
+      transform: translate(0);
+      left: 0;
+    }
+  }
+
+  .inner-wrap {
+    position: relative;
+    height: 100%;
+  }
+
+  .aside {
+    &-cont {
+      padding: 0 0 0 16px;
+
+      &-text {
+        color: #fff;
+        margin: 0 0 35px;
+      }
+
+      &--rev {
+        margin: 0 0 0 auto;
+      }
+
+      &-prices {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0 0 15px;
+      }
+    }
+
+    &-img {
+      right: 620px;
+      left: unset;
+
+    }
+  }
+}
+
+.shop-price {
+  font-size: 3.125rem;
+  font-weight: 700;
+  background: var(--btn-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #e52c43;
+}
+

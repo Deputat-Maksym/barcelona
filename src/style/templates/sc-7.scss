@@ -1,0 +1,45 @@
+.sc-7 {
+  &.section-pad {
+    height: 610px;
+    padding: 85px 0 0;
+  }
+
+  .main-title {
+    color: #000;
+    margin: 0 0 35px;
+    align-items: flex-start;
+
+    &:after {
+      transform: translate(0);
+      left: 0;
+    }
+  }
+
+  .inner-wrap {
+    position: relative;
+    height: 100%;
+  }
+}
+
+.aside {
+  &-cont {
+    width: 600px;
+    padding: 0 32px 0 0;
+
+    &-text {
+      margin: 0 0 60px;
+    }
+  }
+
+  &-img {
+    position: absolute;
+    bottom: 0;
+    left: 620px;
+
+  }
+}
+
+.btn--aside {
+  width: 100%;
+  max-width: 370px;
+}

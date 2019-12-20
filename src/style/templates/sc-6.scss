@@ -4,15 +4,49 @@
 }
 
 .excursions {
+  &-list {
+    display: flex;
+    margin: 0 -15px;
+    opacity: 0;
+    visibility: hidden;
+
+    &.slick-initialized {
+      opacity: 1;
+      visibility: visible;
+      transition: var(--transition4);
+    }
+
+    .slick-track {
+      display: flex;
+    }
+
+    .slick-slide {
+      min-height: 100%;
+      height: auto;
+      padding: 15px;
+
+      > div {
+        height: 100%;
+      }
+    }
+  }
+
   &-item {
     position: relative;
     overflow: hidden;
     color: #fff;
     background: #000;
     border-radius: 6px;
+    height: 100%;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 0 5px rgba(255,255,255,.15);
+      transition: var(--transition1);
+    }
 
     &-layer {
-      height: 365px;
+      height: 310px;
       position: absolute;
       top: 0;
       left: 50%;
@@ -27,8 +61,23 @@
 
     &-descr {
       position: relative;
-      padding: 365px 25px 25px;
-      background: linear-gradient(to top,#000 30%,rgba(0,0,0,.1));
+      padding: 280px 25px 25px;
+      background: linear-gradient(to top,#000 25%,rgba(0,0,0,.1));
+    }
+
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.5rem;
+      margin: 0 0 10px;
     }
   }
+}
+
+.exc-price {
+  font-weight: 700;
+  background: var(--btn-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #e52c43;
 }
