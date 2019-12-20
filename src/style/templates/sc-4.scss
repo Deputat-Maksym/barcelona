@@ -1,8 +1,5 @@
 .sc-4 {
-  &.section-pad {
-    height: 500px;
-    padding: 50px 0;
-  }
+  height: calc(100vh - 155px);
 
   .section-aligning {
     justify-content: center;

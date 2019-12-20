@@ -1,8 +1,8 @@
 .sc-1 {
-  height: 700px;
+  height: calc(100vh - 150px);
 
   &.section-pad {
-    padding: 45px 0;
+    //padding: 45px 0;
   }
 
   .bef1 {
@@ -82,5 +82,15 @@
 .btn--score {
   width: 270px;
   margin: 0 30px;
+}
+
+.commerc-mess {
+  background: var(--btn-grad);
+  -webkit-background-clip: text;
+  color: #e52c43;
+  font-size: 2.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 5vh 0 0;
 }
 

@@ -1,8 +1,13 @@
 $(document).ready(function () {
+    var currId = '';
+
     $(".main-menu").find("a").on("click", function(  ){
+        $('.main-menu a').removeClass('current-sect');
+        $(this).addClass('current-sect');
         var id = $( this ).attr('href'),
             top = $( id ).offset().top - 155;
         $('body,html').animate( {scrollTop: top}, 600);
+        currId = id.slice(1);
     });
 
     var options = {
@@ -12,26 +17,13 @@ $(document).ready(function () {
         threshold: 0
     };
 
-    var linksList = document.querySelectorAll(".main-menu a"),
-        linkStatus = {};
-    for(var t = 0; t < linksList.length; t += 1) {
-        var linkCurrent = linksList[t].getAttribute('href').slice(1);
-        linkStatus[linkCurrent] = false;
-    };
-
     var callback = function(entries, observer) {
         entries.forEach(function(entry) {
             var sectionAnchor = entry.target.getAttribute('id');
 
-            if (entry.intersectionRatio > 0 && linkStatus[sectionAnchor] === false) {
-                linkStatus[sectionAnchor] = true;
-
-                $('.main-menu a').removeClass('current-sect');
-                $(".main-menu a[href='#" + sectionAnchor + "']").addClass('current-sect');
-            } else {
+            if (entry.isIntersecting === false && currId === sectionAnchor) {
                 $(".main-menu a[href='#" + sectionAnchor + "']").removeClass('current-sect');
-                linkStatus[sectionAnchor] = false;
-            }
+            };
         })
     };
 
