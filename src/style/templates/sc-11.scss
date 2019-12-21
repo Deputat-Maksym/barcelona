@@ -1,0 +1,27 @@
+.sc-11 {
+  background: var(--btn-grad);
+  padding: 32px 0;
+}
+
+.accept {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &-pay {
+
+    img {
+      max-height: 45px;
+      max-width: 100%;
+      width: auto;
+      margin: 0 0 0 36px;
+    }
+  }
+}
