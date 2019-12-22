@@ -1,5 +1,19 @@
 $(document).ready(function () {
 
+    if ($(document).scrollTop() > 106) {
+        $(".header").addClass("min-height");
+    }
+
+    $(window).scroll(function() {
+
+        if ($(document).scrollTop() > 106) {
+            $(".header").addClass("min-height");
+        }
+        else {
+            $(".header").removeClass("min-height");
+        }
+    });
+
     $('.checkbox').click(function () {
         if (this.checked) {
             $('input[type=text].sitebg').val('20€');
@@ -22,7 +36,7 @@ $(document).ready(function () {
     });
 
     $('.js-arrow-btn').on('click', function () {
-        $(".numbers-sect-phone").toggleClass('numbers-sect-phone--open');
+        $(this).parents(".numbers-sect-phone").toggleClass('numbers-sect-phone--open');
     });
 
     $('body').on('click', function (e) {
@@ -31,6 +45,21 @@ $(document).ready(function () {
         }
     });
 
+    // humburger menu
+    $('#menu-trigger').on('click', function () {
+        $(this).toggleClass('is-open');
+        $('.side-bottom').toggleClass('show-menu');
+        $('html').toggleClass('hidden');
+    });
+
+    if(window.matchMedia('(max-width: 967px)').matches) {
+        $('.main-menu a').on('click', function() {
+            $('#menu-trigger').removeClass('is-open');
+            $('.side-bottom').removeClass('show-menu');
+            $('html').removeClass('hidden');
+        });
+    }
+    // humburger menu end
 });
 
 // Time Picker Initialization

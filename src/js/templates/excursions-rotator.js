@@ -5,14 +5,25 @@ $(document).ready(function () {
         // centerPadding: '0px',
         slidesToShow: 4,
         slidesToScroll: 1,
-        // responsive: [
-        //     {
-        //         breakpoint: 1100,
-        //         settings: {
-        //             // centerMode: false,
-        //             slidesToShow: 3
-        //         }
-        //     }
-        // ]
+        responsive: [
+            {
+                breakpoint: 1120,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 845,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 580,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 });

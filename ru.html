@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<header class="header" style="min-width: 1280px">
+<header class="header">
     <div class="side-top">
         <div class="inner-wrap">
             <div class="pad-left side-top-cont">
@@ -37,9 +37,9 @@
                     Трансферы и экскурсии по Барселоне и другим городам
                 </div>
                 <ul class="lang-menu">
-                    <!--<li><a href="/eng.html"><img src="img/eng.png" alt="английская версия сайта">English</a></li>-->
-                    <li><a href="#"><img src="img/eng.png" alt="английская версия сайта">English</a></li>
-                    <li class="current-lang"><img src="img/rus.png" alt="русская версия сайта">Русский</li>
+                    <!--<li><a href="/eng.html"><img src="img/eng.png" alt="английская версия сайта"><span>English</span></a></li>-->
+                    <li><a href="#"><img src="img/eng.png" alt="английская версия сайта"><span>English</span></a></li>
+                    <li class="current-lang"><img src="img/rus.png" alt="русская версия сайта"><span>Русский</span></li>
                 </ul>
                 <div class="contact-menu">
                     <a href="https://wa.me/34635055656" rel="nofollow" target="blank" title="Нажмите, чтобы написать нам в Whatsapp">
@@ -60,12 +60,38 @@
                         <a class="numbers-sect-mail" href="mailto:support@barcelonadriver.com">info@barcelonadriver.com</a>
                     </div>
                 </div>
+    
+                <div class="menu">
+                    <button id="menu-trigger" class="btn menu__btn">
+                        <span class="menu__burger"></span>
+                        <span class=menu__exit></span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
     
     <div class="side-bottom">
         <div class="inner-wrap">
+            <div class="contact-menu contact-menu--mob">
+                <a href="https://wa.me/34635055656" rel="nofollow" target="blank" title="Нажмите, чтобы написать нам в Whatsapp">
+                    <img src="img/whatup.png" alt="Ватсапп">
+                </a>
+                <a href="viber://chat?number=34635055656" rel="nofollow" target="blank" title="Нажмите, чтобы написать нам в Viber">
+                    <img src="img/viber.png" alt="Вайбер">
+                </a>
+                <div class="numbers-sect">
+                    <div class="numbers-sect-phone">
+                        <button class="arrow-btn js-arrow-btn"></button>
+                        <a class="num num-top" href="tel:34635055656">+34 635 05 56 56</a>
+                        <div class="numbers-sect-phone-hidden">
+                            <a class="num" href="tel:34635726490">+34 635 72 64 90</a>
+                            <a class="num" href="tel:34034622264">+34 034 62 22 64</a>
+                        </div>
+                    </div>
+                    <a class="numbers-sect-mail" href="mailto:support@barcelonadriver.com">info@barcelonadriver.com</a>
+                </div>
+            </div>
             <div class="pad-left side-bottom-cont">
                 <nav>
                     <ul class="main-menu">
@@ -113,13 +139,13 @@
         <div class="inner-wrap section-aligning">
             <h1 class="main-title">
                 <span>Трансферы и такси в Барселоне</span>
-                <span class="sub-title">с русскоговорящими водителями</span>
-                <span class="commerc-mess">
-                    <!-- МЕСТО ДЛЯ РЕКЛАМНОГО ТЕКСТА -->
+                <span class="h3 sub-title">с русскоговорящими водителями</span>
+                <span class="h2 commerc-mess">
+<!--                     МЕСТО ДЛЯ РЕКЛАМНОГО ТЕКСТА-->
                 </span>
             </h1>
             <div class="route-block">
-                <div class="form-text">УЗНАЙ СТОИМОСТЬ</div>
+                <div class="h3 form-text">УЗНАЙ СТОИМОСТЬ</div>
                 <form action="">
                     <div class="bef1" data-from="откуда">
                         <select name="" id="first_select">
@@ -523,7 +549,7 @@
         <div class="inner-wrap">
             <div class="price-tables">
                 <div class="price-tables-item barcelona">
-                    <table style="overflow-x:auto;">
+                    <table>
                         <tr class="t-title">
                             <td class="b-l">Направление</td>
                             <td class="b-t">1-4 человека стандарт</td>
@@ -552,7 +578,7 @@
                 </div>
                 
                 <div class="price-tables-item dorada">
-                    <table style="overflow-x:auto;">
+                    <table>
                         <tr class="t-title">
                             <td class="b-l">Направление</td>
                             <td class="b-t">1-4 человека стандарт</td>
@@ -629,7 +655,7 @@
                 </div>
 
                 <div class="price-tables-item brava">
-                    <table style="overflow-x:auto;">
+                    <table>
                         <tr class="t-title">
                             <td class="b-l">Направление</td>
                             <td class="b-t">1-4 человека стандарт</td>
@@ -718,7 +744,7 @@
                 </div>
 
                 <div class="price-tables-item andorra">
-                    <table style="overflow-x:auto;">
+                    <table>
                         <tr class="t-title">
                             <td class="b-l">Направление</td>
                             <td class="b-t">1-4 человека стандарт</td>
@@ -962,7 +988,7 @@
             <div class="aside-cont">
                 <h2 class="main-title line-bot">
                     <span>Фотограф</span>
-                    <span class="sub-title">услуги профессионалов</span>
+                    <span class="h3 sub-title">услуги профессионалов</span>
                 </h2>
                 <div class="aside-cont-text">
                     Всё очень просто. Теперь вам не нужно рыскать по тысячи форумов, искать
@@ -996,7 +1022,7 @@
             <div class="aside-cont aside-cont--rev">
                 <h2 class="main-title line-bot">
                     <span>ШОППИНГ</span>
-                    <span class="sub-title">гид по магазинам</span>
+                    <span class="h3 sub-title">гид по магазинам</span>
                 </h2>
                 <div class="aside-cont-text">
                     Шоппинг в Испании — сплошное удовольствие. В городах есть торговые
@@ -1179,7 +1205,7 @@
     <section class="sc-11">
         <div class="inner-wrap">
             <div class="accept">
-                <div class="accept-title">МЫ ПРИНИМАЕМ:</div>
+                <div class="h2 accept-title">МЫ ПРИНИМАЕМ:</div>
                 <div class="accept-pay">
                     <img src="img/visa.png" alt="visa">
                     <img src="img/mc.png" alt="MasterCard">
@@ -1234,7 +1260,7 @@
                     по Барселоне и другим городам. Все права защищены.
                 </div>
             </div>
-            <div class="contact-menu">
+            <div class="contact-menu contact-menu--footer">
                 <a href="https://wa.me/34635055656" rel="nofollow" target="blank" title="Нажмите, чтобы написать нам в Whatsapp">
                     <img src="img/whatup.png" alt="Ватсапп">
                 </a>

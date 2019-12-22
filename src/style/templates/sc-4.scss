@@ -1,8 +1,17 @@
 .sc-4 {
-  height: calc(100vh - 155px);
+  min-height: calc(100vh - 106px);
+
+  @media only screen and (max-width: 967px) {
+    min-height: calc(100vh - 50px);
+  }
 
   .section-aligning {
     justify-content: center;
+    min-height: calc(90vh - 106px);
+
+    @media only screen and (max-width: 967px) {
+      min-height: calc(90vh - 50px);
+    }
   }
 
   .main-title {
@@ -16,6 +25,11 @@
   padding: 20px 50px;
   background: rgba(0,0,0,.4);
   position: relative;
+
+  @media only screen and (max-width: 640px) {
+    text-align: left;
+    padding: 20px;
+  }
 
   span {
     text-transform: uppercase;

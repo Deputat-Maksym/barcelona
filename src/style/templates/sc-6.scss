@@ -1,5 +1,22 @@
 .sc-6 {
-  min-height: calc(100vh - 155px);
+  min-height: calc(100vh - 106px);
+
+  @media only screen and (max-width: 967px) {
+    min-height: calc(100vh - 50px);
+  }
+
+  .section-aligning {
+    min-height: calc(90vh - 106px);
+    justify-content: center;
+
+    @media only screen and (max-width: 967px) {
+      min-height: calc(90vh - 50px);
+    }
+  }
+
+  .main-title {
+    flex-grow: 0;
+  }
 }
 
 .excursions {
@@ -38,6 +55,12 @@
     border-radius: 6px;
     height: 100%;
 
+    @media only screen and (max-width: 579px) {
+      max-width: 450px;
+      margin: 0 auto;
+      display: block !important;
+    }
+
     &:hover {
       cursor: pointer;
       box-shadow: 0 0 0 5px rgba(255,255,255,.15);
@@ -62,6 +85,10 @@
       position: relative;
       padding: 280px 25px 25px;
       background: linear-gradient(to top,#000 25%,rgba(0,0,0,.1));
+
+      @media only screen and (max-width: 640px) {
+        padding: 280px 12px 12px;
+      }
     }
 
     &-title {

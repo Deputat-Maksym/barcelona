@@ -1,11 +1,15 @@
 $(document).ready(function () {
-    var currId = '';
+    var currId = '',
+        topMargScroll = 106;
+    if(window.matchMedia('(max-width: 967px)').matches) {
+        topMargScroll = 50;
+    }
 
     $(".main-menu").find("a").on("click", function(  ){
         $('.main-menu a').removeClass('current-sect');
         $(this).addClass('current-sect');
         var id = $( this ).attr('href'),
-            top = $( id ).offset().top - 155;
+            top = $( id ).offset().top - topMargScroll;
         $('body,html').animate( {scrollTop: top}, 600);
         currId = id.slice(1);
     });
