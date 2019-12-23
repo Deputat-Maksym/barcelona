@@ -60,6 +60,17 @@ $(document).ready(function () {
         });
     }
     // humburger menu end
+
+    // modal open
+    $('button[data-target="#myModal2"], #order-btn').on('click', function () {
+        $('#myModal2').addClass('modal-open');
+        $('html').addClass('hidden');
+    });
+
+    $('.modal-inner-layer, .modal-close').on('click', function () {
+        $('.modal').removeClass('modal-open');
+        $('html').removeClass('hidden');
+    })
 });
 
 // Time Picker Initialization
