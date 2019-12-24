@@ -67,10 +67,17 @@ $(document).ready(function () {
         $('html').addClass('hidden');
     });
 
-    $('.modal-inner-layer, .modal-close').on('click', function () {
+    $('.modal-close').on('click', function () {
         $('.modal').removeClass('modal-open');
         $('html').removeClass('hidden');
     })
+
+    $('.modal-dialog').on('click', function (e) {
+        if (!$('.modal-content').is(e.target) && $('.modal-content').has(e.target).length === 0) {
+            $('.modal').removeClass('modal-open');
+            $('html').removeClass('hidden');
+        }
+    });
 });
 
 // Time Picker Initialization
