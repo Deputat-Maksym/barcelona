@@ -159,7 +159,7 @@ input:focus {
     transition: var(--transition1);
   }
 
-  &--grad {
+  &--grad, &--black {
     color: #fff;
     text-transform: uppercase;
     font-size: 1.25rem;
@@ -176,6 +176,15 @@ input:focus {
     &:hover {
       border-color: #e52c43;
       background: linear-gradient(to right, #e52c43, #e52c43);
+    }
+  }
+
+  &--black {
+    background: #000;
+
+    &:hover {
+      background: var(--gray-dark);
+      border-color: var(--gray-dark);
     }
   }
 

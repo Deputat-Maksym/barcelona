@@ -24,7 +24,7 @@ $(document).ready(function () {
     $('.checkbox2').click(function () {
         if (this.checked) {
 
-            var price_f = $('input[name="book-transfer"]:checked').parent(".fl").find("h6").text();
+            var price_f = $('input[name="book-transfer"]:checked').parent(".fl").find(".trans-price").text();
 
             $('input[type=text].sitebg2').val(price_f);
 

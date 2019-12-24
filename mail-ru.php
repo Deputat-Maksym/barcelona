@@ -1,17 +1,17 @@
 <?php
 
 	header("Content-Type: text/html; charset=utf-8");
-	
+
 	if(isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && strtolower($_SERVER["HTTP_X_REQUESTED_WITH"]) === "xmlhttprequest") {
-	
+
 		if(!isset($_POST["number_text"]) || !isset($_POST["data_text_1"]) || !isset($_POST["time_text_1"]) || !isset($_POST["sitebg"]) || !isset($_POST["place_text_1"]) || !isset($_POST["passanger"]) || !isset($_POST["stuff"]) || !isset($_POST["nump_priv"]) || !isset($_POST["sitebg2"]) || !isset($_POST["place_text_2"]) || !isset($_POST["data_text_2"]) || !isset($_POST["time_text_2"]) || !isset($_POST["name_text"]) || !isset($_POST["lastname_text"]) || !isset($_POST["phone_text"]) || !isset($_POST["email_text"]) || !isset($_POST["st"]) || !isset($_POST["en"]) || !isset($_POST["price_transf"]) || !isset($_POST["car_name"]) || !isset($_POST["itog"])) {
 
 			die();
 
 		}
-	
+
 		function send_form_admin($send_form_admin) {
-	
+
 			$mail_to = "igorkapabarcelona@gmail.com";
 			$subject = "Заявка с сайта barcelonadriver.com";
 			$headers = "MIME-Version: 1.0\r\n";
@@ -21,11 +21,11 @@
 			$headers .= "From: Система уведомлений <no-reply@".$_SERVER['HTTP_HOST'].">\r\n";
 
 			mail($mail_to, $subject, $send_form_admin, $headers);
-		
+
 		}
-	
+
 		function send_form_user($send_form_user, $email_us) {
-	
+
 			$mail_to = $email_us;
 			$subject = "Успешное оформление трансфера на barcelonadriver.com";
 			$headers = "MIME-Version: 1.0\r\n";
@@ -35,7 +35,7 @@
 			$headers .= "From: Система уведомлений <no-reply@".$_SERVER['HTTP_HOST'].">\r\n";
 
 			mail($mail_to, $subject, $send_form_user, $headers);
-		
+
 		}
 
 		$number_text = strip_tags($_POST["number_text"]);
@@ -223,8 +223,8 @@ HTML;
 
 		send_form_admin($send_form_admin);
 		send_form_user($send_form_user, $email_text);
-		
-		echo '<div style="padding: 40px 0;font-size: 20px;color: green">Ваше бронирование оформлено!<br>Наши менеджеры свяжутся с Вами для уточнения деталей поездки.</div><script>setTimeout(function() { document.forms["main_form"].reset(); window.location.reload(); }, 10000);$(".final_order_pay, .final_order_nopay, .all, .transfer-option, .put_price_car, .bef1, .modal-header").hide();</script>';
+
+		echo '<div style="font-size: 20px;color: green">Ваше бронирование оформлено!<br>Наши менеджеры свяжутся с Вами для уточнения деталей поездки.</div><script>setTimeout(function() { document.forms["main_form"].reset(); window.location.reload(); }, 10000);$(".final_order_pay, .final_order_nopay, .all, .transfer-option, .put_price_car, .bef1, .modal-header").hide();</script>';
 
 	} else {
 

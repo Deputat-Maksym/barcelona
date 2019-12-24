@@ -8,11 +8,11 @@
         }
 
         function getCookie(name) {
-            
+
             let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
-            
+
             return matches ? decodeURIComponent(matches[1]) : "";
-        
+
         }
 
         function get_active_select_ref_1() {
@@ -278,7 +278,7 @@
             } else if(active_selecet_1 == "El Prat Airport" && active_selecet_2 == "Barcelona") {
 
                 var price_arr = ["40"+sumbol, "55"+sumbol, "70"+sumbol];
-                
+
             } else if(active_selecet_1 == "El Prat Airport" && active_selecet_2 == "Sitges") {
 
                 var price_arr = ["75"+sumbol, "95"+sumbol, "115"+sumbol];
@@ -318,11 +318,11 @@
             } else if(active_selecet_1 == "El Prat Airport" && active_selecet_2 == "Cruise Port") {
 
                 var price_arr = ["40"+sumbol, "55"+sumbol, "70"+sumbol];
-                
+
             } else if(active_selecet_1 == "El Prat Airport" && active_selecet_2 == "Badalona") {
 
                 var price_arr = ["50"+sumbol, "60"+sumbol, "70"+sumbol];
-                
+
             } else if(active_selecet_1 == "El Prat Airport" && active_selecet_2 == "Montcada i Reixac") {
 
                 var price_arr = ["50"+sumbol, "60"+sumbol, "70"+sumbol];
@@ -362,7 +362,7 @@
             } else if(active_selecet_1 == "El Prat Airport" && active_selecet_2 == "Castell-Platja d'Aro") {
 
                 var price_arr = ["130"+sumbol, "150"+sumbol, "170"+sumbol];
-                
+
             } else if(active_selecet_1 == "El Prat Airport" && active_selecet_2 == "Girona Airport") {
 
                 var price_arr = ["105"+sumbol, "125"+sumbol, "145"+sumbol];
@@ -370,11 +370,11 @@
             } else if(active_selecet_1 == "El Prat Airport" && active_selecet_2 == "Figueres") {
 
                 var price_arr = ["165"+sumbol, "185"+sumbol, "205"+sumbol];
-           
+
             } else if(active_selecet_1 == "Barcelona" && active_selecet_2 == "El Prat Airport") {
 
                 var price_arr = ["40"+sumbol, "55"+sumbol, "70"+sumbol];
-                
+
             } else if(active_selecet_1 == "Sitges" && active_selecet_2 == "El Prat Airport") {
 
                 var price_arr = ["75"+sumbol, "95"+sumbol, "115"+sumbol];
@@ -414,11 +414,11 @@
             } else if(active_selecet_1 == "Cruise Port" && active_selecet_2 == "El Prat Airport") {
 
                 var price_arr = ["40"+sumbol, "55"+sumbol, "70"+sumbol];
-                
+
             } else if(active_selecet_1 == "Badalona" && active_selecet_2 == "El Prat Airport") {
 
                 var price_arr = ["50"+sumbol, "60"+sumbol, "70"+sumbol];
-                
+
             } else if(active_selecet_1 == "Montcada i Reixac" && active_selecet_2 == "El Prat Airport") {
 
                 var price_arr = ["50"+sumbol, "60"+sumbol, "70"+sumbol];
@@ -458,7 +458,7 @@
             } else if(active_selecet_1 == "Castell-Platja d'Aro" && active_selecet_2 == "El Prat Airport") {
 
                 var price_arr = ["130"+sumbol, "150"+sumbol, "170"+sumbol];
-                
+
             } else if(active_selecet_1 == "Girona Airport" && active_selecet_2 == "El Prat Airport") {
 
                 var price_arr = ["105"+sumbol, "125"+sumbol, "145"+sumbol];
@@ -466,7 +466,7 @@
             } else if(active_selecet_1 == "Figueres" && active_selecet_2 == "El Prat Airport") {
 
                 var price_arr = ["165"+sumbol, "185"+sumbol, "205"+sumbol];
-            
+
             } else {
 
                 var price_arr = ["Price on request", "Price on request", "Price on request", "Price on request", "Price on request"];
@@ -485,18 +485,18 @@
 
             if($(".checkbox2").prop("checked")) {
 
-                var price_f = $('input[name="book-transfer"]:checked').parent(".fl").find("h6").text();
+                var price_f = $('input[name="book-transfer"]:checked').parent(".fl").find(".trans-price").text();
 
                 $('input[type=text].sitebg2').val(price_f);
 
                 $(".info_for_back_transf").show();
-                
+
             } else {
-                
+
                 $('input[type=text].sitebg2').val('0€');
 
                 $(".info_for_back_transf").hide();
-                
+
             }
 
         }
@@ -583,7 +583,7 @@
                 var dop_clock = $(".sitebg").val().replace(/[^0-9]/gim, "");
                 var back_transf = $(".sitebg2").val().replace(/[^0-9]/gim, "");
                 var numb_priv = $("#nump_priv option:selected").text() * 10;
-                var price_transf = $('input[name="book-transfer"]:checked').parent(".fl").find("h6").text().replace(/[^0-9]/gim, "");
+                var price_transf = $('input[name="book-transfer"]:checked').parent(".fl").find(".trans-price").text().replace(/[^0-9]/gim, "");
 
                 var itog = Number(dop_clock) + Number(back_transf) + Number(numb_priv) + Number(price_transf);
 
@@ -676,12 +676,12 @@
                     var email_text = $(".email_text").val();
                     var st = $("#first_select_2 option:selected").text();
                     var en = $("#second_select_2 option:selected").text();
-                    var price_transf = $('input[name="book-transfer"]:checked').parent(".fl").find("h6").text();
-                    var car_name = $('input[name="book-transfer"]:checked').parent(".fl").find("h5").text();
+                    var price_transf = $('input[name="book-transfer"]:checked').parent(".fl").find(".trans-price").text();
+                    var car_name = $('input[name="book-transfer"]:checked').parent(".fl").find(".person-val").text();
                     var itog = $(".unitCount").text();
-      
+
                     $.ajax({
-      
+
                         url: "/mail-eng-pay.php",
                         type: "post",
 
@@ -711,11 +711,11 @@
                         },
 
                         success: function(data) {
-        
+
                             $(".result").html(data);
-          
+
                         }
-        
+
                     });
 
 
@@ -725,7 +725,7 @@
 
 
             $(".final_order_nopay").on("click", function() {
-    
+
                 var number_text = $(".number_text").val();
                 var data_text_1 = $(".data_text_1").val();
                 var time_text_1 = $(".time_text_1").val();
@@ -744,12 +744,12 @@
                 var email_text = $(".email_text").val();
                 var st = $("#first_select_2 option:selected").text();
                 var en = $("#second_select_2 option:selected").text();
-                var price_transf = $('input[name="book-transfer"]:checked').parent(".fl").find("h6").text();
-                var car_name = $('input[name="book-transfer"]:checked').parent(".fl").find("h5").text();
+                var price_transf = $('input[name="book-transfer"]:checked').parent(".fl").find(".trans-price").text();
+                var car_name = $('input[name="book-transfer"]:checked').parent(".fl").find(".person-val").text();
                 var itog = $(".unitCount").text();
-      
+
                 $.ajax({
-      
+
                     url: "/mail-eng.php",
                     type: "post",
 
@@ -778,13 +778,13 @@
                     },
 
                     success: function(data) {
-        
+
                         $(".result").html(data);
-          
+
                     }
-        
+
                 });
-      
+
             });
 
             $("body").append('<form action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_xclick" /><input type="hidden" name="charset" value="utf-8" /><input type="hidden" name="business" value="igorkapabarcelona@gmail.com" /><input type="hidden" name="return" value="https://barcelonadriver.com/?pay=success" /><input type="hidden" name="currency_code" value="EUR" /><input type="hidden" name="cancel_return" value="https://barcelonadriver.com/?pay=fail" /><input type="hidden" name="notify_url" value="https://barcelonadriver.com/paypal_result.php" /><input type="hidden" name="undefined_quantity" value="1" /><input type="hidden" name="custom" value="'+getCookie("dle_hash")+'||us" /><input type="hidden" name="rm" value="POST" /><input type="hidden" name="no_note" value="1" /><input type="hidden" name="no_shipping" value="1" /><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="" /><input type="hidden" name="amount" value="" /></form>');
@@ -793,20 +793,20 @@
             var exists = pattern.test(window.location.search);
 
             if(exists) {
-    
+
                 $(".myModal_succes").modal("show");
                 window.history.replaceState({}, document.title, window.location.pathname);
-        
+
             }
 
             var pattern_1 = /fail/;
             var exists_1 = pattern_1.test(window.location.search);
 
             if(exists_1) {
-    
+
                 $(".myModal_fail").modal("show");
                 window.history.replaceState({}, document.title, window.location.pathname);
-        
+
             }
 
         });

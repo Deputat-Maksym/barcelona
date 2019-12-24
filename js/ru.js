@@ -644,7 +644,7 @@
 
             if($(".checkbox2").prop("checked")) {
 
-                var price_f = $('input[name="book-transfer"]:checked').parent(".fl").find("h6").text();
+                var price_f = $('input[name="book-transfer"]:checked').parent(".fl").find(".trans-price").text();
 
                 $('input[type=text].sitebg2').val(price_f);
 
@@ -742,7 +742,7 @@
                 var dop_clock = $(".sitebg").val().replace(/[^0-9]/gim, "");
                 var back_transf = $(".sitebg2").val().replace(/[^0-9]/gim, "");
                 var numb_priv = $("#nump_priv option:selected").text() * 10;
-                var price_transf = $('input[name="book-transfer"]:checked').parent(".fl").find("h6").text().replace(/[^0-9]/gim, "");
+                var price_transf = $('input[name="book-transfer"]:checked').parent(".fl").find(".trans-price").text().replace(/[^0-9]/gim, "");
 
                 var itog = Number(dop_clock) + Number(back_transf) + Number(numb_priv) + Number(price_transf);
 
@@ -795,7 +795,7 @@
 
                 if($('input[name="amount"]').val() == "") {
 
-                    $(".result").html('<div style="margin-top: 47px;font-size: 20px;color: red">К сожалению, из-за неточной цены Вам доступно оформление заказа<br>только с оплатой на месте.</div>');
+                    $(".result").html('<div style="font-size: 20px;color: red">К сожалению, из-за неточной цены Вам доступно оформление заказа<br>только с оплатой на месте.</div>');
 
                     setTimeout(function() {
 
@@ -806,7 +806,7 @@
 
                 } else if(getCookie("dle_hash") == "") {
 
-                    $(".result").html('<div style="margin-top: 47px;font-size: 20px;color: red">Произошла ошибка оформления заказа. Пожалуйста, повторите попытку позже, смените тип оплаты или свяжитесь к нашей техническо поддержкой.</div>');
+                    $(".result").html('<div style="font-size: 20px;color: red">Произошла ошибка оформления заказа. Пожалуйста, повторите попытку позже, смените тип оплаты или свяжитесь к нашей техническо поддержкой.</div>');
 
                     setTimeout(function() {
 
@@ -835,8 +835,8 @@
                     var email_text = $(".email_text").val();
                     var st = $("#first_select_2 option:selected").text();
                     var en = $("#second_select_2 option:selected").text();
-                    var price_transf = $('input[name="book-transfer"]:checked').parent(".fl").find("h6").text();
-                    var car_name = $('input[name="book-transfer"]:checked').parent(".fl").find("h5").text();
+                    var price_transf = $('input[name="book-transfer"]:checked').parent(".fl").find(".trans-price").text();
+                    var car_name = $('input[name="book-transfer"]:checked').parent(".fl").find(".person-val").text();
                     var itog = $(".unitCount").text();
 
                     $.ajax({
@@ -903,8 +903,8 @@
                 var email_text = $(".email_text").val();
                 var st = $("#first_select_2 option:selected").text();
                 var en = $("#second_select_2 option:selected").text();
-                var price_transf = $('input[name="book-transfer"]:checked').parent(".fl").find("h6").text();
-                var car_name = $('input[name="book-transfer"]:checked').parent(".fl").find("h5").text();
+                var price_transf = $('input[name="book-transfer"]:checked').parent(".fl").find(".trans-price").text();
+                var car_name = $('input[name="book-transfer"]:checked').parent(".fl").find(".person-val").text();
                 var itog = $(".unitCount").text();
 
                 $.ajax({

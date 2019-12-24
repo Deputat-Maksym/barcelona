@@ -1,16 +1,16 @@
-<!--<?php-->
-<!--$user_id = rand(999, 999999);-->
-<!--if(isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {-->
-<!--$user_ip = $_SERVER["HTTP_CF_CONNECTING_IP"];-->
-<!--} else {-->
-<!--$user_ip = $_SERVER["REMOTE_ADDR"];-->
-<!--}-->
-<!--if(!isset($_COOKIE["dle_hash"])) {-->
-<!--setcookie("dle_hash", md5($user_ip.$user_id), time()+3600);-->
-<!--}-->
-<!--setcookie("dle_pm", "0", time()+3600);-->
-<!--setcookie("user_id", $user_id, time()+3600);-->
-<!--?>-->
+<?php
+$user_id = rand(999, 999999);
+if(isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+$user_ip = $_SERVER["HTTP_CF_CONNECTING_IP"];
+} else {
+$user_ip = $_SERVER["REMOTE_ADDR"];
+}
+if(!isset($_COOKIE["dle_hash"])) {
+setcookie("dle_hash", md5($user_ip.$user_id), time()+3600);
+}
+setcookie("dle_pm", "0", time()+3600);
+setcookie("user_id", $user_id, time()+3600);
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -1044,7 +1044,7 @@
         </div>
     </div>
 </div>
-<div style="display: none" id="myModal" class="modal myModal_fail" role="dialog">
+<div style="display: none" id="myModal1" class="modal myModal_fail" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -1179,87 +1179,91 @@
                     <button type="button" class="btn btn--grad btn--popup-order order first_step">забронировать</button>
                     <div class="form_hide">
                         <div class="transfer-option">
-                            <div class="w684 form-pad-h">
-                                <input class="inp-w100 mod-inp number_text" type="text" placeholder="Номер рейса прилета, как указано в билете" required>
-                                <div class="input-title">Дата и время прилета, как указано в билете</div>
-                                <div class="input-sect">
-                                    <!-- <input class="w50" type="date" id="" name="" value=""> -->
-                                    <input type="text" class="inp-w50 mod-inp data_text_1" id="datepicker">
-                                    <input class="inp-w50 mod-inp time_text_1" type="time" name="" required>
-                                </div>
-                                <div class="input-sect">
-                                    <label class="switch">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                    <span class="wait">
-                                        <div>Дополнительный час ожидания</div>
-                                        <div class="special">Водитель ждет вас в аэропорту 2 часа вместо 1 часа</div>
-                                    </span>
-                                    <input type="text" class="inp-dis sitebg" value="0€" readonly>
-                                </div>
-                                <input type="text" class="inp-w100 mod-inp place_text_1" required placeholder="Место назначения: адрес или название отеля">
-                                <div class="title-sect">
-                                    <div class="input-title">Число пассажиров включая детей</div>
-                                    <div class="input-title">Количество багажа</div>
-                                </div>
-                                <div class="input-sect">
-                                    <input class="inp-w50 mod-inp passanger" type="number" value="0" unchecked>
-                                    <input class="inp-w50 mod-inp stuff" type="number" value="0" required>
-                                </div>
-                                <div class="input-sect">
-                                    <div class="sect-w">
-                                        <input type="text" class="inp-dis inp-dis--text extra" value="Доп. остановки (10€ за каждую)" readonly>
-                                        <div class="bef">
-                                            <select class="mod-inp--sel" name="" id="nump_priv">
-                                                <option value="">0</option>
-                                                <option value="">1</option>
-                                                <option value="">2</option>
-                                                <option value="">3</option>
-                                                <option value="">4</option>
-                                                <option value="">5</option>
-                                            </select>
-                                        </div>
+                            <div class="w684">
+                                <div class="form-pad-h">
+                                    <input class="inp-w100 mod-inp number_text" type="text" placeholder="Номер рейса прилета, как указано в билете" required>
+                                    <div class="input-title">Дата и время прилета, как указано в билете</div>
+                                    <div class="input-sect">
+                                        <!-- <input class="w50" type="date" id="" name="" value=""> -->
+                                        <input type="text" class="inp-w50 mod-inp data_text_1" id="datepicker">
+                                        <input class="inp-w50 mod-inp time_text_1" type="time" name="" required>
                                     </div>
-                                    <div class="sect-w">
+                                    <div class="input-sect">
                                         <label class="switch">
-                                            <input type="checkbox" class="checkbox2" unchecked>
+                                            <input type="checkbox" class="checkbox">
                                             <span class="slider round"></span>
                                         </label>
                                         <span class="wait">
-                                            <div>Обратный трансфер</div>
-                                            <input type="text" class="inp-dis sitebg2" value="0€" readonly>
+                                            <div>Дополнительный час ожидания</div>
+                                            <div class="special">Водитель ждет вас в аэропорту 2 часа вместо 1 часа</div>
                                         </span>
+                                        <input type="text" class="inp-dis sitebg" value="0€" readonly>
+                                    </div>
+                                    <input type="text" class="inp-w100 mod-inp place_text_1" required placeholder="Место назначения: адрес или название отеля">
+                                    <div class="title-sect">
+                                        <div class="input-title">Число пассажиров включая детей</div>
+                                        <div class="input-title">Количество багажа</div>
+                                    </div>
+                                    <div class="input-sect">
+                                        <input class="inp-w50 mod-inp passanger" type="number" value="0" unchecked>
+                                        <input class="inp-w50 mod-inp stuff" type="number" value="0" required>
+                                    </div>
+                                    <div class="input-sect">
+                                        <div class="sect-w">
+                                            <input type="text" class="inp-dis inp-dis--text extra" value="Доп. остановки (10€ за каждую)" readonly>
+                                            <div class="bef">
+                                                <select class="mod-inp mod-inp--sel" name="" id="nump_priv">
+                                                    <option value="">0</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                    <option value="">3</option>
+                                                    <option value="">4</option>
+                                                    <option value="">5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="sect-w">
+                                            <label class="switch">
+                                                <input type="checkbox" class="checkbox2" unchecked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <span class="wait">
+                                                <div>Обратный трансфер</div>
+                                            </span>
+                                            <input type="text" class="inp-dis sitebg2" value="0€" readonly>
+                                        </div>
+                                    </div>
+                                    <div style="display: none;" class="info_for_back_transf">
+                                        <input type="text" class="inp-w100 mod-inp place_text_2" placeholder="Место отправления: адрес или название отеля">
+                                        <div class="input-title">Дата и время подачи трансфера</div>
+                                        <div class="input-sect">
+                                            <!-- <input class="w50" type="date" id="" name="" value=""> -->
+                                            <input type="text" class="inp-w50 mod-inp data_text_2" id="datepicker_1">
+                                            <input class="inp-w50 mod-inp time_text_2" type="time" id="" name="">
+                                        </div>
                                     </div>
                                 </div>
-                                <div style="display: none;" class="info_for_back_transf">
-                                    <h3>Место отправления: адрес или название отеля</h3>
-                                    <input type="text" class="place_text_2">
-                                    <h3>Дата и время подачи трансфера</h3>
-                                    <!-- <input class="w50" type="date" id="" name="" value=""> -->
-                                    <input type="text" class="w50 data_text_2" id="datepicker_1">
-                                    <input class="w50 time_text_2" type="time" id="" name="">
+                                <div class="sect-back-col form-pad-h person-conts">
+                                    <div class="input-sect">
+                                        <input class="inp-w50-smpl mod-inp nobg name_text" type="text" required placeholder="Введите своё имя">
+                                        <input class="inp-w50-smpl mod-inp nobg lastname_text" type="text" required placeholder="Введите фамилию">
+                                    </div>
+                                    <div class="input-sect">
+                                        <input type="phone" class="inp-w50-smpl mod-inp phone_text" required placeholder="Телефон с кодом страны">
+                                        <input type="email" class="inp-w50-smpl mod-inp email_text" required placeholder="Электронная почта">
+                                    </div>
                                 </div>
-                                <span class="w50 ">
-                                    <h3>Имя</h3>
-                                    <input class="w50 nobg name_text" type="text" required>
-                                </span>
-                                <span class="w50">
-                                    <h3>Фамилия</h3>
-                                    <input class="w50 nobg lastname_text" type="text" required>
-                                </span>
-                                <h3>Телефон с кодом страны</h3>
-                                <input type="phone" class="phone_text" required>
-                                <h3>email</h3>
-                                <input type="email" class="email_text" required>
                             </div>
                         </div>
-                        <div class="all">итого: <span class="unitCount"></span></div>
-                        <div class="result"></div>
-                        <button class="btn btn-now order final_order_pay">забронировать <br>и оплатить <u>онлайн</u>
-                        </button>
-                        <button class="btn btn-now order final_order_nopay">забронировать <br>и оплатить <u>на месте</u>
-                        </button>
+                        <div class="all form-pad-h">
+                            <span>Общая сумма</span>
+                            <span class="unitCount"></span>
+                        </div>
+                        <div class="result form-pad-h"></div>
+                        <div class="sect-back-col form-pad-h submit-btns">
+                            <button class="btn--grad btn-now order final_order_pay">забронировать<br>и оплатить онлайн</button>
+                            <button class="btn--black btn-now order final_order_nopay">забронировать<br>и оплатить на месте</button>
+                        </div>
                     </div>
                 </form>
             </div>
