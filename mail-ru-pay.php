@@ -41,9 +41,9 @@
 
 		}
 
-		if($number_text == "" || $data_text_1 == "" || $time_text_1 == "" || $sitebg == "" || $place_text_1 == "" || $passanger == "" || $stuff == "" || $nump_priv == "" || $name_text == "" || $lastname_text == "" || $phone_text == "" || $st == "" || $en == "" || $price_transf == "" || $car_name == "" || $itog == "") {
+		if($data_text_1 == "" || $time_text_1 == "" || $sitebg == "" || $place_text_1 == "" || $passanger == "" || $stuff == "" || $nump_priv == "" || $name_text == "" || $lastname_text == "" || $phone_text == "" || $st == "" || $en == "" || $price_transf == "" || $car_name == "" || $itog == "") {
 
-			echo '<div style="margin-top: 47px;font-size: 20px;color: red">Не заполнены обязательные поля.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
+			echo '<div style="padding-top: 15px;font-size: 20px;color: red">Не заполнены обязательные поля.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
 
 			die();
 
@@ -51,7 +51,7 @@
 
 		if($passanger < 1) {
 
-			echo '<div style="margin-top: 47px;font-size: 20px;color: red">Укажите реальное число пассажиров.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
+			echo '<div style="padding-top: 15px;font-size: 20px;color: red">Укажите реальное число пассажиров.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
 
 			die();
 
@@ -59,7 +59,7 @@
 
 		if($dle_hash == "") {
 
-			echo '<div style="margin-top: 47px;font-size: 20px;color: red">Произошла ошибка оформления заказа. Пожалуйста, повторите попытку позже, смените тип оплаты или свяжитесь к нашей технической поддержкой.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
+			echo '<div style="padding-top: 15px;font-size: 20px;color: red">Произошла ошибка оформления заказа. Пожалуйста, повторите попытку позже, смените тип оплаты или свяжитесь к нашей технической поддержкой.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
 
 			die();
 
@@ -69,7 +69,7 @@
 
 			if($place_text_2 == "" || $data_text_2 == "" || $time_text_2 == "" ) {
 
-				echo '<div style="margin-top: 47px;font-size: 20px;color: red">Не заполнены данные об обратном трансфере.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
+				echo '<div style="padding-top: 15px;font-size: 20px;color: red">Не заполнены данные об обратном трансфере.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
 
 				die();
 

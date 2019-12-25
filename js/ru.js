@@ -953,7 +953,8 @@
 
             if(exists) {
 
-                $(".myModal_succes").modal("show");
+                $(".myModal_succes").addClass("modal-open");
+                $('html').addClass('hidden');
                 window.history.replaceState({}, document.title, window.location.pathname);
 
             }
@@ -963,7 +964,8 @@
 
             if(exists_1) {
 
-                $(".myModal_fail").modal("show");
+                $(".myModal_fail").addClass("modal-open");
+                $('html').addClass('hidden');
                 window.history.replaceState({}, document.title, window.location.pathname);
 
             }

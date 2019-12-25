@@ -1028,33 +1028,33 @@ setcookie("user_id", $user_id, time()+3600);
     </div>
 </footer>
 
-<div style="display: none" id="myModal" class="modal myModal_succes" role="dialog">
+<div id="myModal" class="modal myModal_succes" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><img src="img/close.png" alt="закрыть">
-                </button>
-                <h4 class="modal-title">Бронирование трансфера</h4>
+            <div class="modal-header form-pad-h">
+                <button type="button" class="modal-close" data-dismiss="modal"></button>
+                <h2 class="modal-title">Бронирование трансфера</h2>
             </div>
             <div class="modal-body">
-                <div style="padding: 40px 0;font-size: 20px;color: green">Ваше бронирование оформлено!<br>Наши менеджеры
-                    свяжутся с Вами для уточнения деталей поездки.
+                <div class="form-pad-h">
+                    Ваше бронирование оформлено!<br>
+                    Наши менеджеры свяжутся с Вами для уточнения деталей поездки.
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div style="display: none" id="myModal1" class="modal myModal_fail" role="dialog">
+<div id="myModal1" class="modal myModal_fail" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><img src="img/close.png" alt="закрыть">
-                </button>
-                <h4 class="modal-title">Бронирование трансфера</h4>
+            <div class="modal-header form-pad-h">
+                <button type="button" class="modal-close" data-dismiss="modal"></button>
+                <h2 class="modal-title">Бронирование трансфера</h2>
             </div>
             <div class="modal-body">
-                <div style="padding: 40px 0;font-size: 20px;color: red">Ваше бронирование не оформлено в связи с отменой
-                    оплаты!<br>Повторите попытку или обратитесь в службу технической поддержки.
+                <div class="form-pad-h">
+                    Ваше бронирование не оформлено в связи с отменойоплаты!<br>
+                    Повторите попытку или обратитесь в службу технической поддержки.
                 </div>
             </div>
         </div>
@@ -1067,7 +1067,7 @@ setcookie("user_id", $user_id, time()+3600);
         <div class="modal-content">
             <div class="modal-header form-pad-h">
                 <button type="button" class="modal-close" data-dismiss="modal"></button>
-                <h4 class="modal-title">Расчет стоимости и бронирование трансфера</h4>
+                <h2 class="modal-title">Расчет стоимости и бронирование трансфера</h2>
             </div>
             <div class="modal-body">
                 <form action="" name="main_form" onsubmit="return false;">
@@ -1156,22 +1156,22 @@ setcookie("user_id", $user_id, time()+3600);
                         <div class="fl">
                             <input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-1">
                             <label class="label-for-check2" for="transfer-person-1" value="person 1-4 normal car">
-                                <div class="person-val">1-4 человека<br>стандарт</div>
-                                <div class="trans-price">40€</div>
+                                <div class="h3 person-val">1-4 человека<br>стандарт</div>
+                                <div class="h1 trans-price">40€</div>
                             </label>
                         </div>
                         <div class="fl">
                             <input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-2">
                             <label class="label-for-check2" for="transfer-person-2" value="person 1-4 luxury car">
-                                <div class="person-val">1-4 человека<br>люкс</div>
-                                <div class="trans-price">55€</div>
+                                <div class="h3 person-val">1-4 человека<br>люкс</div>
+                                <div class="h1 trans-price">55€</div>
                             </label>
                         </div>
                         <div class="fl">
                             <input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-3">
                             <label class="label-for-check2" for="transfer-person-3" value="person 4-6 normal car">
-                                <div class="person-val">1-8 человек<br>люкс минивен</div>
-                                <div class="trans-price">70€</div>
+                                <div class="h3 person-val">1-8 человек<br>люкс минивен</div>
+                                <div class="h1 trans-price">70€</div>
                             </label>
                         </div>
                     </div>
@@ -1181,14 +1181,14 @@ setcookie("user_id", $user_id, time()+3600);
                         <div class="transfer-option">
                             <div class="w684">
                                 <div class="form-pad-h">
-                                    <input class="inp-w100 mod-inp number_text" type="text" placeholder="Номер рейса прилета, как указано в билете" required>
+                                    <input class="inp-w100 mod-inp number_text" type="text" placeholder="Номер рейса прилета, как указано в билете">
                                     <div class="input-title">Дата и время прилета, как указано в билете</div>
                                     <div class="input-sect">
                                         <!-- <input class="w50" type="date" id="" name="" value=""> -->
-                                        <input type="text" class="inp-w50 mod-inp data_text_1" id="datepicker">
+                                        <input type="date" class="inp-w50 mod-inp data_text_1" id="datepicker" required>
                                         <input class="inp-w50 mod-inp time_text_1" type="time" name="" required>
                                     </div>
-                                    <div class="input-sect">
+                                    <div class="input-sect d-col">
                                         <label class="switch">
                                             <input type="checkbox" class="checkbox">
                                             <span class="slider round"></span>
@@ -1205,12 +1205,14 @@ setcookie("user_id", $user_id, time()+3600);
                                         <div class="input-title">Количество багажа</div>
                                     </div>
                                     <div class="input-sect">
-                                        <input class="inp-w50 mod-inp passanger" type="number" value="0" unchecked>
+                                        <input class="inp-w50 mod-inp passanger" type="number" value="1" min="1" unchecked>
                                         <input class="inp-w50 mod-inp stuff" type="number" value="0" required>
                                     </div>
-                                    <div class="input-sect">
+                                    <div class="input-sect d-vert">
                                         <div class="sect-w">
-                                            <input type="text" class="inp-dis inp-dis--text extra" value="Доп. остановки (10€ за каждую)" readonly>
+                                            <span class="wait">
+                                                <div>Доп. остановки (10€ за каждую)</div>
+                                            </span>
                                             <div class="bef">
                                                 <select class="mod-inp mod-inp--sel" name="" id="nump_priv">
                                                     <option value="">0</option>
@@ -1238,7 +1240,7 @@ setcookie("user_id", $user_id, time()+3600);
                                         <div class="input-title">Дата и время подачи трансфера</div>
                                         <div class="input-sect">
                                             <!-- <input class="w50" type="date" id="" name="" value=""> -->
-                                            <input type="text" class="inp-w50 mod-inp data_text_2" id="datepicker_1">
+                                            <input type="date" class="inp-w50 mod-inp data_text_2" id="datepicker_1">
                                             <input class="inp-w50 mod-inp time_text_2" type="time" id="" name="">
                                         </div>
                                     </div>
@@ -1249,7 +1251,7 @@ setcookie("user_id", $user_id, time()+3600);
                                         <input class="inp-w50-smpl mod-inp nobg lastname_text" type="text" required placeholder="Введите фамилию">
                                     </div>
                                     <div class="input-sect">
-                                        <input type="phone" class="inp-w50-smpl mod-inp phone_text" required placeholder="Телефон с кодом страны">
+                                        <input type="text" class="inp-w50-smpl mod-inp phone_text" required placeholder="Телефон с кодом страны">
                                         <input type="email" class="inp-w50-smpl mod-inp email_text" required placeholder="Электронная почта">
                                     </div>
                                 </div>
@@ -1327,7 +1329,6 @@ setcookie("user_id", $user_id, time()+3600);
 
 
 <script src="js/main.js"></script>
-<script src="js/script.js"></script>
 <script src="js/ru.js"></script>
 
 

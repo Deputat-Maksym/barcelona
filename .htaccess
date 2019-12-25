@@ -1,7 +1,7 @@
-RemoveHandler .html .htm
-AddType application/x-httpd-php .php .htm .html .phtml
+#RemoveHandler .html .htm
+#AddType application/x-httpd-php .php .htm .html .phtml
 
-DirectoryIndex ru.html
+DirectoryIndex ru.php
 
 RewriteEngine On
 

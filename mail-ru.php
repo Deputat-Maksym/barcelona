@@ -62,15 +62,15 @@
 
 		if(!preg_match("|^([a-z0-9_.-]{1,20})@([a-z0-9.-]{1,20}).([a-z]{2,4})|is", strtolower($email_text))) {
 
-			echo '<div style="margin-top: 47px;font-size: 20px;color: red">E-mail указан некорректно.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
+			echo '<div style="padding-top: 15px;font-size: 20px;color: red">E-mail указан некорректно.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
 
 			die();
 
 		}
 
-		if($number_text == "" || $data_text_1 == "" || $time_text_1 == "" || $sitebg == "" || $place_text_1 == "" || $passanger == "" || $stuff == "" || $nump_priv == "" || $name_text == "" || $lastname_text == "" || $phone_text == "" || $st == "" || $en == "" || $price_transf == "" || $car_name == "" || $itog == "") {
+		if($data_text_1 == "" || $time_text_1 == "" || $sitebg == "" || $place_text_1 == "" || $passanger == "" || $stuff == "" || $nump_priv == "" || $name_text == "" || $lastname_text == "" || $phone_text == "" || $st == "" || $en == "" || $price_transf == "" || $car_name == "" || $itog == "") {
 
-			echo '<div style="margin-top: 47px;font-size: 20px;color: red">Не заполнены обязательные поля.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
+			echo '<div style="padding-top: 15px;font-size: 20px;color: red">Не заполнены обязательные поля.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
 
 			die();
 
@@ -78,7 +78,7 @@
 
 		if($passanger < 1) {
 
-			echo '<div style="margin-top: 47px;font-size: 20px;color: red">Укажите реальное число пассажиров.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
+			echo '<div style="padding-top: 15px;font-size: 20px;color: red">Укажите реальное число пассажиров.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
 
 			die();
 
@@ -88,7 +88,7 @@
 
 			if($place_text_2 == "" || $data_text_2 == "" || $time_text_2 == "" ) {
 
-				echo '<div style="margin-top: 47px;font-size: 20px;color: red">Не заполнены данные об обратном трансфере.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
+				echo '<div style="padding-top: 15px;font-size: 20px;color: red">Не заполнены данные об обратном трансфере.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
 
 				die();
 
@@ -224,7 +224,7 @@ HTML;
 		send_form_admin($send_form_admin);
 		send_form_user($send_form_user, $email_text);
 
-		echo '<div style="font-size: 20px;color: green">Ваше бронирование оформлено!<br>Наши менеджеры свяжутся с Вами для уточнения деталей поездки.</div><script>setTimeout(function() { document.forms["main_form"].reset(); window.location.reload(); }, 10000);$(".final_order_pay, .final_order_nopay, .all, .transfer-option, .put_price_car, .bef1, .modal-header").hide();</script>';
+		echo '<div style="padding-top: 15px;font-size: 20px;color: green">Ваше бронирование оформлено!<br>Наши менеджеры свяжутся с Вами для уточнения деталей поездки.</div><script>setTimeout(function() { document.forms["main_form"].reset(); window.location.reload(); }, 10000);$(".submit-btns, .all, .transfer-option, .put_price_car, .bef1, .modal-header, .select-block").hide();</script>';
 
 	} else {
 

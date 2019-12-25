@@ -35,15 +35,15 @@
 
 		if(!preg_match("|^([a-z0-9_.-]{1,20})@([a-z0-9.-]{1,20}).([a-z]{2,4})|is", strtolower($email_text))) {
 
-			echo '<div style="margin-top: 47px;font-size: 20px;color: red">E-mail is not specified correctly.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
+			echo '<div style="padding-top: 15px;font-size: 20px;color: red">E-mail is not specified correctly.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
 
 			die();
 
 		}
 
-		if($number_text == "" || $data_text_1 == "" || $time_text_1 == "" || $sitebg == "" || $place_text_1 == "" || $passanger == "" || $stuff == "" || $nump_priv == "" || $name_text == "" || $lastname_text == "" || $phone_text == "" || $st == "" || $en == "" || $price_transf == "" || $car_name == "" || $itog == "") {
+		if($data_text_1 == "" || $time_text_1 == "" || $sitebg == "" || $place_text_1 == "" || $passanger == "" || $stuff == "" || $nump_priv == "" || $name_text == "" || $lastname_text == "" || $phone_text == "" || $st == "" || $en == "" || $price_transf == "" || $car_name == "" || $itog == "") {
 
-			echo '<div style="margin-top: 47px;font-size: 20px;color: red">The mandatory fields are not filled in.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
+			echo '<div style="padding-top: 15px;font-size: 20px;color: red">The mandatory fields are not filled in.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
 
 			die();
 
@@ -51,7 +51,7 @@
 
 		if($passanger < 1) {
 
-			echo '<div style="margin-top: 47px;font-size: 20px;color: red">Specify the actual number of passengers.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
+			echo '<div style="padding-top: 15px;font-size: 20px;color: red">Specify the actual number of passengers.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
 
 			die();
 
@@ -59,7 +59,7 @@
 
 		if($dle_hash == "") {
 
-			echo '<div style="margin-top: 47px;font-size: 20px;color: red">There\'s been an order placement error. Please try again later, change the type of payment or contact our technical support.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
+			echo '<div style="padding-top: 15px;font-size: 20px;color: red">There\'s been an order placement error. Please try again later, change the type of payment or contact our technical support.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
 
 			die();
 
@@ -69,7 +69,7 @@
 
 			if($place_text_2 == "" || $data_text_2 == "" || $time_text_2 == "" ) {
 
-				echo '<div style="margin-top: 47px;font-size: 20px;color: red">The data on the return transfer are not filled in.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
+				echo '<div style="padding-top: 15px;font-size: 20px;color: red">The data on the return transfer are not filled in.</div><script>setTimeout(function() { $(".result").html(""); }, 4000);</script>';
 
 				die();
 
