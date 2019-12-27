@@ -99,7 +99,7 @@ $(document).ready(function () {
         $('#myModal3').find('.target').text(target);
         $('#myModal3').find('.exc-time span').text(time);
         $('#myModal3').find('.exc-full-text').html(excurText);
-        $('#myModal3').find('.exc-img').attr('src', imgSrc),
+        $('#myModal3').find('.exc-img').attr('src', imgSrc);
         $('#myModal3').find('.exc-mod-price span').text(excurPrice);
 
         $('#myModal3').addClass('modal-open');
@@ -118,3 +118,4 @@ $(document).ready(function () {
         $('html').addClass('hidden');
     });
 });
+
