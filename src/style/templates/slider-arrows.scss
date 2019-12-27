@@ -27,7 +27,7 @@
     transition: var(--transition1);
   }
 
-  &.slick-next {
+  &.slick-prev {
     left: 0;
     right: unset;
     transform: translate(-100%, -50%) rotate(180deg);

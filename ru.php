@@ -899,6 +899,10 @@ setcookie("user_id", $user_id, time()+3600);
                         Дождались. встретили с табличкой. Доставили без проблем.
                         Было нас 6 человек с лыжами. Эту же машину заказали и назад. Водитель вежливый и пунктуальный, большое спасибо.
                     </div>
+                    <div class="reviews-item-link">
+                        <img src="img/review-link-img.png" alt="">
+                        <a href="#!">Читать оригинал отзыва</a>
+                    </div>
                 </div>
                 <div class="reviews-item">
                     <div class="circle">
@@ -912,6 +916,10 @@ setcookie("user_id", $user_id, time()+3600);
                     <div class="reviews-item-text">Ох и намучалась я с геттрансфером! То машину не вовремя подадут,
                         то цена в 2 раза отличается, сразу чувствуется отношение к клиентам.
                         В барселона-драйвер же все честно и индивидуально
+                    </div>
+                    <div class="reviews-item-link">
+                        <img src="img/review-link-img.png" alt="">
+                        <a href="#!">Читать оригинал отзыва</a>
                     </div>
                 </div>
                 <div class="reviews-item">
@@ -927,6 +935,10 @@ setcookie("user_id", $user_id, time()+3600);
                         как в большинстве служб по трансферу из Барселоны!
                         Все честно, недорого, цены на сайте и по факту аналогичны
                     </div>
+                    <div class="reviews-item-link">
+                        <img src="img/review-link-img.png" alt="">
+                        <a href="#!">Читать оригинал отзыва</a>
+                    </div>
                 </div>
                 <div class="reviews-item">
                     <div class="circle">
@@ -940,6 +952,10 @@ setcookie("user_id", $user_id, time()+3600);
                     <div class="reviews-item-text">Пользовались услугами по трансферу из Барселоны в Андорру
                         и обратно в начале февраля 2019. Машины были поданы вовремя,
                         нареканий нет. Спасибо
+                    </div>
+                    <div class="reviews-item-link">
+                        <img src="img/review-link-img.png" alt="">
+                        <a href="#!">Читать оригинал отзыва</a>
                     </div>
                 </div>
             </div>
@@ -1362,12 +1378,12 @@ setcookie("user_id", $user_id, time()+3600);
 </div>
 
 <!-- Modal 3 забронировать экскурсию -->
-<div id="myModal3" class="modal" role="dialog">
+<div id="myModal3" class="simple-form modal" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header form-pad-h">
                 <button type="button" class="modal-close" data-dismiss="modal"></button>
-                <h2 class="modal-title">ЭКСКУРСИЯ В <span class="target"></span></h2>
+                <h2 class="modal-title send-title">ЭКСКУРСИЯ В <span class="target"></span></h2>
             </div>
             <div class="modal-body">
                 <img class="exc-img" src="" alt="">
@@ -1379,14 +1395,15 @@ setcookie("user_id", $user_id, time()+3600);
                 <div class="form-sect form-pad-h sect-back-col">
                     <div class="h2 modal-title">ЗАКАЗАТЬ ЭКСКУРСИЮ В <span class="target"></span></div>
                     <div class="modal-subtitle">Заполните форму и наш менеджер свяжется с вами в ближайшее время</div>
-                    <form action="">
+                    <form name="exc_form" action="">
                         <div class="inp-field">
                             <input class="name_client mod-inp" type="text" maxlength="50" title="Макс. длина - 50 символов" required placeholder="Введите своё имя">
                             <input type="text" class="phone_number mod-inp" required placeholder="Номер телефона">
                             <textarea maxlength="350" class="comments_text" placeholder="Комментарий" title="Макс. длина - 350 символов"></textarea>
                         </div>
-                        <button class="btn btn--grad btn--exc btn-now order ">заказать</button>
+                        <button class="btn btn--grad btn--exc smpl-order">заказать</button>
                     </form>
+                    <div class="result"></div>
                 </div>
             </div>
         </div>
@@ -1394,24 +1411,25 @@ setcookie("user_id", $user_id, time()+3600);
 </div>
 
 <!-- Modal 4 photographer -->
-<div id="myModal4" class="simple-form modal" role="dialog">
+<div id="myModal4" class="simple-form smpl modal" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header form-pad-h">
                 <button type="button" class="modal-close" data-dismiss="modal"></button>
-                <h2 class="modal-title">ЗАКАЗАТЬ ФОТОГРАФА</h2>
+                <h2 class="modal-title send-title">ЗАКАЗАТЬ ФОТОГРАФА</h2>
             </div>
             <div class="modal-body">
                 <div class="form-sect form-pad-h">
                     <div class="modal-subtitle">Заполните форму и наш менеджер свяжется с вами в ближайшее время</div>
-                    <form action="">
+                    <form name="photo_form" action="">
                         <div class="inp-field">
                             <input class="name_client mod-inp" type="text" maxlength="50" title="Макс. длина - 50 символов" required placeholder="Введите своё имя">
                             <input type="text" class="phone_number mod-inp" required placeholder="Номер телефона">
                             <textarea maxlength="350" class="comments_text" placeholder="Комментарий" title="Макс. длина - 350 символов"></textarea>
                         </div>
-                        <button class="btn btn--grad btn--exc btn-now order ">заказать</button>
+                        <button class="btn btn--grad btn--exc smpl-order">заказать</button>
                     </form>
+                    <div class="result"></div>
                 </div>
             </div>
         </div>
@@ -1419,24 +1437,25 @@ setcookie("user_id", $user_id, time()+3600);
 </div>
 
 <!-- Modal 5 shopping -->
-<div id="myModal5" class="simple-form modal" role="dialog">
+<div id="myModal5" class="simple-form smpl modal" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header form-pad-h">
                 <button type="button" class="modal-close" data-dismiss="modal"></button>
-                <h2 class="modal-title">ХОЧУ НА ШОППИНГ</h2>
+                <h2 class="modal-title send-title">ХОЧУ НА ШОППИНГ</h2>
             </div>
             <div class="modal-body">
                 <div class="form-sect form-pad-h">
                     <div class="modal-subtitle">Заполните форму и наш менеджер свяжется с вами в ближайшее время</div>
-                    <form action="">
+                    <form name="shop_form" action="">
                         <div class="inp-field">
                             <input class="name_client mod-inp" type="text" maxlength="50" title="Макс. длина - 50 символов" required placeholder="Введите своё имя">
                             <input type="text" class="phone_number mod-inp" required placeholder="Номер телефона">
                             <textarea maxlength="350" class="comments_text" placeholder="Комментарий" title="Макс. длина - 350 символов"></textarea>
                         </div>
-                        <button class="btn btn--grad btn--exc btn-now order ">заказать</button>
+                        <button class="btn btn--grad btn--exc smpl-order">заказать</button>
                     </form>
+                    <div class="result"></div>
                 </div>
             </div>
         </div>

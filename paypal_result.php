@@ -1,11 +1,11 @@
 <?php
-	
+
 	if(!isset($_POST["mc_gross"]) || !isset($_POST["item_name"]) || !isset($_POST["custom"])) {
 
 		die();
 
 	}
-	
+
 	if($_POST["mc_gross"] == "" || $_POST["item_name"] == "" || $_POST["custom"] == "") {
 
 		die();
@@ -27,8 +27,8 @@
 		if($custom[0] == "ru") { // На русском
 
 			function send_form_admin($send_form_admin) {
-	
-				$mail_to = "igorkapabarcelona@gmail.com";
+
+				$mail_to = "info@barcelonadriver.com";
 				$subject = "Заявка с сайта barcelonadriver.com";
 				$headers = "MIME-Version: 1.0\r\n";
 				$headers .= "Content-type: text/html; charset=utf-8\r\n";
@@ -37,11 +37,11 @@
 				$headers .= "From: Система уведомлений <no-reply@".$_SERVER['HTTP_HOST'].">\r\n";
 
 				mail($mail_to, $subject, $send_form_admin, $headers);
-		
+
 			}
-	
+
 			function send_form_user($send_form_user, $email_us) {
-	
+
 				$mail_to = $email_us;
 				$subject = "Успешное оформление трансфера на barcelonadriver.com";
 				$headers = "MIME-Version: 1.0\r\n";
@@ -51,13 +51,13 @@
 				$headers .= "From: Система уведомлений <no-reply@".$_SERVER['HTTP_HOST'].">\r\n";
 
 				mail($mail_to, $subject, $send_form_user, $headers);
-		
+
 			}
 
 		} else { // На английском
 
 			function send_form_admin($send_form_admin) {
-	
+
 				$mail_to = "igorkapabarcelona@gmail.com";
 				$subject = "Заявка с сайта barcelonadriver.com";
 				$headers = "MIME-Version: 1.0\r\n";
@@ -67,11 +67,11 @@
 				$headers .= "From: Система уведомлений <no-reply@".$_SERVER['HTTP_HOST'].">\r\n";
 
 				mail($mail_to, $subject, $send_form_admin, $headers);
-		
+
 			}
-	
+
 			function send_form_user($send_form_user, $email_us) {
-	
+
 				$mail_to = $email_us;
 				$subject = "Успешное оформление трансфера на barcelonadriver.com";
 				$headers = "MIME-Version: 1.0\r\n";
@@ -81,7 +81,7 @@
 				$headers .= "From: Система уведомлений <no-reply@".$_SERVER['HTTP_HOST'].">\r\n";
 
 				mail($mail_to, $subject, $send_form_user, $headers);
-		
+
 			}
 
 
