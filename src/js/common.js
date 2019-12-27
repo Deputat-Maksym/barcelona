@@ -80,7 +80,7 @@ $(document).ready(function () {
     });
 
     /*-----------phone input form mask--------------*/
-    $('.phone_text, .phone_number').mask("+99 (999) 999-99-99");
+    $('.phone_text, .phone_number').mask("+99 (999) 999-99-9?9");
 
     /*-----------get current date--------------*/
     var now = new Date(),
@@ -88,7 +88,7 @@ $(document).ready(function () {
     $('#datepicker, #datepicker_1').attr("min", date);
 
     /*-------------excursion modal------------*/
-    $('.excursions-item').on('click', function () {
+    $('.excursions-list').on('click', '.excursions-item', function () {
         var excurModalCont = $(this).find('.descr-full'),
             excurText = excurModalCont.html(),
             target = excurModalCont.attr('data-target'),

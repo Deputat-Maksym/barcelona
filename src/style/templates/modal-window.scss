@@ -722,6 +722,10 @@
   .form-sect {
     width: 100%;
     max-width: 390px;
+
+    @media only screen and (max-width: 480px) {
+      max-width: 100%;
+    }
   }
 
   .inp-field input {
@@ -748,6 +752,10 @@
       background-position: 90% calc(100% + 170px), 0;
     }
   }
+
+  .form-sect .modal-subtitle {
+    margin: 0 0 20px;
+  }
 }
 
 #myModal5 {
@@ -759,5 +767,9 @@
     @media only screen and (max-width: 767px) {
       background-position: 100% calc(100% + 170px), 0;
     }
+  }
+
+  .form-sect .modal-subtitle {
+    margin: 0 0 20px;
   }
 }
