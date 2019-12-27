@@ -1,4 +1,3 @@
-
         var sumbol = "€";
 
         function name_item(starn, finish) {
@@ -470,14 +469,24 @@
             } else {
 
                 var price_arr = ["Price on request", "Price on request", "Price on request", "Price on request", "Price on request"];
+                $(".trans-price").css('display', 'none');
 
+                $(".put_price_car .fl:nth-of-type(1) label .no-price").html(price_arr[0]).css('display', 'flex');
+                $(".put_price_car .fl:nth-of-type(2) label .no-price").html(price_arr[1]).css('display', 'flex');
+                $(".put_price_car .fl:nth-of-type(3) label .no-price").html(price_arr[2]).css('display', 'flex');
+                $(".put_price_car .fl:nth-of-type(4) label .no-price").html(price_arr[3]).css('display', 'flex');
+                $(".put_price_car .fl:nth-of-type(5) label .no-price").html(price_arr[4]).css('display', 'flex');
+
+                return false;
             }
 
-            $(".put_price_car .fl:nth-of-type(1) label h6").html(price_arr[0]);
-            $(".put_price_car .fl:nth-of-type(2) label h6").html(price_arr[1]);
-            $(".put_price_car .fl:nth-of-type(3) label h6").html(price_arr[2]);
-            $(".put_price_car .fl:nth-of-type(4) label h6").html(price_arr[3]);
-            $(".put_price_car .fl:nth-of-type(5) label h6").html(price_arr[4]);
+            $(".no-price").css('display', 'none');
+
+            $(".put_price_car .fl:nth-of-type(1) label .trans-price").html(price_arr[0]).css('display', 'block');
+            $(".put_price_car .fl:nth-of-type(2) label .trans-price").html(price_arr[1]).css('display', 'block');
+            $(".put_price_car .fl:nth-of-type(3) label .trans-price").html(price_arr[2]).css('display', 'block');
+            $(".put_price_car .fl:nth-of-type(4) label .trans-price").html(price_arr[3]).css('display', 'block');
+            $(".put_price_car .fl:nth-of-type(5) label .trans-price").html(price_arr[4]).css('display', 'block');
 
         }
 
@@ -562,7 +571,7 @@
 
                     setTimeout(function() {
 
-                       $("#myModal2").animate({scrollTop: $(".transfer-option").position().top + 150}, 500);
+                       $("#myModal2 .modal-dialog").animate({scrollTop: $(".transfer-option").position().top + 20}, 500);
 
                     }, 500);
 
@@ -636,7 +645,7 @@
 
                 if($('input[name="amount"]').val() == "") {
 
-                    $(".result").html('<div style="margin-top: 47px;font-size: 20px;color: red">К сожалению, из-за неточной цены Вам доступно оформление заказа<br>только с оплатой на месте.</div>');
+                    $(".result").html('<div style="font-size: 20px;color: red">К сожалению, из-за неточной цены Вам доступно оформление заказа<br>только с оплатой на месте.</div>');
 
                     setTimeout(function() {
 
@@ -647,7 +656,7 @@
 
                 } else if(getCookie("dle_hash") == "") {
 
-                    $(".result").html('<div style="margin-top: 47px;font-size: 20px;color: red">Произошла ошибка оформления заказа. Пожалуйста, повторите попытку позже, смените тип оплаты или свяжитесь к нашей техническо поддержкой.</div>');
+                    $(".result").html('<div style="font-size: 20px;color: red">Произошла ошибка оформления заказа. Пожалуйста, повторите попытку позже, смените тип оплаты или свяжитесь к нашей техническо поддержкой.</div>');
 
                     setTimeout(function() {
 
@@ -667,6 +676,8 @@
                     var stuff = $(".stuff").val().replace(/[^0-9]/gim, ""); // Багаж
                     var nump_priv = $("#nump_priv option:selected").text(); // Остановки
                     var sitebg2 = $(".sitebg2").val().replace(/[^0-9]/gim, ""); // Обратный трансфер
+                    var carSeats = $(".car-seats").val().replace(/[^0-9]/gim, "");
+                    var booster = $(".booster").val().replace(/[^0-9]/gim, "");
                     var place_text_2 = $(".place_text_2").val();
                     var data_text_2 = $(".data_text_2").val();
                     var time_text_2 = $(".time_text_2").val();
@@ -695,6 +706,8 @@
                             "stuff": stuff,
                             "nump_priv": nump_priv,
                             "sitebg2": sitebg2,
+                            "car_seats": carSeats,
+                            "booster": booster,
                             "place_text_2": place_text_2,
                             "data_text_2": data_text_2,
                             "time_text_2": time_text_2,
@@ -735,6 +748,8 @@
                 var stuff = $(".stuff").val().replace(/[^0-9]/gim, ""); // Багаж
                 var nump_priv = $("#nump_priv option:selected").text(); // Остановки
                 var sitebg2 = $(".sitebg2").val().replace(/[^0-9]/gim, ""); // Обратный трансфер
+                var carSeats = $(".car-seats").val().replace(/[^0-9]/gim, "");
+                var booster = $(".booster").val().replace(/[^0-9]/gim, "");
                 var place_text_2 = $(".place_text_2").val();
                 var data_text_2 = $(".data_text_2").val();
                 var time_text_2 = $(".time_text_2").val();
@@ -763,6 +778,8 @@
                         "stuff": stuff,
                         "nump_priv": nump_priv,
                         "sitebg2": sitebg2,
+                        "car_seats": carSeats,
+                        "booster": booster,
                         "place_text_2": place_text_2,
                         "data_text_2": data_text_2,
                         "time_text_2": time_text_2,
@@ -794,7 +811,8 @@
 
             if(exists) {
 
-                $(".myModal_succes").modal("show");
+                $(".myModal_succes").addClass("modal-open");
+                $('html').addClass('hidden');
                 window.history.replaceState({}, document.title, window.location.pathname);
 
             }
@@ -804,7 +822,8 @@
 
             if(exists_1) {
 
-                $(".myModal_fail").modal("show");
+                $(".myModal_fail").addClass("modal-open");
+                $('html').addClass('hidden');
                 window.history.replaceState({}, document.title, window.location.pathname);
 
             }

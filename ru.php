@@ -60,7 +60,7 @@ setcookie("user_id", $user_id, time()+3600);
                         <a class="numbers-sect-mail" href="mailto:support@barcelonadriver.com">info@barcelonadriver.com</a>
                     </div>
                 </div>
-    
+
                 <div class="menu">
                     <button id="menu-trigger" class="btn menu__btn">
                         <span class="menu__burger"></span>
@@ -70,7 +70,7 @@ setcookie("user_id", $user_id, time()+3600);
             </div>
         </div>
     </div>
-    
+
     <div class="side-bottom">
         <div class="inner-wrap">
             <div class="contact-menu contact-menu--mob">
@@ -233,7 +233,7 @@ setcookie("user_id", $user_id, time()+3600);
             </div>
         </div>
     </section>
-    
+
     <!-- SECTION 2 -->
     <section class="sc-2 section-pad">
         <div class="inner-wrap">
@@ -262,7 +262,7 @@ setcookie("user_id", $user_id, time()+3600);
             </div>
         </div>
     </section>
-    
+
     <!-- SECTION 3 -->
     <section class="sc-3 main-menu-item" id="scroll3">
         <input type="radio" class="price-tables-input" name="price-tables" checked id="barcelona">
@@ -299,7 +299,7 @@ setcookie("user_id", $user_id, time()+3600);
                             <td class="b-l">Направление</td>
                             <td class="b-t">1-4 человека стандарт</td>
                             <td class="b-t">1-4 человека люкс</td>
-                            <td class="b-t">1-8 человек люкс минивен</td>
+                            <td class="b-t">1-7 человек минивен</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Барселона — Отель в Барселоне</td>
@@ -321,14 +321,14 @@ setcookie("user_id", $user_id, time()+3600);
                         </tr>
                     </table>
                 </div>
-                
+
                 <div class="price-tables-item dorada">
                     <table>
                         <tr class="t-title">
                             <td class="b-l">Направление</td>
                             <td class="b-t">1-4 человека стандарт</td>
                             <td class="b-t">1-4 человека люкс</td>
-                            <td class="b-t">1-8 человек люкс минивен</td>
+                            <td class="b-t">1-7 человек минивен</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Барселона</td>
@@ -405,7 +405,7 @@ setcookie("user_id", $user_id, time()+3600);
                             <td class="b-l">Направление</td>
                             <td class="b-t">1-4 человека стандарт</td>
                             <td class="b-t">1-4 человека люкс</td>
-                            <td class="b-t">1-8 человек люкс минивен</td>
+                            <td class="b-t">1-7 человек минивен</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Бадалона</td>
@@ -494,7 +494,7 @@ setcookie("user_id", $user_id, time()+3600);
                             <td class="b-l">Направление</td>
                             <td class="b-t">1-4 человека стандарт</td>
                             <td class="b-t">1-4 человека люкс</td>
-                            <td class="b-t">1-8 человек люкс минивен</td>
+                            <td class="b-t">1-7 человек минивен</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Andorra la vella</td>
@@ -558,12 +558,12 @@ setcookie("user_id", $user_id, time()+3600);
                         </tr>
                     </table>
                 </div>
-            
+
                 <button class="btn btn--grad btn--order" data-target="#myModal2">забронировать</button>
             </div>
         </div>
     </section>
-    
+
     <!-- SECTION 4 -->
     <section class="sc-4 main-menu-item layer-container section-pad" id="scroll1">
         <div class="layer-back">
@@ -591,7 +591,7 @@ setcookie("user_id", $user_id, time()+3600);
             </div>
         </div>
     </section>
-    
+
     <!-- SECTION 5 -->
     <section class="sc-5 main-menu-item" id="scroll2">
         <div class="inner-wrap">
@@ -644,7 +644,7 @@ setcookie("user_id", $user_id, time()+3600);
             </div>
         </div>
     </section>
-    
+
     <!-- SECTION 6 -->
     <section class="sc-6 main-menu-item layer-container section-pad" id="scroll5">
         <div class="layer-back">
@@ -673,10 +673,18 @@ setcookie("user_id", $user_id, time()+3600);
                             Крупнейший промышленный и торговый центр Испании. Один из важнейших туристических пунктов в европейских маршрутах.
                         </div>
                     </div>
+                    <div class="descr-full" data-target="Барселону" data-time="5 часов" data-img-src="img/exc-barcelona.jpg">
+                        <p>
+                            Авторская обзорная экскурсия по Барселоне на автомобиле 4-6-8 часов предполагает знакомство с основными достопримечтельностями - главная улица Пасео де Грация со знаменитыми шедеврами Гауди - дом Батльо и дом Мила, Собор Святое семейство, парк Гуэль, площадь Испании и великолепные виды с горы Монжуик, самая высокая точка Барселоны гора Тибедабо и конечно же история Барселоны - старый город или готический квартал со своими удивительными секретами, накопившимися за 2000 лет, улица Ла рамбла и рынок Бокерия с широким ассортиентом фруктов, хамона, сыров и морепродуктов
+                        </p>
+                        <p>
+                            Наш гид позаботится о покупке билетов в Собор святое семейство и в парк Гуэль, расчитает время и вам не прийдется стоять в утомительных очередях
+                        </p>
+                    </div>
                 </div>
                 <div class="excursions-item">
                     <div class="excursions-item-layer">
-                        <img src="img/exc-port.jpg" alt="Барселонa">
+                        <img src="img/exc-port.jpg" alt="Cruise Port">
                     </div>
                     <div class="excursions-item-descr">
                         <div class="excursions-item-title">
@@ -687,10 +695,32 @@ setcookie("user_id", $user_id, time()+3600);
                             Порт располагается у начала бульвара La Rambla (Ла Рамбла — самый знаменитый бульвар Барселоны, также известный, как Las Ramblas.
                         </div>
                     </div>
+                    <div class="descr-full" data-target="Cruise Port" data-time="3 часа" data-img-src="img/exc-port.jpg">
+                        <p>
+                            Если Вы уже изучили Барселону от и до, и Вам хочется побывать в других не менее
+                            интересных уголках, расположенных относительно недалеко, наша компания приглашает
+                            Вас на экскурсию в Андорру.
+                        </p>
+                        <p>
+                            Андорра – это маленькая страна, которую называются «почти что Испанией». В первую
+                            очередь она славится своими горнолыжными курортами. Зимой здесь настоящий рай
+                            для любителей этого вида спорта. На экскурсии Вы познакомитесь
+                            с достопримечательностями исторического центра столицы – Андорры-Ла-Велья, увидите
+                            потрясающе красивую церковь Святого Арменголя, погуляете по живописным
+                            окрестностям. А еще в ходе экскурсии у Вас непременно будет время на шопинг, ведь
+                            в Андорре находится огромное количество магазинчиков беспошлинной торговли, ради
+                            посещения которых сюда приезжают любители покупок за разумные деньги.
+                        </p>
+                        <p>
+                            Экскурсия принесет Вам незабываемые впечатления, хорошее самочувствие от свежего
+                            горного воздуха и, конечно же, множество сувениров, которые Вы сможете увезти для
+                            своих близких на память о поездке.
+                        </p>
+                    </div>
                 </div>
                 <div class="excursions-item">
                     <div class="excursions-item-layer">
-                        <img src="img/exc-seaport.jpg" alt="Барселонa">
+                        <img src="img/exc-seaport.jpg" alt="Морской порт">
                     </div>
                     <div class="excursions-item-descr">
                         <div class="excursions-item-title">
@@ -701,10 +731,32 @@ setcookie("user_id", $user_id, time()+3600);
                             Испанский морской порт — крупный торговый порт международного значения, расположен на северо-западном побережье.
                         </div>
                     </div>
+                    <div class="descr-full" data-target="Морской порт" data-time="4 часа" data-img-src="img/exc-seaport.jpg">
+                        <p>
+                            Если Вы уже изучили Барселону от и до, и Вам хочется побывать в других не менее
+                            интересных уголках, расположенных относительно недалеко, наша компания приглашает
+                            Вас на экскурсию в Андорру.
+                        </p>
+                        <p>
+                            Андорра – это маленькая страна, которую называются «почти что Испанией». В первую
+                            очередь она славится своими горнолыжными курортами. Зимой здесь настоящий рай
+                            для любителей этого вида спорта. На экскурсии Вы познакомитесь
+                            с достопримечательностями исторического центра столицы – Андорры-Ла-Велья, увидите
+                            потрясающе красивую церковь Святого Арменголя, погуляете по живописным
+                            окрестностям. А еще в ходе экскурсии у Вас непременно будет время на шопинг, ведь
+                            в Андорре находится огромное количество магазинчиков беспошлинной торговли, ради
+                            посещения которых сюда приезжают любители покупок за разумные деньги.
+                        </p>
+                        <p>
+                            Экскурсия принесет Вам незабываемые впечатления, хорошее самочувствие от свежего
+                            горного воздуха и, конечно же, множество сувениров, которые Вы сможете увезти для
+                            своих близких на память о поездке.
+                        </p>
+                    </div>
                 </div>
                 <div class="excursions-item">
                     <div class="excursions-item-layer">
-                        <img src="img/exc-andorra.jpg" alt="Барселонa">
+                        <img src="img/exc-andorra.jpg" alt="Андорра">
                     </div>
                     <div class="excursions-item-descr">
                         <div class="excursions-item-title">
@@ -714,6 +766,28 @@ setcookie("user_id", $user_id, time()+3600);
                         <div class="excursions-item-text">
                             Это маленькое независимое княжество, расположенное на Пиренеях между Францией и Испанией.
                         </div>
+                    </div>
+                    <div class="descr-full" data-target="Андорру" data-time="2 часа" data-img-src="img/exc-andorra.jpg">
+                        <p>
+                            Если Вы уже изучили Барселону от и до, и Вам хочется побывать в других не менее
+                            интересных уголках, расположенных относительно недалеко, наша компания приглашает
+                            Вас на экскурсию в Андорру.
+                        </p>
+                        <p>
+                            Андорра – это маленькая страна, которую называются «почти что Испанией». В первую
+                            очередь она славится своими горнолыжными курортами. Зимой здесь настоящий рай
+                            для любителей этого вида спорта. На экскурсии Вы познакомитесь
+                            с достопримечательностями исторического центра столицы – Андорры-Ла-Велья, увидите
+                            потрясающе красивую церковь Святого Арменголя, погуляете по живописным
+                            окрестностям. А еще в ходе экскурсии у Вас непременно будет время на шопинг, ведь
+                            в Андорре находится огромное количество магазинчиков беспошлинной торговли, ради
+                            посещения которых сюда приезжают любители покупок за разумные деньги.
+                        </p>
+                        <p>
+                            Экскурсия принесет Вам незабываемые впечатления, хорошее самочувствие от свежего
+                            горного воздуха и, конечно же, множество сувениров, которые Вы сможете увезти для
+                            своих близких на память о поездке.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -742,7 +816,7 @@ setcookie("user_id", $user_id, time()+3600);
                     всех русскоговорящих профессиональных и фотографов, работающих
                     или проживающи в Испании.
                 </div>
-                <button class="btn btn--grad btn--aside">ЗАКАЗАТЬ ФОТОГРАФА</button>
+                <button class="btn btn--grad btn--aside photo-order">ЗАКАЗАТЬ ФОТОГРАФА</button>
             </div>
             <div class="aside-img">
                 <picture>
@@ -793,7 +867,7 @@ setcookie("user_id", $user_id, time()+3600);
                         <div class="shop-price">20€</div>
                     </div>
                 </div>
-                <button class="btn btn--grad btn--aside">ХОЧУ НА ШОППИНГ</button>
+                <button class="btn btn--grad btn--aside shop-order">ХОЧУ НА ШОППИНГ</button>
             </div>
             <div class="aside-img">
                 <picture>
@@ -945,7 +1019,7 @@ setcookie("user_id", $user_id, time()+3600);
             </article>
         </div>
     </section>
-    
+
     <!-- SECTION 11 -->
     <section class="sc-11">
         <div class="inner-wrap">
@@ -1157,21 +1231,24 @@ setcookie("user_id", $user_id, time()+3600);
                             <input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-1">
                             <label class="label-for-check2" for="transfer-person-1" value="person 1-4 normal car">
                                 <div class="h3 person-val">1-4 человека<br>стандарт</div>
-                                <div class="h1 trans-price">40€</div>
+                                <div class="h1 trans-price"></div>
+                                <div class="no-price"></div>
                             </label>
                         </div>
                         <div class="fl">
                             <input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-2">
                             <label class="label-for-check2" for="transfer-person-2" value="person 1-4 luxury car">
                                 <div class="h3 person-val">1-4 человека<br>люкс</div>
-                                <div class="h1 trans-price">55€</div>
+                                <div class="h1 trans-price"></div>
+                                <div class="no-price"></div>
                             </label>
                         </div>
                         <div class="fl">
                             <input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-3">
                             <label class="label-for-check2" for="transfer-person-3" value="person 4-6 normal car">
-                                <div class="h3 person-val">1-8 человек<br>люкс минивен</div>
-                                <div class="h1 trans-price">70€</div>
+                                <div class="h3 person-val">1-7 человек<br> минивен</div>
+                                <div class="h1 trans-price"></div>
+                                <div class="no-price"></div>
                             </label>
                         </div>
                     </div>
@@ -1184,9 +1261,8 @@ setcookie("user_id", $user_id, time()+3600);
                                     <input class="inp-w100 mod-inp number_text" type="text" placeholder="Номер рейса прилета, как указано в билете">
                                     <div class="input-title">Дата и время прилета, как указано в билете</div>
                                     <div class="input-sect">
-                                        <!-- <input class="w50" type="date" id="" name="" value=""> -->
-                                        <input type="date" class="inp-w50 mod-inp data_text_1" id="datepicker" required>
-                                        <input class="inp-w50 mod-inp time_text_1" type="time" name="" required>
+                                        <input type="date" min="" max="2100-12-31" class="inp-w50 mod-inp data_text_1 inp-bg" id="datepicker" required>
+                                        <input class="inp-w50 mod-inp time_text_1 inp-bg" type="time" name="" required>
                                     </div>
                                     <div class="input-sect d-col">
                                         <label class="switch">
@@ -1205,8 +1281,21 @@ setcookie("user_id", $user_id, time()+3600);
                                         <div class="input-title">Количество багажа</div>
                                     </div>
                                     <div class="input-sect">
-                                        <input class="inp-w50 mod-inp passanger" type="number" value="1" min="1" unchecked>
-                                        <input class="inp-w50 mod-inp stuff" type="number" value="0" required>
+                                        <input class="inp-w50 mod-inp passanger inp-bg" type="number" value="1" min="1" unchecked>
+                                        <input class="inp-w50 mod-inp stuff inp-bg" type="number" value="0" required>
+                                    </div>
+                                    <div class="input-title m-0">Детские кресла и бустеры</div>
+                                    <div class="input-sect">
+                                        <label class="inp-w50-l">
+                                            <span>Кресло</span>
+                                            <input class="mod-inp car-seats inp-bg" type="number" value="0" min="0">
+                                            <span class="light">Вес: 9-18 кг</span>
+                                        </label>
+                                        <label class="inp-w50-l">
+                                            <span>Бустер</span>
+                                            <input class="mod-inp booster inp-bg" type="number" value="0" min="0">
+                                            <span class="light">Вес: 15-36 кг</span>
+                                        </label>
                                     </div>
                                     <div class="input-sect d-vert">
                                         <div class="sect-w">
@@ -1239,9 +1328,8 @@ setcookie("user_id", $user_id, time()+3600);
                                         <input type="text" class="inp-w100 mod-inp place_text_2" placeholder="Место отправления: адрес или название отеля">
                                         <div class="input-title">Дата и время подачи трансфера</div>
                                         <div class="input-sect">
-                                            <!-- <input class="w50" type="date" id="" name="" value=""> -->
-                                            <input type="date" class="inp-w50 mod-inp data_text_2" id="datepicker_1">
-                                            <input class="inp-w50 mod-inp time_text_2" type="time" id="" name="">
+                                            <input type="date" min="" max="2100-12-31" class="inp-w50 mod-inp data_text_2 inp-bg" id="datepicker_1">
+                                            <input class="inp-w50 mod-inp time_text_2 inp-bg" type="time" id="" name="">
                                         </div>
                                     </div>
                                 </div>
@@ -1263,8 +1351,8 @@ setcookie("user_id", $user_id, time()+3600);
                         </div>
                         <div class="result form-pad-h"></div>
                         <div class="sect-back-col form-pad-h submit-btns">
-                            <button class="btn--grad btn-now order final_order_pay">забронировать<br>и оплатить онлайн</button>
-                            <button class="btn--black btn-now order final_order_nopay">забронировать<br>и оплатить на месте</button>
+                            <button class="btn--grad btn-now order final_order_nopay">забронировать<br>и оплатить на месте</button>
+                            <button class="btn--black btn-now order final_order_pay">забронировать<br>и оплатить онлайн</button>
                         </div>
                     </div>
                 </form>
@@ -1274,54 +1362,82 @@ setcookie("user_id", $user_id, time()+3600);
 </div>
 
 <!-- Modal 3 забронировать экскурсию -->
-<div style="display:none" id="myModal3" class="modal" role="dialog">
+<div id="myModal3" class="modal" role="dialog">
     <div class="modal-dialog">
-        <!-- Modal content-->
         <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><img src="img/close.png" alt="закрыть">
-                </button>
-                <h4 class="modal-title">забронировать экскурсию</h4>
+            <div class="modal-header form-pad-h">
+                <button type="button" class="modal-close" data-dismiss="modal"></button>
+                <h2 class="modal-title">ЭКСКУРСИЯ В <span class="target"></span></h2>
             </div>
             <div class="modal-body">
-                <form action="">
-                    <div class="tour">
-                        <p>Авторская обзорная экскурсия по Барселоне на автомобиле 4-6-8 часов предполагает
-                            знакомство с основными достопримечтельностями - главная улица Пасео де Грация
-                            со знаменитыми шедеврами Гауди - дом Батльо и дом Мила, Собор Святое семейство,
-                            парк Гуэль, площадь Испании и великолепные виды с горы Монжуик, самая высокая
-                            точка Барселоны гора Тибедабо и конечно же история Барселоны - старый город или
-                            готический квартал со своими удивительными секретами, накопившимися за 2000 лет,
-                            улица Ла рамбла и рынок Бокерия с широким ассортиентом фруктов, хамона, сыров
-                            и морепродуктов</p>
-                        <p>
-                            Наш гид позаботится о покупке билетов в Собор святое семейство и в парк
-                            Гуэль, расчитает время и вам не прийдется стоять в утомительных очередях</p>
-                        <table bordercolor="#b9bbbf">
-                            <tr height="48px" class="mbi">
-                                <td>В барселоне</td>
-                                <td>За барселоной</td>
-                            </tr>
-                            <tr height="48px">
-                                <td>2h <span>60€</span></td>
-                                <td>2h <span>80€</span></td>
-                            </tr>
-                            <tr height="48px">
-                                <td>3h <span>55€</span></td>
-                                <td>3h <span>75€</span></td>
-                            </tr>
-                            <tr height="48px">
-                                <td>4h <span>50€</span></td>
-                                <td>4h <span>70€</span></td>
-                            </tr>
-                            <tr height="48px">
-                                <td class="b-b-n">8h <span>45€</span></td>
-                                <td class="b-b-n">8h <span>65€</span></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <button class="btn btn-now order">забронировать</button>
-                </form>
+                <img class="exc-img" src="" alt="">
+                <div class="exc-full-text form-pad-h"></div>
+                <div class="exc-feat form-pad-h">
+                    <div class="exc-time">Длительность экскурсии: <span></span></div>
+                    <div class="exc-mod-price">Стоимость: <span></span></div>
+                </div>
+                <div class="form-sect form-pad-h sect-back-col">
+                    <div class="h2 modal-title">ЗАКАЗАТЬ ЭКСКУРСИЮ В <span class="target"></span></div>
+                    <div class="modal-subtitle">Заполните форму и наш менеджер свяжется с вами в ближайшее время</div>
+                    <form action="">
+                        <div class="inp-field">
+                            <input class="name_client mod-inp" type="text" maxlength="50" title="Макс. длина - 50 символов" required placeholder="Введите своё имя">
+                            <input type="text" class="phone_number mod-inp" required placeholder="Номер телефона">
+                            <textarea maxlength="350" class="comments_text" placeholder="Комментарий" title="Макс. длина - 350 символов"></textarea>
+                        </div>
+                        <button class="btn btn--grad btn--exc btn-now order ">заказать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 4 photographer -->
+<div id="myModal4" class="simple-form modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header form-pad-h">
+                <button type="button" class="modal-close" data-dismiss="modal"></button>
+                <h2 class="modal-title">ЗАКАЗАТЬ ФОТОГРАФА</h2>
+            </div>
+            <div class="modal-body">
+                <div class="form-sect form-pad-h">
+                    <div class="modal-subtitle">Заполните форму и наш менеджер свяжется с вами в ближайшее время</div>
+                    <form action="">
+                        <div class="inp-field">
+                            <input class="name_client mod-inp" type="text" maxlength="50" title="Макс. длина - 50 символов" required placeholder="Введите своё имя">
+                            <input type="text" class="phone_number mod-inp" required placeholder="Номер телефона">
+                            <textarea maxlength="350" class="comments_text" placeholder="Комментарий" title="Макс. длина - 350 символов"></textarea>
+                        </div>
+                        <button class="btn btn--grad btn--exc btn-now order ">заказать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 5 shopping -->
+<div id="myModal5" class="simple-form modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header form-pad-h">
+                <button type="button" class="modal-close" data-dismiss="modal"></button>
+                <h2 class="modal-title">ХОЧУ НА ШОППИНГ</h2>
+            </div>
+            <div class="modal-body">
+                <div class="form-sect form-pad-h">
+                    <div class="modal-subtitle">Заполните форму и наш менеджер свяжется с вами в ближайшее время</div>
+                    <form action="">
+                        <div class="inp-field">
+                            <input class="name_client mod-inp" type="text" maxlength="50" title="Макс. длина - 50 символов" required placeholder="Введите своё имя">
+                            <input type="text" class="phone_number mod-inp" required placeholder="Номер телефона">
+                            <textarea maxlength="350" class="comments_text" placeholder="Комментарий" title="Макс. длина - 350 символов"></textarea>
+                        </div>
+                        <button class="btn btn--grad btn--exc btn-now order ">заказать</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

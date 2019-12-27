@@ -70,7 +70,7 @@ $(document).ready(function () {
     $('.modal-close').on('click', function () {
         $('.modal').removeClass('modal-open');
         $('html').removeClass('hidden');
-    })
+    });
 
     $('.modal-dialog').on('click', function (e) {
         if (!$('.modal-content').is(e.target) && $('.modal-content').has(e.target).length === 0) {
@@ -80,5 +80,41 @@ $(document).ready(function () {
     });
 
     /*-----------phone input form mask--------------*/
-    $('.phone_text').mask("+99 (999) 999-99-99");
+    $('.phone_text, .phone_number').mask("+99 (999) 999-99-99");
+
+    /*-----------get current date--------------*/
+    var now = new Date(),
+        date = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate();
+    $('#datepicker, #datepicker_1').attr("min", date);
+
+    /*-------------excursion modal------------*/
+    $('.excursions-item').on('click', function () {
+        var excurModalCont = $(this).find('.descr-full'),
+            excurText = excurModalCont.html(),
+            target = excurModalCont.attr('data-target'),
+            time = excurModalCont.attr('data-time'),
+            imgSrc = excurModalCont.attr('data-img-src'),
+            excurPrice = $(this).find('.exc-price').text();
+
+        $('#myModal3').find('.target').text(target);
+        $('#myModal3').find('.exc-time span').text(time);
+        $('#myModal3').find('.exc-full-text').html(excurText);
+        $('#myModal3').find('.exc-img').attr('src', imgSrc),
+        $('#myModal3').find('.exc-mod-price span').text(excurPrice);
+
+        $('#myModal3').addClass('modal-open');
+        $('html').addClass('hidden');
+    });
+
+    /*-------------photographer modal------------*/
+    $('.photo-order').on('click', function () {
+        $('#myModal4').addClass('modal-open');
+        $('html').addClass('hidden');
+    });
+
+    /*-------------shoping modal------------*/
+    $('.shop-order').on('click', function () {
+        $('#myModal5').addClass('modal-open');
+        $('html').addClass('hidden');
+    });
 });

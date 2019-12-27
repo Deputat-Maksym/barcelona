@@ -1,6 +1,8 @@
 $(document).ready(function () {
     var openBtnText = $('.seo_text').attr('data-open'),
         closeBtnText = $('.seo_text').attr('data-close');
+        // openBtnTextModal = $('.exc-full-text').attr('data-open'),
+        // closeBtnTextModal = $('.exc-full-text').attr('data-close');
 
     $('.seo_text').readmore({
         maxHeight: 160,

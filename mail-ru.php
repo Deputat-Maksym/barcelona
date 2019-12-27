@@ -4,7 +4,7 @@
 
 	if(isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && strtolower($_SERVER["HTTP_X_REQUESTED_WITH"]) === "xmlhttprequest") {
 
-		if(!isset($_POST["number_text"]) || !isset($_POST["data_text_1"]) || !isset($_POST["time_text_1"]) || !isset($_POST["sitebg"]) || !isset($_POST["place_text_1"]) || !isset($_POST["passanger"]) || !isset($_POST["stuff"]) || !isset($_POST["nump_priv"]) || !isset($_POST["sitebg2"]) || !isset($_POST["place_text_2"]) || !isset($_POST["data_text_2"]) || !isset($_POST["time_text_2"]) || !isset($_POST["name_text"]) || !isset($_POST["lastname_text"]) || !isset($_POST["phone_text"]) || !isset($_POST["email_text"]) || !isset($_POST["st"]) || !isset($_POST["en"]) || !isset($_POST["price_transf"]) || !isset($_POST["car_name"]) || !isset($_POST["itog"])) {
+		if(!isset($_POST["number_text"]) || !isset($_POST["data_text_1"]) || !isset($_POST["time_text_1"]) || !isset($_POST["sitebg"]) || !isset($_POST["place_text_1"]) || !isset($_POST["passanger"]) || !isset($_POST["stuff"]) || !isset($_POST["nump_priv"]) || !isset($_POST["sitebg2"]) || !isset($_POST["car_seats"]) || !isset($_POST["booster"]) || !isset($_POST["place_text_2"]) || !isset($_POST["data_text_2"]) || !isset($_POST["time_text_2"]) || !isset($_POST["name_text"]) || !isset($_POST["lastname_text"]) || !isset($_POST["phone_text"]) || !isset($_POST["email_text"]) || !isset($_POST["st"]) || !isset($_POST["en"]) || !isset($_POST["price_transf"]) || !isset($_POST["car_name"]) || !isset($_POST["itog"])) {
 
 			die();
 
@@ -47,6 +47,8 @@
 		$stuff = strip_tags($_POST["stuff"]);
 		$nump_priv = strip_tags($_POST["nump_priv"]);
 		$sitebg2 = strip_tags($_POST["sitebg2"]);
+		$car_seats = strip_tags($_POST["car_seats"]);
+		$booster = strip_tags($_POST["booster"]);
 		$place_text_2 = strip_tags($_POST["place_text_2"]);
 		$data_text_2 = strip_tags($_POST["data_text_2"]);
 		$time_text_2 = strip_tags($_POST["time_text_2"]);
@@ -158,6 +160,7 @@ HTML;
 			<i>Путь</i>: {$st} - {$en}<br>
 			<i>Время отправления</i>: {$data_text_1} в {$time_text_1}<br>
 			<i>Машина</i>: {$car_name} ($price_transf)<br>
+			<i>Детские кресла и бустеры</i>: кресла - {$car_seats}, бустеры - {$booster}<br>
 			
 			<h2>Обратный трансфер</h2>
 			{$sitebg_2}
@@ -192,6 +195,7 @@ HTML;
 			<i>Путь</i>: {$st} - {$en}<br>
 			<i>Время отправления</i>: {$data_text_1} в {$time_text_1}<br>
 			<i>Машина</i>: {$car_name} ($price_transf)<br>
+			<i>Детские кресла и бустеры</i>: кресла - {$car_seats}, бустеры - {$booster}<br>
 			
 			<h2>Обратный трансфер</h2>
 			{$sitebg_2}

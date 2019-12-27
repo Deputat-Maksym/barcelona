@@ -127,6 +127,10 @@ input:focus {
   outline: none;
 }
 
+select {
+  cursor: pointer;
+}
+
 .layer {
   &-container {
     position: relative;
@@ -167,7 +171,7 @@ input:focus {
     height: 60px;
     border-radius: 6px;
     background: var(--btn-grad);
-    border: 1px solid transparent;
+    //border: 1px solid transparent;
 
     @media only screen and (max-width: 967px) {
       height: 50px;

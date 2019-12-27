@@ -59,6 +59,7 @@
     width: 100vw;
     height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
     position: absolute;
     z-index: 100;
     top: 0;
@@ -137,6 +138,10 @@
 .inp-w100 {
   width: 100%;
   padding: 0 20px;
+
+  @media only screen and (max-width: 500px) {
+    padding: 0 10px;
+  }
 }
 
 .inp-w50 {
@@ -144,13 +149,36 @@
   padding: 10px 20px 10px 45px;
 
   @media only screen and (max-width: 500px) {
-    padding: 10px 5px 10px 28px;
+    padding: 14px 5px 14px 28px;
   }
 
   &-smpl {
     width: 100%;
     padding: 0 20px;
   }
+}
+
+.inp-w50-l {
+  width: calc(50% - 0.75vw);
+  margin: 0;
+
+  span {
+    font-size: 0.8rem;
+    padding: 0 0 0 3px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px 20px 10px 45px;
+
+    @media only screen and (max-width: 500px) {
+      padding: 14px 5px 14px 28px;
+    }
+  }
+}
+
+.light {
+  color: var(--light-gray);
 }
 
 .inp-dis {
@@ -170,6 +198,10 @@
 .input {
   &-title {
     margin: 0 0 0.8vw;
+
+    @media only screen and (max-width: 500px) {
+      margin: 15px 0 0.8vw;
+    }
   }
 
   &-sect {
@@ -177,6 +209,10 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 0 1.5vw;
+
+    @media only screen and (max-width: 500px) {
+      margin: 0 0 15px;
+    }
 
     input {
       margin: 0 1.5vw 0 0;
@@ -191,6 +227,10 @@
 .title-sect {
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: 500px) {
+    padding: 15px 0 0;
+  }
 
   .input-title {
     width: 100%;
@@ -256,7 +296,7 @@
     @media only screen and (max-width: 967px) {
       height: 50px;
       width: 260px;
-      padding: 20px 24px 8px 12px;
+      padding: 18px 24px 6px 12px;
     }
 
     @media only screen and (max-width: 560px) {
@@ -267,33 +307,34 @@
 
 .data_text_1, .data_text_2 {
   background: url("../img/inp-bg-1.png") 8px 50% no-repeat;
-
-  @media only screen and (max-width: 500px) {
-    background-position: 4px 50%;
-    background-size: 20px auto;
-  }
 }
 
 .time_text_1, .time_text_2 {
   background: url("../img/inp-bg-2.png") 8px 50% no-repeat;
-
-  @media only screen and (max-width: 500px) {
-    background-position: 4px 50%;
-    background-size: 20px auto;
-  }
 }
 
 .passanger {
   background: url("../img/inp-bg-3.png") 8px 50% no-repeat;
-
-  @media only screen and (max-width: 500px) {
-    background-position: 4px 50%;
-    background-size: 20px auto;
-  }
 }
 
 .stuff {
   background: url("../img/inp-bg-4.png") 8px 50% no-repeat;
+}
+
+.car-beds {
+  background: url("../img/baby-car-seat-40.png") 8px 50% no-repeat;
+}
+
+.car-seats {
+  background: url("../img/baby-40.png") 8px 50% no-repeat;
+}
+
+.booster {
+  background: url("../img/seat-40.png") 8px 50% no-repeat;
+}
+
+.inp-bg {
+  background-size: 30px auto;
 
   @media only screen and (max-width: 500px) {
     background-position: 4px 50%;
@@ -542,3 +583,181 @@
   }
 }
 
+.no-price {
+  display: none;
+  font-size: 1rem;
+  font-weight: 300;
+  height: 60px;
+  align-items: center;
+
+  @media only screen and (max-width: 1200px) {
+    height: 30px;
+  }
+}
+
+.m-0 {
+  margin: 0;
+}
+
+//excursions
+#myModal3 {
+  .modal-title {
+    text-transform: uppercase;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+}
+
+.exc {
+  &-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin: 5px 0 30px;
+    //filter: brightness(60%);
+
+    @media only screen and (max-width: 480px) {
+      height: 200px;
+    }
+  }
+
+  &-full-text {
+    padding-bottom: 15px;
+  }
+
+  &-feat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.125rem;
+    font-weight: 700;
+    border-top: 1px solid var(--mid-gray);
+
+    @media only screen and (max-width: 640px) {
+      flex-direction: column;
+    }
+  }
+
+  &-time {
+    padding: 10px 5px 10px 50px;
+    background: url(../img/inp-bg-2.png) 0 50% no-repeat;
+  }
+
+  &-mod-price {
+    padding: 10px 0 10px 5px;
+    display: flex;
+    align-items: center;
+
+    span {
+      background: var(--btn-grad);
+      -webkit-background-clip: text;
+      color: #e52c43;
+      font-size: 3.125rem;
+      margin: 0 0 0 20px;
+    }
+  }
+}
+
+.btn--exc {
+  height: 50px;
+  width: 100%;
+  max-width: 340px;
+  margin: 20px auto 0;
+}
+
+.form-sect {
+  //background: var(--mid-gray);
+
+  .modal {
+    &-title {
+      padding: 30px 0 15px;
+    }
+
+    &-subtitle {
+      width: 100%;
+      max-width: 360px;
+      text-align: center;
+      margin: 0 auto 20px;
+    }
+  }
+
+  form {
+    padding: 0 0 40px;
+  }
+}
+
+.inp-field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  input {
+    background: #fff;
+    padding: 0 20px;
+    width: calc(50% - 15px);
+    margin: 0 0 12px;
+
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+    }
+  }
+}
+
+.comments_text {
+  border: 1px solid var(--light-gray);
+  border-radius: 6px;
+  display: block;
+  background: #fff;
+  padding: 15px 20px;
+  width: 100%;
+  height: 150px;
+  margin: 0 0 12px;
+}
+
+.simple-form {
+
+  .form-sect {
+    width: 100%;
+    max-width: 390px;
+  }
+
+  .inp-field input {
+    width: 100%;
+  }
+
+  .modal-header:before {
+    left: 1.6vw;
+    transform: translateX(0);
+  }
+
+  .modal-title, .modal-subtitle {
+    text-align: left;
+  }
+}
+
+#myModal4 {
+  .modal-content {
+    background: url(../img/foto-modal-1.png) 90% calc(100% + 30px) no-repeat,
+    url(../img/shoping-modal-2.jpg) no-repeat;
+    background-size: contain, cover;
+
+    @media only screen and (max-width: 767px) {
+      background-position: 90% calc(100% + 170px), 0;
+    }
+  }
+}
+
+#myModal5 {
+  .modal-content {
+    background: url(../img/shoping-modal-1.png) calc(100% + 30px) calc(100% + 30px) no-repeat,
+    url(../img/shoping-modal-2.jpg) no-repeat;
+    background-size: contain, cover;
+
+    @media only screen and (max-width: 767px) {
+      background-position: 100% calc(100% + 170px), 0;
+    }
+  }
+}
