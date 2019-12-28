@@ -19,11 +19,12 @@ RewriteRule ^index\.html$ https://barcelonadriver.com [R=301,L]
 RewriteCond %{HTTP_HOST} ^www.barcelonadriver\.com$ [NC]
 RewriteRule ^(.*)$ https://barcelonadriver.com/$1 [R=301,L]
 
+#Remove .php from url
+RewriteRule ^([^.?]+)$ %{REQUEST_URI}.php [L]
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+RewriteRule .* - [L,R=404]
+
 RewriteRule ^pay_data_base/(.*)$ - [R=404,L]
-
-
-#RewriteRule ^js/rus_script.js$ js/script_rus.php [L]
-#RewriteRule ^js/eng_script.js$ js/script_eng.php [L]
 
 # Кеширование картинок, js и css
 FileETag MTime Size

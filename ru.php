@@ -37,8 +37,7 @@ setcookie("user_id", $user_id, time()+3600);
                     Трансферы и экскурсии по Барселоне и другим городам
                 </div>
                 <ul class="lang-menu">
-                    <!--<li><a href="/eng.html"><img src="img/eng.png" alt="английская версия сайта"><span>English</span></a></li>-->
-                    <li><a href="#"><img src="img/eng.png" alt="английская версия сайта"><span>English</span></a></li>
+                    <li><a href="/en"><img src="img/eng.png" alt="английская версия сайта"><span>English</span></a></li>
                     <li class="current-lang"><img src="img/rus.png" alt="русская версия сайта"><span>Русский</span></li>
                 </ul>
                 <div class="contact-menu">
@@ -657,7 +656,6 @@ setcookie("user_id", $user_id, time()+3600);
         <div class="inner-wrap section-aligning">
             <h2 class="main-title line-bot">
                 <span>Экскурсии</span>
-<!--                <span class="sub-title">также мы организовываем экскурсии</span>-->
             </h2>
             <div class="excursions-list js-slider-excur">
                 <div class="excursions-item">
@@ -1468,63 +1466,61 @@ setcookie("user_id", $user_id, time()+3600);
 
 
 <!-- Yandex.Metrika counter -->
-<!--<script type="text/javascript">-->
-<!--    (function (m, e, t, r, i, k, a) {-->
-<!--        m[i] = m[i] || function () {-->
-<!--            (m[i].a = m[i].a || []).push(arguments);-->
-<!--        };-->
-<!--        m[i].l = 1 * new Date();-->
-<!--        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a);-->
-<!--    })-->
-<!--    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");-->
-<!--    ym(54508261, "init", {-->
-<!--        clickmap: true,-->
-<!--        trackLinks: true,-->
-<!--        accurateTrackBounce: true,-->
-<!--        webvisor: true-->
-<!--    });-->
-<!--</script>-->
-<!--<noscript>-->
-<!--    <div><img src="https://mc.yandex.ru/watch/54508261" style="position:absolute; left:-9999px;" alt="метрика"/></div>-->
-<!--</noscript>-->
+<script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () {
+            (m[i].a = m[i].a || []).push(arguments);
+        };
+        m[i].l = 1 * new Date();
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a);
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(54508261, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/54508261" style="position:absolute; left:-9999px;" alt="метрика" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-<!--<script type="text/javascript">-->
-<!--    var arrgetbtn = [];-->
-<!--    arrgetbtn.push({-->
-<!--        "title": "Whatsapp",-->
-<!--        "icon": "fwidgethelp-whatsapp",-->
-<!--        "link": "https://wa.me/34635055656",-->
-<!--        "target": "_blank",-->
-<!--        "color": "#FFFFFF",-->
-<!--        "background": "#5EC758"-->
-<!--    });-->
-<!--    arrgetbtn.push({-->
-<!--        "title": "Viber",-->
-<!--        "icon": "fwidgethelp-viber",-->
-<!--        "link": "viber://chat?number=34635055656",-->
-<!--        "target": "_blank",-->
-<!--        "color": "#FFFFFF",-->
-<!--        "background": "#8456A7"-->
-<!--    });-->
-<!--    var WidGetButtonOptions = {-->
-<!--        id: "9443a9d37984b85366905c31d1e71ab4",-->
-<!--        iconopen: "fwidgethelp-commenting-o",-->
-<!--        maintitle: "",-->
-<!--        mainbackground: "#FF3338",-->
-<!--        maincolor: "#FFFFFF",-->
-<!--        pulse: "widgethelp_pulse",-->
-<!--        fasize: "2",-->
-<!--        direction: "top",-->
-<!--        position: "rightbottom",-->
-<!--        arrbtn: arrgetbtn-->
-<!--    };-->
-<!--    (function () {-->
-<!--        var script = document.createElement("script");-->
-<!--        script.type = "text/javascript";-->
-<!--        script.async = true;-->
-<!--        script.src = "https://getbtn.com/widget/index.php?id=" + WidGetButtonOptions.id;-->
-<!--        document.getElementsByTagName("head")[0].appendChild(script);-->
-<!--    })();</script>-->
+<script type="text/javascript">
+    var arrgetbtn = [];
+    arrgetbtn.push({
+        "title": "Whatsapp",
+        "icon": "fwidgethelp-whatsapp",
+        "link": "https://wa.me/34635055656",
+        "target": "_blank",
+        "color": "#FFFFFF",
+        "background": "#5EC758"
+    });
+    arrgetbtn.push({
+        "title": "Viber",
+        "icon": "fwidgethelp-viber",
+        "link": "viber://chat?number=34635055656",
+        "target": "_blank",
+        "color": "#FFFFFF",
+        "background": "#8456A7"
+    });
+    var WidGetButtonOptions = {
+        id: "9443a9d37984b85366905c31d1e71ab4",
+        iconopen: "fwidgethelp-commenting-o",
+        maintitle: "",
+        mainbackground: "#FF3338",
+        maincolor: "#FFFFFF",
+        pulse: "widgethelp_pulse",
+        fasize: "2",
+        direction: "top",
+        position: "rightbottom",
+        arrbtn: arrgetbtn
+    };
+    (function () {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.async = true;
+        script.src = "https://getbtn.com/widget/index.php?id=" + WidGetButtonOptions.id;
+        document.getElementsByTagName("head")[0].appendChild(script);
+    })();</script>
 
 </body>
 </html>
