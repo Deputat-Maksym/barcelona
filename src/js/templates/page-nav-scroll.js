@@ -14,6 +14,12 @@ $(document).ready(function () {
         currId = id.slice(1);
     });
 
+    $(".footer-menu").find("a").on("click", function(  ){
+        var id = $( this ).attr('href'),
+            top = $( id ).offset().top - topMargScroll;
+        $('body,html').animate( {scrollTop: top}, 600);
+    });
+
     var options = {
         root: null,
         // root: document.querySelector('body'),
