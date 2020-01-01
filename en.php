@@ -1410,7 +1410,7 @@ setcookie("user_id", $user_id, time()+3600);
 
 
 <script src="js/main.js"></script>
-<script src="js/ru.js"></script>
+<script src="js/eng.js"></script>
 
 
 <!-- Yandex.Metrika counter -->
