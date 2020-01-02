@@ -228,7 +228,7 @@ HTML;
 		send_form_admin($send_form_admin);
 		send_form_user($send_form_user, $email_text);
 
-		echo '<div style="padding-top: 15px;padding: 40px 0;font-size: 20px;color: green">Ваше бронирование оформлено!<br>Наши менеджеры свяжутся с Вами для уточнения деталей поездки.</div><script>setTimeout(function() { document.forms["main_form"].reset(); window.location.reload(); }, 10000);$(".submit-btns, .all, .transfer-option, .put_price_car, .bef1, .modal-header, .select-block").hide();</script>';
+		echo '<div style="padding-top: 15px;padding: 40px 0;font-size: 20px;color: green">Ваше бронирование оформлено!<br>Наши менеджеры свяжутся с Вами для уточнения деталей поездки.</div><script>setTimeout(function() { document.forms["main_form"].reset(); window.location.reload(); }, 10000);$(".submit-btns, .all, .transfer-option, .put_price_car, .modal-header, .select-block").hide();</script>';
 
 	} else {
 

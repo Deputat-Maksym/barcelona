@@ -853,7 +853,7 @@
 
                     $.ajax({
 
-                        url: "/mail-ru-pay.php",
+                        url: "/mail-ru-pay",
                         type: "post",
 
                         data: {
@@ -925,7 +925,7 @@
 
                 $.ajax({
 
-                    url: "/mail-ru.php",
+                    url: "/mail-ru",
                     type: "post",
 
                     data: {
@@ -975,7 +975,7 @@
 
                 $.ajax({
 
-                    url: "/mail-smpl-ru.php",
+                    url: "/mail-smpl-ru",
                     type: "post",
 
                     data: {

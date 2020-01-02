@@ -84,7 +84,21 @@ $(document).ready(function () {
 
     /*-----------get current date--------------*/
     var now = new Date(),
-        date = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate();
+        year = now.getFullYear(),
+        month = now.getMonth() + 1,
+        day = now.getDate();
+        date = '';
+
+    if(month < 10) {
+        month = '0' + month;
+    }
+
+    if(day < 10) {
+        day = '0' + day;
+    }
+
+    date = year + '-' + month + '-' + day;
+
     $('#datepicker, #datepicker_1').attr("min", date);
 
     /*-------------excursion modal------------*/

@@ -537,7 +537,7 @@ setcookie("user_id", $user_id, time()+3600);
                     </table>
                 </div>
 
-                <button class="btn btn--grad btn--order" data-target="#myModal2">Book a transfer</button>
+                <button class="btn btn--grad btn--order run_price" data-target="#myModal2">Book a transfer</button>
             </div>
         </div>
     </section>
@@ -605,7 +605,7 @@ setcookie("user_id", $user_id, time()+3600);
                         <div>Capacity up to 4 people</div>
                     </div>
                 </div>
-                <div class="automob-item automob-item--btn" id="order-btn" data-target="#myModal2">
+                <div class="automob-item automob-item--btn run_price" id="order-btn" data-target="#myModal2">
                     <img src="img/order-btn-img.png" alt="">
                     <div class="btn-text">
                         РАССЧИТАТЬ<br>СТОИМОСТЬ И<br>БРОНИРОВАТЬ<br>ТРАНСФЕР>
@@ -1347,7 +1347,7 @@ setcookie("user_id", $user_id, time()+3600);
                             <input type="text" class="phone_number mod-inp" required placeholder="Номер телефона">
                             <textarea maxlength="350" class="comments_text" placeholder="Комментарий" title="Макс. длина - 350 символов"></textarea>
                         </div>
-                        <button class="btn btn--grad btn--exc smpl-order">заказать</button>
+                        <button type="button" class="btn btn--grad btn--exc smpl-order">заказать</button>
                     </form>
                     <div class="result"></div>
                 </div>
@@ -1373,7 +1373,7 @@ setcookie("user_id", $user_id, time()+3600);
                             <input type="text" class="phone_number mod-inp" required placeholder="Номер телефона">
                             <textarea maxlength="350" class="comments_text" placeholder="Комментарий" title="Макс. длина - 350 символов"></textarea>
                         </div>
-                        <button class="btn btn--grad btn--exc smpl-order">заказать</button>
+                        <button type="button" class="btn btn--grad btn--exc smpl-order">заказать</button>
                     </form>
                     <div class="result"></div>
                 </div>
@@ -1399,7 +1399,7 @@ setcookie("user_id", $user_id, time()+3600);
                             <input type="text" class="phone_number mod-inp" required placeholder="Номер телефона">
                             <textarea maxlength="350" class="comments_text" placeholder="Комментарий" title="Макс. длина - 350 символов"></textarea>
                         </div>
-                        <button class="btn btn--grad btn--exc smpl-order">заказать</button>
+                        <button type="button" class="btn btn--grad btn--exc smpl-order">заказать</button>
                     </form>
                     <div class="result"></div>
                 </div>
