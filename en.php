@@ -130,7 +130,9 @@ setcookie("user_id", $user_id, time()+3600);
     <section class="sc-1 layer-container section-pad">
         <div class="layer-back">
             <picture>
+                <source type="image/webp" srcset="img/section-1-bg.webp" media="(min-width: 800px)">
                 <source type="image/webp" srcset="img/section-1-bg.webp">
+                <source type="image/jpeg" srcset="img/section-1-bg.jpg" media="(min-width: 800px)">
                 <source type="image/jpeg" srcset="img/section-1-bg.jpg">
                 <img src="img/section-1-bg.jpg" alt="Трансферы и такси в Барселоне">
             </picture>

@@ -5,7 +5,8 @@ $(document).ready(function () {
         topMargScroll = 50;
     }
 
-    $(".main-menu").find("a").on("click", function(  ){
+    $(".main-menu").find("a").on("click", function(e){
+        e.preventDefault();
         $('.main-menu a').removeClass('current-sect');
         $(this).addClass('current-sect');
         var id = $( this ).attr('href'),
@@ -14,7 +15,8 @@ $(document).ready(function () {
         currId = id.slice(1);
     });
 
-    $(".footer-menu").find("a").on("click", function(  ){
+    $(".footer-menu").find("a").on("click", function(e){
+        e.preventDefault();
         var id = $( this ).attr('href'),
             top = $( id ).offset().top - topMargScroll;
         $('body,html').animate( {scrollTop: top}, 600);
