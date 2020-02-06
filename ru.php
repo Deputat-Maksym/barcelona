@@ -689,13 +689,13 @@ setcookie("user_id", $user_id, time()+3600);
                     <div class="excursions-item-descr">
                         <div class="excursions-item-title">
                             <div class="target">Cruise Port</div>
-                            <div class="exc-price">65€</div>
+                            <div class="exc-price">300€/450€/600€</div>
                         </div>
                         <div class="excursions-item-text">
                             Порт располагается у начала бульвара La Rambla (Ла Рамбла — самый знаменитый бульвар Барселоны, также известный, как Las Ramblas.
                         </div>
                     </div>
-                    <div class="descr-full" data-target="Cruise Port" data-time="3 часа" data-img-src="img/exc-port.jpg">
+                    <div class="descr-full" data-target="Cruise Port" data-time="4/6/8 часов" data-img-src="img/exc-port.jpg">
                         <p>
                             Если Вы уже изучили Барселону от и до, и Вам хочется побывать в других не менее
                             интересных уголках, расположенных относительно недалеко, наша компания приглашает

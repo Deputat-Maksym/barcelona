@@ -77,8 +77,8 @@
 
             $("#first_select option, #second_select option, #first_select_2 option, #second_select_2 option").attr("selected", false).attr("disabled", false);
 
-            $('#first_select_2 [value="'+active_selecet_6+'"]').prop("disabled", true);
-            $('#second_select_2 [value="'+active_selecet_5+'"]').prop("disabled", true);
+            $('#first_select_2 [value="'+active_selecet_6+'"]').attr("disabled", true);
+            $('#second_select_2 [value="'+active_selecet_5+'"]').attr("disabled", true);
 
             $('input[name="item_name"]').val(name_item($("#first_select_2 option:selected").text(), $("#second_select_2 option:selected").text()));
 
