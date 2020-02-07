@@ -680,11 +680,11 @@
 
             });
 
-            $(document).on("change", "#first_select, #second_select", function() {
+            // $(document).on("change", "#first_select, #second_select", function() {
 
-                get_active_select_fix_1();
+                // get_active_select_fix_1();
 
-            });
+            // });
 
             $(document).on("click", ".run_price", function() {
 
@@ -704,7 +704,7 @@
 
             $(document).on("click", ".bron_trnf, .order, .run_price", function() {
 
-                get_active_select_3();
+                // get_active_select_3();
 
                 get_car_price();
 
