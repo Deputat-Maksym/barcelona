@@ -2,8 +2,10 @@
 //= ../libraries/slick.js
 //= ../libraries/readmore.js
 //= ../libraries/jquery.maskedinput.min.js
+//= ../libraries/select2.js
 //= ../templates/page-nav-scroll.js
 //= ../templates/excursions-rotator.js
 //= ../templates/feedback-rotator.js
 //= ../templates/read-more.js
 //= ../templates/common.js
+//= ../templates/select-box.js

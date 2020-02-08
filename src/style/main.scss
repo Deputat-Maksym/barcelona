@@ -5,7 +5,7 @@
 
 /*libraries*/
 @import 'libraries/slick';
-//@import 'libraries/slick-theme';
+@import 'libraries/select2';
 
 /*templates*/
 @import 'templates/header';
@@ -24,5 +24,6 @@
 @import 'templates/slider-arrows';
 @import 'templates/footer';
 @import 'templates/modal-window';
+@import 'templates/select-box';
 
 
