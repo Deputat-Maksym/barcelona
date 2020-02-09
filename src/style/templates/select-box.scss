@@ -2,6 +2,8 @@
   max-width: 100%;
 
   .select2-selection {
+    outline: none;
+
     &--single {
       height: 60px;
       border-radius: 6px;
@@ -12,13 +14,14 @@
       }
 
       .select2-selection__rendered {
-        padding: 25px 36px 8px 16px;
+        padding: 30px 24px 8px 12px;
         font-size: 1.25rem;
         font-weight: 700;
         color: #212529;
+        line-height: 20px;
 
         @media only screen and (max-width: 967px) {
-          padding: 20px 24px 8px 12px;
+          padding: 24px 24px 4px 12px;
         }
       }
 

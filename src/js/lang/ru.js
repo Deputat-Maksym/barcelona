@@ -14,22 +14,22 @@
 
         }
 
-        function get_active_select_ref_1() {
-
-            var active_selecet_1 = $("#first_select option:selected").val();
-            var active_selecet_2 = $("#second_select option:selected").val();
-
-            $("#first_select option, #second_select option, #first_select_2 option, #second_select_2 option").attr("selected", false).attr("disabled", false);
-
-            $("#first_select_2, #first_select").val(active_selecet_2);
-            $("#second_select_2, #second_select").val(active_selecet_1);
-
-            $('#first_select [value="'+active_selecet_1+'"]').prop("disabled", true);
-            $('#second_select [value="'+active_selecet_2+'"]').prop("disabled", true);
-
-            $('input[name="item_name"]').val(name_item($("#second_select option:selected").text(), $("#first_select option:selected").text()));
-
-        }
+        // function get_active_select_ref_1() {
+        //
+        //     var active_selecet_1 = $("#first_select option:selected").val();
+        //     var active_selecet_2 = $("#second_select option:selected").val();
+        //
+        //     $("#first_select option, #second_select option, #first_select_2 option, #second_select_2 option").attr("selected", false).attr("disabled", false);
+        //
+        //     $("#first_select_2, #first_select").val(active_selecet_2);
+        //     $("#second_select_2, #second_select").val(active_selecet_1);
+        //
+        //     $('#first_select [value="'+active_selecet_1+'"]').prop("disabled", true);
+        //     $('#second_select [value="'+active_selecet_2+'"]').prop("disabled", true);
+        //
+        //     $('input[name="item_name"]').val(name_item($("#second_select option:selected").text(), $("#first_select option:selected").text()));
+        //
+        // }
 
         // function get_active_select_1() {
         //

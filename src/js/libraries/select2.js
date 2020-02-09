@@ -4124,11 +4124,11 @@ S2.define('select2/dropdown/search',[
       self.$search.attr('tabindex', 0);
       self.$search.attr('aria-controls', resultsId);
 
-      self.$search.trigger('focus');
-
-      window.setTimeout(function () {
-        self.$search.trigger('focus');
-      }, 0);
+      // self.$search.trigger('focus');
+      //
+      // window.setTimeout(function () {
+      //   self.$search.trigger('focus');
+      // }, 0);
     });
 
     container.on('close', function () {

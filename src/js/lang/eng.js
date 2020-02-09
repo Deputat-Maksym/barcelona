@@ -14,75 +14,76 @@
 
         }
 
-        function get_active_select_ref_1() {
+        // function get_active_select_ref_1() {
+        //
+        //     var active_selecet_1 = $("#first_select option:selected").val();
+        //     var active_selecet_2 = $("#second_select option:selected").val();
+        //
+        //     $("#first_select option, #second_select option, #first_select_2 option, #second_select_2 option").attr("selected", false).attr("disabled", false);
+        //
+        //     $("#first_select_2, #first_select").val(active_selecet_2);
+        //     $("#second_select_2, #second_select").val(active_selecet_1);
+        //
+        //     $('#first_select [value="'+active_selecet_1+'"]').prop("disabled", true);
+        //     $('#second_select [value="'+active_selecet_2+'"]').prop("disabled", true);
+        //
+        //     $('input[name="item_name"]').val(name_item($("#second_select option:selected").text(), $("#first_select option:selected").text()));
+        //
+        // }
+        //
 
-            var active_selecet_1 = $("#first_select option:selected").val();
-            var active_selecet_2 = $("#second_select option:selected").val();
-
-            $("#first_select option, #second_select option, #first_select_2 option, #second_select_2 option").attr("selected", false).attr("disabled", false);
-
-            $("#first_select_2, #first_select").val(active_selecet_2);
-            $("#second_select_2, #second_select").val(active_selecet_1);
-
-            $('#first_select [value="'+active_selecet_1+'"]').prop("disabled", true);
-            $('#second_select [value="'+active_selecet_2+'"]').prop("disabled", true);
-
-            $('input[name="item_name"]').val(name_item($("#second_select option:selected").text(), $("#first_select option:selected").text()));
-
-        }
-
-        function get_active_select_1() {
-
-            var active_selecet_1 = $("#first_select option:selected").val();
-            var active_selecet_2 = $("#second_select option:selected").val();
-
-            $("#first_select_2 option, #second_select_2 option").attr("selected", false).attr("disabled", false);
-
-            $('#first_select_2').val(active_selecet_1);
-            $('#second_select_2').val(active_selecet_2);
-
-            $('#first_select [value="'+active_selecet_2+'"]').attr("disabled", true);
-            $('#second_select [value="'+active_selecet_1+'"]').attr("disabled", true);
-
-            $('input[name="item_name"]').val(name_item($("#first_select option:selected").text(), $("#second_select_2 option:selected").text()));
-
-        }
-
-        function get_active_select_fix_1() {
-
-            var active_selecet_1 = $("#first_select option:selected").val();
-            var active_selecet_2 = $("#second_select option:selected").val();
-
-            $("#first_select option, #second_select option, #first_select_2 option, #second_select_2 option").attr("selected", false).attr("disabled", false);
-
-            $('#first_select_2').val(active_selecet_1);
-            $('#second_select_2').val(active_selecet_2);
-
-            $('#first_select [value="'+active_selecet_2+'"]').attr("disabled", true);
-            $('#second_select [value="'+active_selecet_1+'"]').attr("disabled", true);
-
-            $('input[name="item_name"]').val(name_item($("#first_select option:selected").text(), $("#second_select_2 option:selected").text()));
-
-        }
-
-        function get_active_select_3() {
-
-            var active_selecet_5 = $("#first_select_2 option:selected").val();
-            var active_selecet_6 = $("#second_select_2 option:selected").val();
-
-            $("#first_select option, #second_select option, #first_select_2 option, #second_select_2 option").attr("selected", false).attr("disabled", false);
-
-            $('#first_select').val(active_selecet_5);
-            $('#second_select').val(active_selecet_6);
-
-            $("#first_select option, #second_select option, #first_select_2 option, #second_select_2 option").attr("selected", false).attr("disabled", false);
-
-            $('#first_select_2 [value="'+active_selecet_6+'"]').prop("disabled", true);
-            $('#second_select_2 [value="'+active_selecet_5+'"]').prop("disabled", true);
-
-            $('input[name="item_name"]').val(name_item($("#first_select_2 option:selected").text(), $("#second_select_2 option:selected").text()));
-
-        }
+        // function get_active_select_1() {
+        //
+        //     var active_selecet_1 = $("#first_select option:selected").val();
+        //     var active_selecet_2 = $("#second_select option:selected").val();
+        //
+        //     $("#first_select_2 option, #second_select_2 option").attr("selected", false).attr("disabled", false);
+        //
+        //     $('#first_select_2').val(active_selecet_1);
+        //     $('#second_select_2').val(active_selecet_2);
+        //
+        //     $('#first_select [value="'+active_selecet_2+'"]').attr("disabled", true);
+        //     $('#second_select [value="'+active_selecet_1+'"]').attr("disabled", true);
+        //
+        //     $('input[name="item_name"]').val(name_item($("#first_select option:selected").text(), $("#second_select_2 option:selected").text()));
+        //
+        // }
+        //
+        // function get_active_select_fix_1() {
+        //
+        //     var active_selecet_1 = $("#first_select option:selected").val();
+        //     var active_selecet_2 = $("#second_select option:selected").val();
+        //
+        //     $("#first_select option, #second_select option, #first_select_2 option, #second_select_2 option").attr("selected", false).attr("disabled", false);
+        //
+        //     $('#first_select_2').val(active_selecet_1);
+        //     $('#second_select_2').val(active_selecet_2);
+        //
+        //     $('#first_select [value="'+active_selecet_2+'"]').attr("disabled", true);
+        //     $('#second_select [value="'+active_selecet_1+'"]').attr("disabled", true);
+        //
+        //     $('input[name="item_name"]').val(name_item($("#first_select option:selected").text(), $("#second_select_2 option:selected").text()));
+        //
+        // }
+        //
+        // function get_active_select_3() {
+        //
+        //     var active_selecet_5 = $("#first_select_2 option:selected").val();
+        //     var active_selecet_6 = $("#second_select_2 option:selected").val();
+        //
+        //     $("#first_select option, #second_select option, #first_select_2 option, #second_select_2 option").attr("selected", false).attr("disabled", false);
+        //
+        //     $('#first_select').val(active_selecet_5);
+        //     $('#second_select').val(active_selecet_6);
+        //
+        //     $("#first_select option, #second_select option, #first_select_2 option, #second_select_2 option").attr("selected", false).attr("disabled", false);
+        //
+        //     $('#first_select_2 [value="'+active_selecet_6+'"]').prop("disabled", true);
+        //     $('#second_select_2 [value="'+active_selecet_5+'"]').prop("disabled", true);
+        //
+        //     $('input[name="item_name"]').val(name_item($("#first_select_2 option:selected").text(), $("#second_select_2 option:selected").text()));
+        //
+        // }
 
 
         function get_car_price() {
@@ -512,29 +513,29 @@
 
         $(document).ready(function() {
 
-            get_active_select_1();
+            // get_active_select_1();
+            //
+            // $(".one_ref").on("click", function() {
+            //
+            //     get_active_select_ref_1();
+            //
+            // });
+            //
+            // $(document).on("change", "#first_select, #second_select", function() {
+            //
+            //     get_active_select_fix_1();
+            //
+            // });
 
-            $(".one_ref").on("click", function() {
-
-                get_active_select_ref_1();
-
-            });
-
-            $(document).on("change", "#first_select, #second_select", function() {
-
-                get_active_select_fix_1();
-
-            });
-
-            $(document).on("click", ".run_price", function() {
-
-                get_active_select_fix_1();
-
-            });
+            // $(document).on("click", ".run_price", function() {
+            //
+            //     get_active_select_fix_1();
+            //
+            // });
 
             $(document).on("change", "#first_select_2, #second_select_2", function() {
 
-                get_active_select_3();
+                // get_active_select_3();
 
                 get_car_price();
 
@@ -544,7 +545,7 @@
 
             $(document).on("click", ".bron_trnf, .order, .run_price", function() {
 
-                get_active_select_3();
+                // get_active_select_3();
 
                 get_car_price();
 
