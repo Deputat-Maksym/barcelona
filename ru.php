@@ -1261,8 +1261,16 @@ setcookie("user_id", $user_id, time()+3600);
                         </div>
                         <div class="fl">
                             <input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-3">
-                            <label class="label-for-check2" for="transfer-person-3" value="person 4-6 normal car">
+                            <label class="label-for-check2" for="transfer-person-3" value="person 1-7 normal car">
                                 <div class="h3 person-val">1-7 человек<br> минивен</div>
+                                <div class="h1 trans-price"></div>
+                                <div class="no-price"></div>
+                            </label>
+                        </div>
+                        <div class="fl">
+                            <input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-4">
+                            <label class="label-for-check2" for="transfer-person-4" value="person 1-4 premium car">
+                                <div class="h3 person-val">1-4 человек<br> премиум</div>
                                 <div class="h1 trans-price"></div>
                                 <div class="no-price"></div>
                             </label>
