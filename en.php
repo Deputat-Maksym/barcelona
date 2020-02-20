@@ -1198,6 +1198,12 @@ setcookie("user_id", $user_id, time()+3600);
                                 <div class="h1 trans-price"></div>
                                 <div class="no-price"></div>
                             </label>
+                            <div class="fl-avto">
+                                <div class="fl-avto-img">
+                                    <img src="img/car5.jpg" alt="Fiat tipo">
+                                </div>
+                                <div class="fl-avto-name">Fiat Tipo</div>
+                            </div>
                         </div>
                         <div class="fl">
                             <input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-2">
@@ -1206,6 +1212,12 @@ setcookie("user_id", $user_id, time()+3600);
                                 <div class="h1 trans-price"></div>
                                 <div class="no-price"></div>
                             </label>
+                            <div class="fl-avto">
+                                <div class="fl-avto-img">
+                                    <img src="img/car2.jpg" alt="mercedes benz class e">
+                                </div>
+                                <div class="fl-avto-name">Mercedes Class E</div>
+                            </div>
                         </div>
                         <div class="fl">
                             <input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-3">
@@ -1214,6 +1226,26 @@ setcookie("user_id", $user_id, time()+3600);
                                 <div class="h1 trans-price"></div>
                                 <div class="no-price"></div>
                             </label>
+                            <div class="fl-avto">
+                                <div class="fl-avto-img">
+                                    <img src="img/car1.jpg" alt="mercedes benz class v">
+                                </div>
+                                <div class="fl-avto-name">Mercedes Class V</div>
+                            </div>
+                        </div>
+                        <div class="fl">
+                            <input type="radio" name="book-transfer" class="check-with-label2" id="transfer-person-4">
+                            <label class="label-for-check2" for="transfer-person-4" value="person 1-4 premium car">
+                                <div class="h3 person-val">1-4 people<br> premium</div>
+                                <div class="h1 trans-price"></div>
+                                <div class="no-price"></div>
+                            </label>
+                            <div class="fl-avto">
+                                <div class="fl-avto-img">
+                                    <img src="img/car4.jpg" alt="mercedes benz class s">
+                                </div>
+                                <div class="fl-avto-name">Mercedes Class S</div>
+                            </div>
                         </div>
                     </div>
                     <div class="erro_trnsf">Выберите машину для продолжения оформления трансфера.</div>
