@@ -298,27 +298,31 @@ setcookie("user_id", $user_id, time()+3600);
                     <table>
                         <tr class="t-title">
                             <td class="b-l">Направление</td>
-                            <td class="b-t">1-4 человека стандарт</td>
-                            <td class="b-t">1-4 человека люкс</td>
-                            <td class="b-t">1-7 человек минивен</td>
+                            <td class="b-t">1-4 человек стандарт</td>
+                            <td class="b-t">1-4 человек люкс</td>
+                            <td class="b-t">1-8 человек минивен</td>
+                            <td class="b-t">1-8 человек минивен</td>
                         </tr>
                         <tr class="normal">
-                            <td class="b-l">Барселона — Отель в Барселоне</td>
-                            <td class="new-p"><span>45€</span> 35€</td>
-                            <td class="new-p"><span>60€</span> 50€</td>
-                            <td class="new-p"><span>75€</span> 67€</td>
+                            <td class="b-l">Аэропорт Эль Прат — Барселона</td>
+                            <td class="new-p"><span>60€</span> 45€</td>
+                            <td class="new-p"><span>110€</span> 65€</td>
+                            <td class="new-p"><span>90€</span> 50€</td>
+                            <td class="new-p"><span>90€</span> 50€</td>
                         </tr>
                         <tr class="normal">
-                            <td class="b-l">Барселона — Морской порт</td>
-                            <td class="new-p"><span>45€</span> 35€</td>
-                            <td class="new-p"><span>60€</span> 50€</td>
-                            <td class="new-p"><span>75€</span> 67€</td>
+                            <td class="b-l">Аэропорт Эль Прат — Круизный порт</td>
+                            <td class="new-p"><span>60€</span> 45€</td>
+                            <td class="new-p"><span>110€</span> 65€</td>
+                            <td class="new-p"><span>90€</span> 50€</td>
+                            <td class="new-p"><span>90€</span> 50€</td>
                         </tr>
                         <tr class="normal">
-                            <td class="b-l">Барселона — Барселона аэропорт</td>
-                            <td class="new-p"><span>45€</span> 35€</td>
-                            <td class="new-p"><span>60€</span> 50€</td>
-                            <td class="new-p"><span>75€</span> 67€</td>
+                            <td class="b-l">Барселона — Круизный порт</td>
+                            <td class="new-p"><span>60€</span> 45€</td>
+                            <td class="new-p"><span>110€</span> 65€</td>
+                            <td class="new-p"><span>90€</span> 50€</td>
+                            <td class="new-p"><span>90€</span> 50€</td>
                         </tr>
                     </table>
                 </div>
@@ -327,75 +331,73 @@ setcookie("user_id", $user_id, time()+3600);
                     <table>
                         <tr class="t-title">
                             <td class="b-l">Направление</td>
-                            <td class="b-t">1-4 человека стандарт</td>
-                            <td class="b-t">1-4 человека люкс</td>
-                            <td class="b-t">1-7 человек минивен</td>
+                            <td class="b-t">1-4 человек стандарт</td>
+                            <td class="b-t">1-4 человек люкс</td>
+                            <td class="b-t">1-8 человек минивен</td>
+                            <td class="b-t">1-8 человек минивен</td>
                         </tr>
                         <tr class="normal">
-                            <td class="b-l">Барселона</td>
-                            <td>40€</td>
-                            <td>50€</td>
-                            <td>65€</td>
-                        </tr>
-                        <tr class="normal">
-                            <td class="b-l">Ситджес</td>
+                            <td class="b-l">Ситжес</td>
                             <td>70€</td>
-                            <td>90€</td>
+                            <td>110€</td>
+                            <td>110€</td>
                             <td>110€</td>
                         </tr>
                         <tr class="normal">
-                            <td class="b-l">Вианова</td>
+                            <td class="b-l">Виланова</td>
                             <td>80€</td>
-                            <td>90€</td>
+                            <td>110€</td>
+                            <td>110€</td>
                             <td>110€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Кунит</td>
                             <td>85€</td>
-                            <td>95€</td>
+                            <td>115€</td>
+                            <td>115€</td>
                             <td>115€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Кома-Руга</td>
                             <td>90€</td>
-                            <td>105€</td>
+                            <td>125€</td>
+                            <td>125€</td>
                             <td>125€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Калафель</td>
                             <td>90€</td>
-                            <td>100€</td>
+                            <td>125€</td>
+                            <td>125€</td>
                             <td>125€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Торредембарра</td>
                             <td>105€</td>
-                            <td>115€</td>
+                            <td>125€</td>
+                            <td>125€</td>
                             <td>125€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Салоу</td>
                             <td>115€</td>
-                            <td>145€</td>
+                            <td>165€</td>
+                            <td>165€</td>
                             <td>165€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Камбрильс</td>
                             <td>120€</td>
-                            <td>145€</td>
+                            <td>165€</td>
+                            <td>165€</td>
                             <td>165€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Порт Авентура</td>
                             <td>120€</td>
-                            <td>140€</td>
+                            <td>160€</td>
                             <td>165€</td>
-                        </tr>
-                        <tr class="normal">
-                            <td class="b-l">Cruise Port</td>
-                            <td>40€</td>
-                            <td>50€</td>
-                            <td>65€</td>
+                            <td>165€</td>
                         </tr>
                     </table>
                 </div>
@@ -404,87 +406,101 @@ setcookie("user_id", $user_id, time()+3600);
                     <table>
                         <tr class="t-title">
                             <td class="b-l">Направление</td>
-                            <td class="b-t">1-4 человека стандарт</td>
-                            <td class="b-t">1-4 человека люкс</td>
-                            <td class="b-t">1-7 человек минивен</td>
+                            <td class="b-t">1-4 человек стандарт</td>
+                            <td class="b-t">1-4 человек люкс</td>
+                            <td class="b-t">1-8 человек минивен</td>
+                            <td class="b-t">1-8 человек минивен</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Бадалона</td>
-                            <td>45€</td>
-                            <td>55€</td>
+                            <td>50€</td>
+                            <td>70€</td>
+                            <td>70€</td>
                             <td>70€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Монкада-и-Решак</td>
-                            <td>50€</td>
-                            <td>60€</td>
+                            <td>55€</td>
+                            <td>70€</td>
+                            <td>70€</td>
                             <td>70€</td>
                         </tr>
                         <tr class="normal">
-                            <td class="b-l">Тарраса</td>
+                            <td class="b-l">Террасса</td>
                             <td>60€</td>
-                            <td>80€</td>
+                            <td>90€</td>
+                            <td>90€</td>
                             <td>90€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Матаро</td>
                             <td>65€</td>
-                            <td>85€</td>
+                            <td>95€</td>
+                            <td>95€</td>
                             <td>95€</td>
                         </tr>
                         <tr class="normal">
-                            <td class="b-l">La Roca Village</td>
+                            <td class="b-l">Ла Рока Виладж</td>
                             <td>65€</td>
-                            <td>85€</td>
+                            <td>105€</td>
+                            <td>105€</td>
                             <td>105€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Калелья</td>
                             <td>75€</td>
-                            <td>95€</td>
+                            <td>115€</td>
+                            <td>115€</td>
                             <td>115€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Мальграт-де-Мар</td>
                             <td>95€</td>
-                            <td>115€</td>
+                            <td>130€</td>
+                            <td>130€</td>
                             <td>130€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Санта-Сусанна</td>
                             <td>90€</td>
-                            <td>105€</td>
+                            <td>125€</td>
+                            <td>125€</td>
                             <td>125€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Льорет-де-Мар</td>
                             <td>105€</td>
-                            <td>120€</td>
+                            <td>140€</td>
+                            <td>140€</td>
                             <td>140€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Тосса-де-Мар</td>
                             <td>120€</td>
-                            <td>140€</td>
+                            <td>155€</td>
+                            <td>155€</td>
                             <td>155€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Кастель-Пладжа-де-Аро</td>
                             <td>120€</td>
-                            <td>140€</td>
+                            <td>160€</td>
+                            <td>160€</td>
                             <td>160€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Аэропорт Жирона</td>
                             <td>105€</td>
-                            <td>125€</td>
+                            <td>145€</td>
+                            <td>145€</td>
                             <td>145€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Фигерас</td>
                             <td>160€</td>
-                            <td>175€</td>
                             <td>195€</td>
+                            <td>185€</td>
+                            <td>185€</td>
                         </tr>
                     </table>
                 </div>
@@ -493,69 +509,80 @@ setcookie("user_id", $user_id, time()+3600);
                     <table>
                         <tr class="t-title">
                             <td class="b-l">Направление</td>
-                            <td class="b-t">1-4 человека стандарт</td>
-                            <td class="b-t">1-4 человека люкс</td>
-                            <td class="b-t">1-7 человек минивен</td>
+                            <td class="b-t">1-4 человек стандарт</td>
+                            <td class="b-t">1-4 человек люкс</td>
+                            <td class="b-t">1-8 человек минивен</td>
+                            <td class="b-t">1-8 человек минивен</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Andorra la vella</td>
-                            <td>205€</td>
-                            <td>225€</td>
-                            <td>260€</td>
+                            <td>305€</td>
+                            <td>325€</td>
+                            <td>360€</td>
+                            <td>360€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Escaldes-Engordany</td>
-                            <td>215€</td>
-                            <td>245€</td>
-                            <td>265€</td>
+                            <td>315€</td>
+                            <td>345€</td>
+                            <td>365€</td>
+                            <td>365€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Encamp</td>
-                            <td>220€</td>
-                            <td>250€</td>
-                            <td>270€</td>
+                            <td>320€</td>
+                            <td>350€</td>
+                            <td>370€</td>
+                            <td>370€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">La Massana</td>
-                            <td>215€</td>
-                            <td>245€</td>
-                            <td>275€</td>
+                            <td>315€</td>
+                            <td>345€</td>
+                            <td>375€</td>
+                            <td>375€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">La Canillo</td>
-                            <td>225€</td>
-                            <td>255€</td>
-                            <td>285€</td>
+                            <td>325€</td>
+                            <td>355€</td>
+                            <td>385€</td>
+                            <td>385€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">La El Tarter</td>
-                            <td>235€</td>
-                            <td>265€</td>
-                            <td>285€</td>
+                            <td>335€</td>
+                            <td>365€</td>
+                            <td>385€</td>
+                            <td>385€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Soldeu</td>
-                            <td>235€</td>
-                            <td>265€</td>
-                            <td>295€</td>
+                            <td>335€</td>
+                            <td>365€</td>
+                            <td>395€</td>
+                            <td>395€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">GrauRoig</td>
-                            <td>245€</td>
-                            <td>270€</td>
-                            <td>295€</td>
+                            <td>345€</td>
+                            <td>370€</td>
+                            <td>395€</td>
+                            <td>395€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">PasdelaCasa</td>
-                            <td>255€</td>
-                            <td>275€</td>
-                            <td>295€</td>
+                            <td>355€</td>
+                            <td>375€</td>
+                            <td>395€</td>
+                            <td>395€</td>
                         </tr>
                         <tr class="normal">
                             <td class="b-l">Arinsal</td>
-                            <td>225€</td>
-                            <td>255€</td>
-                            <td>295€</td>
+                            <td>325€</td>
+                            <td>355€</td>
+                            <td>395€</td>
+                            <td>395€</td>
                         </tr>
                     </table>
                 </div>
