@@ -260,7 +260,7 @@ function get_car_price() {
 
         var price_arr = ["125"+sumbol, "145"+sumbol, "170"+sumbol, "230"+sumbol];
 
-    } else if(active_selecet_1 == "Круизный порт" && active_selecet_2 == "Барселона") {
+    } else if(active_selecet_1 == "Круизный Порт" && active_selecet_2 == "Барселона") {
 
         var price_arr = ["45"+sumbol, "55"+sumbol, "70"+sumbol, "135"+sumbol];
 
@@ -396,7 +396,7 @@ function get_car_price() {
 
         var price_arr = ["120"+sumbol, "160"+sumbol, "165"+sumbol, "230"+sumbol];
 
-    } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "Круизный порт") {
+    } else if(active_selecet_1 == "Аэропорт Эль Прат" && active_selecet_2 == "Круизный Порт") {
 
         var price_arr = ["45"+sumbol, "65"+sumbol, "50"+sumbol, "135"+sumbol];
 
@@ -532,7 +532,7 @@ function get_car_price() {
 
         var price_arr = ["120"+sumbol, "160"+sumbol, "165"+sumbol, "230"+sumbol];
 
-    } else if(active_selecet_1 == "Круизный порт" && active_selecet_2 == "Аэропорт Эль Прат") {
+    } else if(active_selecet_1 == "Круизный Порт" && active_selecet_2 == "Аэропорт Эль Прат") {
 
         var price_arr = ["45"+sumbol, "65"+sumbol, "50"+sumbol, "135"+sumbol];
 
