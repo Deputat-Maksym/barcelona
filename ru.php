@@ -141,8 +141,8 @@ setcookie("user_id", $user_id, time()+3600);
             <h1 class="main-title">
                 <span>Трансферы и такси в Барселоне</span>
                 <span class="h3 sub-title">с русскоговорящими водителями</span>
-                <span class="h2 commerc-mess">
-<!--                     МЕСТО ДЛЯ РЕКЛАМНОГО ТЕКСТА-->
+                <span class="h2 commerc-mess animated">
+                     Напишите в чат и получите скидку!
                 </span>
             </h1>
             <div class="route-block">

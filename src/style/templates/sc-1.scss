@@ -130,3 +130,44 @@
   margin: 5vh 0 0;
 }
 
+.animated {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}
